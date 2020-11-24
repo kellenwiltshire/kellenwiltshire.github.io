@@ -7,50 +7,64 @@ body, html{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    color: #e1e7ff;
+    color: #cfc8c0;
+    padding-top: 20px;
+    position: relative;
 }
 
 h1, p{
-    color: #e1e7ff;
+    color: #cfc8c0;
 }
+
 .navbar{
     text-transform: lowercase;
-    color: #e1e7ff;
+    color: #cfc8c0;
 }
 
-.aboutsection{
-    padding: 100px 0;
-    background: url(keyboard.jpg) no-repeat center center fixed;
-    background-size: 50% 100%;
+.contentsection{
+    padding: 25px 0;
 }
 
-.portfoliosection{
-    padding: 100px 0;
-}
-
-.affix {
-    top: 0;
-    width: 100%;
-    z-index: 9999 !important;
-}
-
-.contactsection{
-    padding: 100px 0;
+.divider{
+    padding-top: 50px;
 }
 .nav-link{
     font-size: 1rem;
     transition: .5s;
-    color: #e1e7ff;
+    color: #cfc8c0;
 }
 
 .nav-link:hover{
     text-transform: uppercase;
-    background-color: rgba(0, 20, 146, .5);
-    color: #e1e7ff;
 }
 
 .bg-dark{
-    background-color: rgba(0, 10, 70, .2);
+    background-color: #030d19;
+}
+
+.placeholder-left{
+    float: left;
+    width: 25%;
+    height: 25%;
+    padding: 10px;
+    transition: .5s;
+}
+
+.buffer{
+    padding: 10px;
+}
+
+.placeholder-right{
+    float: right;
+    width: 25%;
+    height: 25%;
+    padding: 10px;
+    transition: .5s;
+}
+
+.placeholder-left:hover, .placeholder-right:hover{
+    width: 30%;
+    height: 30%;
 }
 
 .navbar-brand{
@@ -58,20 +72,33 @@ h1, p{
 }
 
 .navbar-dark .navbar-brand:hover{
-    background-color: rgba(0, 20, 146, .5);
-    color: #e1e7ff;
+    color: #cfc8c0;
 }
 
 .active{
     text-decoration: underline;
 }
 
+.projects{
+    background-color: rgba(3, 13, 25, .9);
+    border: 2px solid #6d6362;
+}
+
+.left-align{
+    padding: 10px;
+}
+
+.right-align{
+    align-items: right;
+    padding: 10px;
+}
+
 .row{
-    background-color: rgba(0, 10, 70, .7);
-    border: 2px solid rgba(0, 10, 70, 1);
+    background-color: rgba(3, 13, 25, .9);
+    border: 2px solid #6d6362;
 }
 
 form{
-    background-color: rgba(0, 10, 70, .7);
-    border: 2px solid rgba(0, 10, 70, 1);
+    background-color: rgba(3, 13, 25, .9);
+    border: 2px solid #6d6362;
 }
