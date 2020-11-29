@@ -1,141 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Kellen Wiltshire Web Development</title>
-    <!-- Required Meta Tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet"> 
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap.css">
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+  <title>Layout Master</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
-
-<!-- TODO: Get Navbar to update depending on page position -->
-<body data-spy="scroll" data-target="#navbarTop" data-offset="0">
-
-    <!-- Navigation Bar-->
-    <header class="fixed-top">
-      <nav id="navbarTop" class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand" href="index.html">LOGO</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#about">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#portfolio">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-      </nav>
-    </header>
-
-    <!-- About Section -->
-    <div class="divider-top"></div>
-
-    <section class="contentsection">
-      <div class="aboutsection container-fluid d-flex align-items-center justify-content-center h-100">
-          <div class="row">
-              <header class="text-center col-12">
-                  <h3 id="about">Welcome to the future home of </h3><br>
-                  <h1 class="text-uppercase"><strong>Kellen Wiltshire Web Development</strong></h1>
-              </header>  
-              <div class="buffer"></div>
-              <div class="text-center col-12">
-                  <p>Kellen is currently learning how to create responsive minimalistic web development and design so that all the websites
-                      he creates look their best and perform flawlessly on any device or platform
-                  </p><br>
-                  <p>For any inquires or to be notified once he is accepting new clients, please use the contact link above.</p>
-              </div>
-          </div>  
+<body>
+  <nav class="zone blue sticky">
+    <ul class="main-nav">
+      <li><a href="">About</a></li>
+      <li><a href="">Products</a></li>
+      <li><a href="">Our Team</a></li>
+      <li class="push"><a href="">Contacts</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <header class="header">
+      <h3 id="about">Welcome to the future home of </h3><br>
+      <h1 class="text-uppercase"><strong>Kellen Wiltshire Web Development</strong></h1>
+      <div class="buffer"></div>
+      <div class="">
+          <p>Kellen is currently learning how to create responsive minimalistic web development and design so that all the websites
+              he creates look their best and perform flawlessly on any device or platform
+          </p><br>
+          <p>For any inquires or to be notified once he is accepting new clients, please use the contact link above.</p>
       </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <div class="divider">
-      <a id="portfolio"></a>
+  </header>
+  </div>
+  <div class="zone blue grid-wrapper" id="projects">
+    <div class="box zone project1" id="proj1">
+      <!-- Check CSS for Image -->
+      <img class="proj1Image" src="mountain.jpg" alt="">
+      <div class="project-information" id="projInfo1">
+        <h1>Amazing Project</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reiciendis nihil ex consectetur exercitationem impedit delectus aliquam asperiores eos iusto, beatae, molestias similique nesciunt totam ipsa tempora minus incidunt accusantium.</p>
+      </div>
     </div>
-
-    <section class="portfoliosection contentsection">
-      <div class="container-fluid d-flex align-items-center justify-content-center">
-        <div class="projects col-12">
-          <div>
-            <img src="keyboard.jpg" class="placeholder-left" alt="placeholder">
-          </div>
-          <div>
-            <h1 class="left-align">Amazing Project</h1>
-            <p class="left-align">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reiciendis nihil ex consectetur exercitationem impedit delectus aliquam asperiores eos iusto, beatae, molestias similique nesciunt totam ipsa tempora minus incidunt accusantium.</p>
-          </div>
-        </div>
+    <div class="box zone project2" id="proj2">
+      <img class="proj1Image" src="mountain.jpg" alt="">
+      <div class="project-information" id="projInfo2">
+        <h1>Amazing Project</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reiciendis nihil ex consectetur exercitationem impedit delectus aliquam asperiores eos iusto, beatae, molestias similique nesciunt totam ipsa tempora minus incidunt accusantium.</p>
       </div>
-
-      <!-- Buffer between projects -->
-      <div class="buffer">
-        <hr>
+    </div>
+    <div class="box zone project3" id="proj3">
+      <img class="proj1Image" src="mountain.jpg" alt="">
+      <div class="project-information" id="projInfo3">
+        <h1>Amazing Project</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reiciendis nihil ex consectetur exercitationem impedit delectus aliquam asperiores eos iusto, beatae, molestias similique nesciunt totam ipsa tempora minus incidunt accusantium.</p>
       </div>
+    </div>
+  </div>
 
-      <div class="container-fluid d-flex align-items-center justify-content-center">
-        <div class="projects col-12">
-          <img src="mountain.jpg" class="placeholder-right" alt="placeholder">
-          <h1 class="right-align text-right">Amazing Project</h1>
-          <p class="right-align text-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reiciendis nihil ex consectetur exercitationem impedit delectus aliquam asperiores eos iusto, beatae, molestias similique nesciunt totam ipsa tempora minus incidunt accusantium.</p>
-        </div>
-      </div>
+  <!-- <footer class="zone yellow">Footer</footer> -->
 
-      <div class="buffer">
-      </div>
-
-      <div class="container-fluid d-flex align-items-center justify-content-center">
-        <div class="projects col-12">
-          <img src="keyboard.jpg" class="placeholder-left" alt="placeholder">
-          <h1 class="left-align">Amazing Project</h1>
-          <p class="left-align">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reiciendis nihil ex consectetur exercitationem impedit delectus aliquam asperiores eos iusto, beatae, molestias similique nesciunt totam ipsa tempora minus incidunt accusantium.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <div class="divider"></div>
-
-    <section class="contactsection contentsection">
-      <div class="container d-flex align-items-center">
-        <form method="GET" class="align-items-center col-12">
-            <div class="form-group">
-                <label id="contact" for="email">Email address</label>
-                <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
-            </div>
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" name="name" id="name" placeholder="John Doe">
-            </div>
-            <div class="form-group">
-                <label for="description">Description of Service Required</label>
-                <textarea class="form-control" name="description" id="description" rows="3"></textarea>
-            </div>
-            <div class="text-center">
-                <button type="submit" class="btn btn-primary btn-sm">Submit</button>
-                <button type="reset" class="btn btn-secondary btn-sm">Clear</button>
-            </div>
-        </form>
-      </div>
-    </section>
-
-    <!-- Bootsrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 </html>
