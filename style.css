@@ -1,86 +1,337 @@
+:root{
+    --navbar-bg-color: black;
+    --navbar-text-color: white;
+    --navbar-text-color-focus: rgb(199, 199, 199);
+    --navbar-bg-contrast: rgb(155, 155, 155);
+    --navbar-hover-text-color: black;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body{
+    height: 100vh;
+    line-height: 1.6;
     margin: auto 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
-.zone {
-    cursor:pointer;
-    color:#FFF;
-    font-size:2em;
-    border-radius:4px;
-    border:1px solid #bbb;
-    transition: all 0.3s linear;
+/* ----------------------------Splash Screen---------------------------- */
+
+.large-header {
+    position: relative;
+    width: 100%;
+    background: #111;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+ }
+ 
+.large-header {
+    background-color: #000000;
+ }
+ 
+ .splash-text{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: #F9F1E9;
+    text-align: right;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+ }
+
+ .arrow{
+     position: absolute;
+     margin: 0;
+     padding: 0;
+     color: white;
+     top: 90%;
+     left: 50%;
+     -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+ }
+ 
+ @media only screen and (max-width: 700px) {
+    .splash-text {
+       font-size: 1em;
+    }
+ }
+
+.icon:hover{
+    border: solid 1px white;
 }
 
-.zone:hover {
-    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+/* ----------------------------NAV---------------------------- */
+
+.container2 {
+    max-width: 100%;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* NAV */
-.sticky{
+#navbar {
+    --navbar-height: 64px;
+    height: var(--navbar-height);
+    background-color: var(--navbar-bg-color);
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
     position: fixed;
-    top: 0;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+.navbar-item {
+    margin: 0.4em;
     width: 100%;
 }
-.main-nav{
+
+.home-link,
+.navbar-link {
+    color: var(--navbar-text-color);
+    transition: color 0.2s ease-in-out;
+    text-decoration: none;
     display: flex;
-    list-style: none;
-    font-size: 0.7em;
-    margin: 0;
+    font-weight: 400;
+    align-items: center;
+    transition: background-color 0.2s ease-in-out,
+                color 0.2s ease-in-out;
 }
 
-@media only screen and (max-width: 600px){
-    .main-nav{
-        font-size: 0.5em;
+.home-link:focus,
+.home-link:hover {
+    color: var(--navbar-text-color-focus);
+}
+
+.navbar-link {
+    justify-content: center;
+    width: 100%;
+    padding: 0.4em 0.8em;
+    border-radius: 5px;
+}
+
+.navbar-link:focus,
+.navbar-link:hover {
+    color: var(--navbar-hover-text-color);
+    background-color: var(--navbar-bg-contrast);
+}
+
+.navlogo {
+    background-image: url('https://avatars2.githubusercontent.com/u/31140634?v=4');
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5em;
+}
+
+.navbar-toggle {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.icon-bar {
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 2px;
+    transition: background-color 0.2s ease-in-out,
+                transform 0.2s ease-in-out,
+                opacity 0.2s ease-in-out;
+    background-color: var(--navbar-text-color);
+}
+
+.navbar-toggle:focus .icon-bar,
+.navbar-toggle:hover .icon-bar {
+    background-color: var(--navbar-text-color-focus);
+}
+
+#navbar.opened .navbar-toggle .icon-bar:first-child,
+#navbar.opened .navbar-toggle .icon-bar:last-child {
+    position: absolute;
+    margin: 0;
+    width: 30px;
+}
+
+#navbar.opened .navbar-toggle .icon-bar:first-child {
+    transform: rotate(45deg);
+}
+
+#navbar.opened .navbar-toggle .icon-bar:nth-child(2) {
+    opacity: 0;
+}
+
+#navbar.opened .navbar-toggle .icon-bar:last-child {
+    transform: rotate(-45deg);
+}
+
+.navbar-menu {
+    position: fixed;
+    top: var(--navbar-height);
+    bottom: 0;
+    transition: opacity 0.2s ease-in-out,
+                visibility 0.2s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    left: 0;
+    right: 0;
+}
+
+#navbar.opened .navbar-menu {
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar-links {
+    list-style-type: none;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: var(--navbar-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+    right: 0;
+    margin: 1.4rem;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+#navbar.opened .navbar-links {
+    padding: 1em;
+    max-height: none;
+}
+
+@media screen and (min-width: 700px) {
+    .navbar-toggle {
+        display: none;
+    }
+    
+    #navbar .navbar-menu,
+    #navbar.opened .navbar-menu {
+        visibility: visible;
+        opacity: 1;
+        position: static;
+        display: block;
+        height: 100%;
+    }
+
+    #navbar .navbar-links,
+    #navbar.opened .navbar-links {
+        margin: 0;
         padding: 0;
+        box-shadow: none;
+        position: static;
+        flex-direction: row;
+        list-style-type: none;
+        max-height: max-content;
+        width: 100%;
+        height: 100%;
+    }
+
+    #navbar .navbar-link:last-child {
+        margin-right: 0;
     }
 }
 
-.push{
-    margin-left: auto;
-}
 
-li{
-    padding: 20px;
-}
+/* ----------------------------ABOUT---------------------------- */
 
-a{
-    color: #f5f5f6;
-    text-decoration: none;
-}
-
-/* COVER */
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 85vh;
-    background: url(mountain.jpg) no-repeat center center fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    text-align: center;
 }
 
-.header{
-    text-align: center;
-    color: ivory;
-    background-color: rgba(68, 68, 68, 0.5)
+.about-bg{
+    background: black;
+    color: white;
 }
 
 .text-uppercase{
     text-transform: uppercase;
 }
 
-/* GRID */
+#hexcontainer {
+	position:relative;
+	margin:50px 0 35px 0;
+    padding:20px 0;
+}
+
+.hex1, .hex2 {
+	position:relative;
+	display:inline-block;
+	height:220px;
+	width:190px;
+	overflow:hidden;
+}
+
+.hex1 {
+	-webkit-transform:rotate(60deg);
+	-moz-transform:rotate(60deg);
+	-ms-transform:rotate(60deg);
+	-o-transform:rotate(60deg);
+	transform:rotate(60deg);
+	margin:-20px 10px;
+}
+
+.hex2 {
+	-webkit-transform:rotate(60deg);
+	-moz-transform:rotate(60deg);
+	-ms-transform:rotate(60deg);
+	-o-transform:rotate(60deg);
+	transform:rotate(60deg);
+}
+
+.hexlink {
+	-webkit-transform:rotate(-120deg);
+	-moz-transform:rotate(-120deg);
+	-ms-transform:rotate(-120deg);
+	-o-transform:rotate(-120deg);
+	transform:rotate(-120deg);
+	position:relative;
+	display:inline-block;
+	text-decoration:none;
+	height:220px;
+	width:190px;
+	background-position:center center;
+	background-size:cover;
+}
+
+#hl1 {background-image:url('https://avatars2.githubusercontent.com/u/31140634?v=4');}
+
+/* ----------------------------GRID---------------------------- */
 .grid-wrapper{
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     justify-content: center;
+    align-content: center;
+    background-color: var(--navbar-bg-color);
 }
 
 .project-information{
@@ -89,81 +340,38 @@ a{
     padding: 0;
     visibility: hidden;
     position: absolute;
-    top: 0;
+    top: 1rem;
 }
 
 .visible{
     visibility: visible;
-    background-color: rgba(68, 68, 68, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
+    color: var(--navbar-text-color);
 }
 
 .project1, .project2, .project3{
     position: relative;
 }
 
-.box > .proj1Image{
+.box > .proj-Image{
     width: 100%;
 }
 
-.box{
-    background-color: #444;
-    padding: 10px;
-    margin: 10px;
-}
+/* ----------------------------FOOTER---------------------------- */
 
 footer{
+    display: flex;
     text-align: center;
-}
-/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
-/***********************************************************************
- *  Green Background
- **********************************************************************/
-.green{
-    background: #56B870; /* Old browsers */
-    background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
-    background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
+    background-color: black;
+    color: white;
+    height: 10vh;
+    justify-content: center;
+    align-content: center;
 }
 
-/***********************************************************************
- *  Red Background
- **********************************************************************/
-.red{
-    background: #C655BE; /* Old browsers */
-    background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C655BE), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* IE10+ */
-    background: linear-gradient(top, #C655BE 0%,#cf0404 100%); /* W3C */
-}
-
-/***********************************************************************
- *  Yellow Background
- **********************************************************************/
-.yellow{
-    background: #F3AAAA; /* Old browsers */
-    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
-    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
-}
-
-/***********************************************************************
- *  Blue Background
- **********************************************************************/
-.blue{
-    background: #7abcff; /* Old browsers */
-    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
-    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+.github-logo{
+    margin: 1rem;
+    height: 32px;
+    width: 32px;
 }

@@ -1,49 +1,107 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Layout Master</title>
+  <title>Kellen Wiltshire Web Development</title>
+
+  <!-- My Style Sheet -->
   <link rel="stylesheet" type="text/css" href="./style.css">
+  <!-- Animate Sytle Sheet -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet"> 
 </head>
 <body>
-  <nav class="zone blue sticky">
-    <ul class="main-nav">
-      <li><a href="">About</a></li>
-      <li><a href="">Products</a></li>
-      <li><a href="">Our Team</a></li>
-      <li class="push"><a href="">Contacts</a></li>
-    </ul>
-  </nav>
-  <div class="container">
-    <header class="header">
-      <h3 id="about">Welcome to the future home of </h3><br>
+  
+
+  <!-- NAVBAR -->
+  <header id="navbar">
+    <nav class="navbar-container container2">
+      <a href="#" class="home-link">
+        <div class="navlogo"></div>
+        Kellen Wiltshire Web Development
+      </a>
+      <button type="button" class="navbar-toggle" aria-label="Open navigation menu">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-menu">
+        <ul class="navbar-links">
+          <li class="navbar-item"><a class="navbar-link" href="#about">About</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#projects">Projects</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Splash Screen -->
+
+  <div class="content">
+    <div id="large-header" class="large-header">
+      <canvas id="demo-canvas"></canvas>
+        <h1 class="splash-text animate__animated animate__fadeInLeft">Hi, I'm Kellen Wiltshire. <br> I'm a Web Developer (in training)</h1>
+        <div class="arrow">
+          <a href="#about">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-down animate__animated animate__fadeInLeft" width="64" height="64" viewBox="0 0 24 24" stroke-width="0.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <line x1="12" y1="5" x2="12" y2="19" />
+              <line x1="18" y1="13" x2="12" y2="19" />
+              <line x1="6" y1="13" x2="12" y2="19" />
+            </svg>
+          </a>
+        </div>
+    </div>
+  </div>
+
+  <div class="bookmark" id="about"></div>
+
+  <!-- ABOUT -->
+  <div class="container about-bg">
+    <div id="hexcontainer">
+      <div class="hex1">
+        <div class="hex2">
+          <a class="hexlink" id="hl1" href="">
+            <div class="hexcover"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>Welcome to the future home of </h3><br>
       <h1 class="text-uppercase"><strong>Kellen Wiltshire Web Development</strong></h1>
       <div class="buffer"></div>
       <div class="">
-          <p>Kellen is currently learning how to create responsive minimalistic web development and design so that all the websites
-              he creates look their best and perform flawlessly on any device or platform
-          </p><br>
-          <p>For any inquires or to be notified once he is accepting new clients, please use the contact link above.</p>
+        <p>Kellen is currently learning how to create responsive minimalistic web development and design so that all the websites
+            he creates look their best and perform flawlessly on any device or platform
+        </p><br>
+        <p>For any inquires or to be notified once he is accepting new clients, please use the contact link above.</p>
       </div>
-  </header>
+    </div>    
+    
   </div>
-  <div class="zone blue grid-wrapper" id="projects">
-    <div class="box zone project1" id="proj1">
-      <!-- Check CSS for Image -->
-      <img class="proj1Image" src="mountain.jpg" alt="">
+
+  <div class="bookmark" id="projects"></div>
+
+  <!-- PROJECTS -->
+  <div class="grid-wrapper">
+    <div class="box project1" id="proj1">
+      <img class="proj-Image" src="img/mountain.jpg" alt="">
       <div class="project-information" id="projInfo1">
         <h1>Amazing Project</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reiciendis nihil ex consectetur exercitationem impedit delectus aliquam asperiores eos iusto, beatae, molestias similique nesciunt totam ipsa tempora minus incidunt accusantium.</p>
       </div>
     </div>
-    <div class="box zone project2" id="proj2">
-      <img class="proj1Image" src="mountain.jpg" alt="">
+    <div class="box project2" id="proj2">
+      <img class="proj-Image" src="img/keyboard.jpg" alt="">
       <div class="project-information" id="projInfo2">
         <h1>Amazing Project</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reiciendis nihil ex consectetur exercitationem impedit delectus aliquam asperiores eos iusto, beatae, molestias similique nesciunt totam ipsa tempora minus incidunt accusantium.</p>
       </div>
     </div>
-    <div class="box zone project3" id="proj3">
-      <img class="proj1Image" src="mountain.jpg" alt="">
+    <div class="box project3" id="proj3">
+      <img class="proj-Image" src="img/mountain.jpg" alt="">
       <div class="project-information" id="projInfo3">
         <h1>Amazing Project</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reiciendis nihil ex consectetur exercitationem impedit delectus aliquam asperiores eos iusto, beatae, molestias similique nesciunt totam ipsa tempora minus incidunt accusantium.</p>
@@ -51,8 +109,49 @@
     </div>
   </div>
 
-  <!-- <footer class="zone yellow">Footer</footer> -->
+  <!-- FOOTER -->
+  <footer class="zone">
+    <!-- Github -->
+    <a href="https://github.com/kellenwiltshire">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="64" height="64" viewBox="0 0 24 24" stroke-width="0.5" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+      </svg>
+    </a>
+    <!-- Instagram -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="64" height="64" viewBox="0 0 24 24" stroke-width="0.5" stroke="#F44336" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <rect x="4" y="4" width="16" height="16" rx="4" />
+      <circle cx="12" cy="12" r="3" />
+      <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+    </svg>
+    <!-- Linkedin -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="64" height="64" viewBox="0 0 24 24" stroke-width="0.5" stroke="#F44336" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <rect x="4" y="4" width="16" height="16" rx="2" />
+      <line x1="8" y1="11" x2="8" y2="16" />
+      <line x1="8" y1="8" x2="8" y2="8.01" />
+      <line x1="12" y1="16" x2="12" y2="11" />
+      <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+    </svg>
+    <!-- Codepen -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-codepen" width="64" height="64" viewBox="0 0 24 24" stroke-width="0.5" stroke="#F44336" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <path d="M3 15l9 6l9 -6l-9 -6l-9 6" />
+      <path d="M3 9l9 6l9 -6l-9 -6l-9 6" />
+      <line x1="3" y1="9" x2="3" y2="15" />
+      <line x1="21" y1="9" x2="21" y2="15" />
+      <line x1="12" y1="3" x2="12" y2="9" />
+      <line x1="12" y1="15" x2="12" y2="21" />
+    </svg>
+  </footer>
 
+  <!-- My Script -->
   <script src="script.js"></script>
+
+  <!-- Scripts for Splash Effect -->
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"></script>
 </body>
 </html>
