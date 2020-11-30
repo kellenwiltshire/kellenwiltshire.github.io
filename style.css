@@ -80,13 +80,14 @@ body{
 }
 
 #navbar {
-    --navbar-height: 64px;
+    --navbar-height: 5vh;
     height: var(--navbar-height);
     background-color: var(--navbar-bg-color);
     left: 0;
     right: 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
     position: fixed;
+    z-index: 2;
 }
 
 .navbar-container {
