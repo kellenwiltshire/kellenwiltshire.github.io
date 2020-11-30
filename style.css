@@ -17,6 +17,7 @@ body{
     line-height: 1.6;
     margin: auto 0;
     font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
 }
 
 /* ----------------------------Splash Screen---------------------------- */
@@ -224,7 +225,7 @@ body{
     max-height: none;
 }
 
-@media screen and (min-width: 700px) {
+/* @media screen and (min-width: 700px) {
     .navbar-toggle {
         display: none;
     }
@@ -254,11 +255,25 @@ body{
     #navbar .navbar-link:last-child {
         margin-right: 0;
     }
-}
+} */
 
 
 /* ----------------------------ABOUT---------------------------- */
 
+
+@media screen and (max-width: 1000px){
+    .about{
+        font-size: 1.4rem;
+    }
+    .container{
+        display: inline-flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        height: 85vh;
+        text-align: center;
+    }
+}
 .container{
     display: flex;
     align-items: center;
