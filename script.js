@@ -30,48 +30,26 @@ navbarLinksContainer.addEventListener("click", (clickEvent) => {
 navbarMenu.addEventListener("click", closeMobileNavbar);
 
 //PROJECTS
-var project1 = document.getElementById("proj1");
-var projectInfo = [document.getElementById("projInfo1"), document.getElementById("projInfo2"), document.getElementById("projInfo3")];
+const project1 = document.getElementById("proj1");
+let projectInfo = [document.getElementById("projInfo1"), document.getElementById("projInfo2"), document.getElementById("projInfo3")];
 
-var project2 = document.getElementById("proj2");
-// var projectInfo2 = document.getElementById("projInfo2")
+const project2 = document.getElementById("proj2");
 
-var project3 = document.getElementById("proj3");
-// var projectInfo3 = document.getElementById("projInfo3")
+const project3 = document.getElementById("proj3");
 
-var projects = document.getElementById("projects");
+const projects = document.getElementById("projects");
 
-function revealInfo(i){
-    projectInfo[i].classList.toggle("visible");
-}
+const revealInfo = (i) => { projectInfo[i].classList.toggle("visible") };
 
-function hideInfo(i){
-    projectInfo[i].classList.toggle("visible");
-}
+const  hideInfo = (i) => { projectInfo[i].classList.toggle("visible") };
 
-function enterProj1() {
-    revealInfo(0);
-}
+const enterProj1 = () => { revealInfo(0) };
+const enterProj2 = () => { revealInfo(1) };
+const enterProj3 = () => { revealInfo(2) };
 
-function leaveProj1() {
-    hideInfo(0);
-}
-
-function enterProj2() {
-    revealInfo(1);
-}
-
-function leaveProj2() {
-    hideInfo(1);
-}
-
-function enterProj3() {
-    revealInfo(2);
-}
-
-function leaveProj3() {
-    hideInfo(2);
-}
+const leaveProj1 = () => { hideInfo(0) };
+const leaveProj2 = () => { hideInfo(1) };
+const leaveProj3 = () => { hideInfo(2) };
 
 project1.addEventListener("mouseenter", enterProj1);
 project1.addEventListener("mouseleave", leaveProj1);
