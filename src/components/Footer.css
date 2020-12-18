@@ -1,0 +1,15 @@
+footer{
+    display: flex;
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 10vh;
+    justify-content: center;
+    align-content: center;
+}
+
+.github-logo{
+    margin: 1rem;
+    height: 32px;
+    width: 32px;
+}
