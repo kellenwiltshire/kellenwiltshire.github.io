@@ -15,7 +15,7 @@ const about = () => {
                 <p>Kellen started self teaching himself Web Development in 2020 with the extra time he had during the pandemic. 
                 He graduated from the University of Ontario Institute of Technology in 2012. Although initially enrolled in Game Development he switch to Legal Studies.
                 Although he was able to find a fulfilling career helping people seek justice in the Legal System, he missed using his brain in a technical role. With the extra time working from home he decided to start teaching 
-                himself Web Development with the help of the Udemy court Zero-to-Mastery.</p>
+                himself Web Development with the help of the Udemy course Zero-to-Mastery.</p>
 
                 <p>Now he builds websites and projects to hone his skills to make the jump completely into Web Development. Contact him now if you have any inquries!</p>
             </div>

@@ -28,14 +28,14 @@ const portfolio = () => {
                     </div>
                 </div>
                 <div class="box project2" id="proj2">
-                    <img class="proj-Image" src="img/keyboard.jpg" alt=""/>
+                    <img class="proj-Image" src={Robofriends} alt=""/>
                     <div class="project-information" id="projInfo2">
                         <h1>Amazing Project</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reiciendis nihil ex consectetur exercitationem impedit delectus aliquam asperiores eos iusto, beatae, molestias similique nesciunt totam ipsa tempora minus incidunt accusantium.</p>
                     </div>
                 </div>
                 <div class="box project3" id="proj3">
-                    <img class="proj-Image" src="img/mountain.jpg" alt=""/>
+                    <img class="proj-Image" src={Robofriends} alt=""/>
                     <div class="project-information" id="projInfo3">
                         <h1>Amazing Project</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reiciendis nihil ex consectetur exercitationem impedit delectus aliquam asperiores eos iusto, beatae, molestias similique nesciunt totam ipsa tempora minus incidunt accusantium.</p>
