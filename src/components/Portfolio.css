@@ -1,0 +1,38 @@
+.portfolio{
+    color: white;
+    padding: 25px;
+    background: white;
+}
+
+.grid-wrapper{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+}
+
+.project-information{
+    font-size: 1rem;
+    text-align: center;
+    padding: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 1rem;
+}
+
+.project1:hover .project-information{
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    color: white;
+}
+
+.project1, .project2, .project3{
+    position: relative;
+}
+
+.box > .proj-Image{
+    width: 100%;
+}
