@@ -4,6 +4,9 @@ import './index.css';
 import './components/Navbar.css'
 import './components/Splash.css'
 import './components/Footer.css'
+import './components/About.css'
+import './components/Portfolio.css'
+import 'tachyons'
 import App from './containers/App';
 
 ReactDOM.render(

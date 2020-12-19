@@ -3,7 +3,7 @@ import React from 'react'
 const navbar = () => {
 
     // const showMenu = () => {
-    //     if ('menu-drop'.style.visibility === "hidden" ? 'menu-drop'.style.visibility = "visible" : 'menu-drop'.style.visibility = "hidden");
+    //     if (menu-drop.style.visibility === "hidden" ? menu-drop.style.visibility = "visible" : menu-drop.style.visibility = "hidden");
     // }
 
 
@@ -34,7 +34,7 @@ const navbar = () => {
             </div>            
             </div>
             <div class="hamburger">
-            <div class="menu" /*! onClick=showMenu()  TODO */>
+            <div class="menu" /*onClick={showMenu}*/>
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
         <line x1="4" y1="6" x2="20" y2="6" />
