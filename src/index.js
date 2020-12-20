@@ -7,7 +7,6 @@ import './components/Footer.css'
 import './components/About.css'
 import './components/Portfolio.css'
 import './components/pricing.css'
-import 'tachyons'
 import App from './containers/App';
 
 ReactDOM.render(
