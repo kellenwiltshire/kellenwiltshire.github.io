@@ -3,15 +3,15 @@ import ProfilePic from '../img/profile.png'
 
 const about = () => {
     return(
-        <div className="container about">
-            <div class="mw5 bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
+        <div className="w-screen flex flex-col align-middle bg-black justify-center items-center p-10">
+            <div className="flex bg-gray-50 w-auto justify-center items-center text-center p-5 rounded m-8">
                 <div class="tc">
-                    <img src={ProfilePic} class="br-100 h4 w4 dib ba b--black-05 pa2" title="Profile"/>
-                    <h1 class="f3 mb2">Kellen Wiltshire</h1>
-                    <h2 class="f5 fw4 gray mt0">Kingston, Ontario, Canada</h2>
+                    <img src={ProfilePic} className="flex text-white rounded-full" title="Profile"/>
+                    <h1 class="text-black">Kellen Wiltshire</h1>
+                    <h2 class="text-black">Kingston, Ontario, Canada</h2>
                 </div>
             </div>
-            <div className="about-text">
+            <div className="text-white text-center w-6/12">
                 <p>Kellen started self teaching himself Web Development in 2020 with the extra time he had during the pandemic. 
                 He graduated from the University of Ontario Institute of Technology in 2012. Although initially enrolled in Game Development he switch to Legal Studies.
                 Although he was able to find a fulfilling career helping people seek justice in the Legal System, he missed using his brain in a technical role. With the extra time working from home he decided to start teaching 

@@ -1,8 +1,4 @@
 .splash{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background: url('../img/splash.jpg') no-repeat center center;
     background-size: cover;
 }
