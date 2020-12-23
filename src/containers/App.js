@@ -5,7 +5,8 @@ import Splash from '../components/Splash.js'
 import Footer from '../components/Footer.js'
 import About from '../components/About.js'
 import Pricing from '../components/Pricing.js'
-import Portfolio from '../components/Portfolio.js'
+import PortfolioList from '../components/PortfolioList.js'
+import { projects } from '../assets/projects.js'
 
 class  App extends Component {
 
@@ -18,7 +19,7 @@ class  App extends Component {
           <Navbar></Navbar>
           <Splash></Splash>
           <About></About>
-          <Portfolio></Portfolio>
+          <PortfolioList projects={ projects } ></PortfolioList>
           <Pricing></Pricing>
           <Footer></Footer>
       </div>
