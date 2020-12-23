@@ -4,8 +4,9 @@ import Navbar from '../components/Navbar.js'
 import Splash from '../components/Splash.js'
 import Footer from '../components/Footer.js'
 import About from '../components/About.js'
-import Pricing from '../components/Pricing.js'
-import Portfolio from '../components/Portfolio.js'
+import PortfolioList from '../components/PortfolioList.js'
+import Contact from '../components/Contact'
+import { projects } from '../assets/projects.js'
 
 class  App extends Component {
 
@@ -14,12 +15,12 @@ class  App extends Component {
 
   render (){
     return (
-      <div>
+      <div className="flex flex-col">
           <Navbar></Navbar>
           <Splash></Splash>
           <About></About>
-          <Portfolio></Portfolio>
-          <Pricing></Pricing>
+          <PortfolioList projects={ projects } ></PortfolioList>
+          <Contact></Contact>
           <Footer></Footer>
       </div>
     )
