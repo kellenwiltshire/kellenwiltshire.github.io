@@ -5,7 +5,7 @@ const portfolioProjects = ({ id, name, description, tools, link, git, img }) =>{
         <div class="sm:w-3/12 shadow-2xl p-5" id="proj1">
             <img class="proj-Image" src={img} alt=""/>
             <div class="text-center justify-center align-middle flex flex-col h-auto m-3 sm:text-xs">
-                <h1>{name}</h1>
+                <h1 className="text-xl underline">{name}</h1>
                 <p>{description}</p>
                 <div className="flex flex-row align-middle justify-center">
                     <a href={git} alt="View on Github" target="_blank">
