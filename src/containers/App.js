@@ -6,6 +6,7 @@ import Footer from '../components/Footer.js'
 import About from '../components/About.js'
 import PortfolioList from '../components/PortfolioList.js'
 import Contact from '../components/Contact'
+import Pricing from '../components/Pricing'
 import { projects } from '../assets/projects.js'
 
 class  App extends Component {
@@ -20,6 +21,7 @@ class  App extends Component {
           <Splash></Splash>
           <About></About>
           <PortfolioList projects={ projects } ></PortfolioList>
+          <Pricing></Pricing>
           <Contact></Contact>
           <Footer></Footer>
       </div>
