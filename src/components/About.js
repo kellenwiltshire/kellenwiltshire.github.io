@@ -4,7 +4,8 @@ import ProfilePic from '../assets/img/profile.png'
 const about = () => {
     return(
         <div className="w-screen flex flex-col align-middle bg-white justify-center items-center p-10">
-            <div className="flex border-black border w-64 justify-center items-center text-center p-5 rounded m-8 shadow-2xl">
+            <h1 className="text-7xl border-b-2 w-full text-center">A Little About Me</h1>
+            <div className="flex border-black border w-64 justify-center items-center text-center p-5 rounded-none m-8 shadow-2xl">
                 <div class="tc">
                     <img src={ProfilePic} className="flex text-white rounded-full" title="Profile" alt="profile"/>
                     <h1 class="text-black">Kellen Wiltshire</h1>
