@@ -2,7 +2,7 @@ import React from 'react';
 
 const portfolioProjects = ({ id, name, description, tools, link, git, img }) =>{
     return (
-        <div class="sm:w-3/12 shadow-2xl p-5 border border-black rounded" id="proj1">
+        <div class="lg:w-3/12 shadow-2xl p-5 border border-black rounded" id="proj1">
             <img class="proj-Image" src={img} alt=""/>
             <div class="text-center justify-center align-middle flex flex-col h-auto m-3 sm:text-xs">
                 <h1 className="text-2xl underline">{name}</h1>

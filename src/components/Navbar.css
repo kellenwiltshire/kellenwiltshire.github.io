@@ -39,9 +39,9 @@
   .nav-title{
       padding: 5px 10px;
       color: white;
-    text-decoration: none;
-    transition: background-color 200ms ease-in;
-    background-color: none;
+      text-decoration: none;
+      transition: background-color 200ms ease-in;
+      background-color: none;
   }
   
   .nav-title:hover{
@@ -126,85 +126,15 @@
   .menu-content{
     display: none;
   }
+
+  /* !! For Mobile Screens !! */
   
-  @media screen and (max-device-width: 700px){
+  @media screen and (max-width: 769px){
     .hamburger{
       max-width: 100px;
-      margin: 0;
-      padding: 0;
+      padding-bottom: 15px;
+      padding-right: 25px;
       display: flex;
-      justify-self: flex-end;
-    }
-    
-    .navbar{
-      height: 5vh;
-    }
-    
-    .menu{
-      font-size: 1rem;
-      padding: 6px 12px;
-      text-decoration: none;
-      transition: background-color 100ms ease-in;
-      background-color: none;
-      border: none;
-      color: white;
-      align-self: center;
-      border-radius: 4px;
-      height: 60px;
-      width: 60px;
-      line-height: 30px;
-    }
-    
-    .menu-content{
-      visibility: hidden;
-      position: absolute center;
-      background-color: darkgrey;
-      border-radius: 4px;
-      display: flex;
-      flex-direction: column;
-      justify-items: center;
-      align-items: center;
-      width: 100vw;
-    }
-    
-    .menu-content a {
-      color: black;
-      text-decoration: none;
-      text-align: center;
-      display: block;
-      transition: background-color 100ms ease-in;
-      background-color: none;
-      font-size: 2rem;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-    
-    .menu:hover{
-      background-color: white;
-      cursor: pointer;
-      color: darkslategrey;
-    }
-    
-    .menu-items{
-      display: none;
-    }
-    
-    .company-name{
-      padding-left: 10px;
-      font-size: 2rem;
-    }
-    
-  }
-  
-  @media screen and (max-width: 750px){
-    .hamburger{
-      max-width: 100px;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-self: flex-end;
     }
     
     .navbar{
@@ -249,11 +179,6 @@
       margin-bottom: 10px;
       padding-top: 10px;
       padding-bottom: 10px;
-    }
-    
-    .menu:hover{
-      cursor: pointer;
-      color: darkslategrey;
     }
     
     .menu-items{
