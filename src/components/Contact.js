@@ -6,7 +6,7 @@ const contact = () => {
 			<h1 className='text-4xl sm:text-6xl text-gray-600 border-b-2 w-full text-center mb-0 sm:mb-10'>
 				Reach Out
 			</h1>
-			<div class='mt-5 sm:mt-0 border rounded border-black lg:w-2/5 w-11/12'>
+			<div class='mt-5 sm:mt-0 shadow lg:w-2/5 w-11/12'>
 				<div class='md:grid md:grid-cols-1 md:gap-6'>
 					<div class='mt-5 md:mt-0 md:col-span-2'>
 						<form action='#' method='POST'>
@@ -16,7 +16,7 @@ const contact = () => {
 										<div class='col-span-6 sm:col-span-3'>
 											<label
 												for='first_name'
-												class='block text-sm font-medium text-gray-700'
+												class='block text-sm font-medium text-black'
 											>
 												First name
 											</label>
@@ -25,14 +25,14 @@ const contact = () => {
 												name='first_name'
 												id='first_name'
 												autocomplete='given-name'
-												class='mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md'
+												class='mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-500 rounded-md'
 											/>
 										</div>
 
 										<div class='col-span-6 sm:col-span-3'>
 											<label
 												for='last_name'
-												class='block text-sm font-medium text-gray-700'
+												class='block text-sm font-medium text-black'
 											>
 												Last name
 											</label>
@@ -41,14 +41,14 @@ const contact = () => {
 												name='last_name'
 												id='last_name'
 												autocomplete='family-name'
-												class='mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md'
+												class='mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-500 rounded-md'
 											/>
 										</div>
 
 										<div class='col-span-6 sm:col-span-5'>
 											<label
 												for='email_address'
-												class='block text-sm font-medium text-gray-700'
+												class='block text-sm font-medium text-black'
 											>
 												Email address
 											</label>
@@ -57,14 +57,14 @@ const contact = () => {
 												name='email_address'
 												id='email_address'
 												autocomplete='email'
-												class='mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md'
+												class='mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-500 rounded-md'
 											/>
 										</div>
 
 										<div class='col-span-6 sm:col-span-3'>
 											<label
 												for='product'
-												class='block text-sm font-medium text-gray-700'
+												class='block text-sm font-medium text-black'
 											>
 												Inquiring About
 											</label>
@@ -72,7 +72,7 @@ const contact = () => {
 												id='product'
 												name='product'
 												autocomplete='product'
-												class='mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'
+												class='mt-1 block w-full py-2 px-3 border border-gray-500 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'
 											>
 												<option>5 Page Site with 12 Month Support</option>
 												<option>Standard 5 Page Site</option>
@@ -84,7 +84,7 @@ const contact = () => {
 										<div class='col-span-6'>
 											<label
 												for='about'
-												class='block text-sm font-medium text-gray-700'
+												class='block text-sm font-medium text-black'
 											>
 												Brief Description About Your Project
 											</label>
@@ -93,7 +93,7 @@ const contact = () => {
 													id='description'
 													name='description'
 													rows='3'
-													class='shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md'
+													class='shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border-gray-500 rounded-md'
 													placeholder='Description'
 												></textarea>
 											</div>

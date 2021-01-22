@@ -10,7 +10,7 @@ const pricing = () => {
 				Services I Offer
 			</h1>
 			{/* 5 Page with 12 Month Support */}
-			<div class='w-full lg:w-1/4 shadow-2xl border border-black rounded-none m-3 order-2 lg:order-3'>
+			<div class='w-full lg:w-1/6 shadow m-3 order-2 lg:order-3'>
 				<div class='text-center justify-center align-middle flex flex-col h-20 p-2 m-0 bg-green-400 sm:text-xs'>
 					<h1 className='text-xl'>5 Page Website with Support for 12 Months</h1>
 				</div>
@@ -34,7 +34,7 @@ const pricing = () => {
 				</div>
 			</div>
 			{/* 5 Page Standard Website */}
-			<div class='w-full lg:w-1/4 shadow-2xl border border-black rounded-none m-3 order-3 lg:order-2'>
+			<div class='w-full lg:w-1/6 shadow m-3 order-3 lg:order-2'>
 				<div class='text-center justify-center align-middle flex flex-col h-20 p-2 m-0 sm:text-xs bg-gray-300'>
 					<h1 className='text-xl'>Standard 5 Page Website</h1>
 				</div>
@@ -53,7 +53,7 @@ const pricing = () => {
 				</div>
 			</div>
 			{/* 5 Page with 6 Month Support */}
-			<div class='w-full lg:w-1/4 shadow-2xl border border-black rounded-none m-3 order-4 lg:order-4'>
+			<div class='w-full lg:w-1/6 shadow m-3 order-4 lg:order-4'>
 				<div class='text-center justify-center align-middle flex flex-col h-20 p-2 m-0 sm:text-xs bg-gray-300'>
 					<h1 className='text-xl'>5 Page Website with Support for 6 Months</h1>
 				</div>

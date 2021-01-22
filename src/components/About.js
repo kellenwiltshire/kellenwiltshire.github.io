@@ -10,7 +10,7 @@ const about = () => {
 			<h1 className='text-gray-600 text-4xl sm:text-6xl border-b-2 w-full text-center'>
 				A Little About Me
 			</h1>
-			<div className='flex border-black border w-64 justify-center items-center text-center p-5 rounded-none m-8 shadow-2xl'>
+			<div className='flex w-64 justify-center items-center text-center p-5 rounded-none m-8 shadow'>
 				<div class='tc'>
 					<img
 						src={ProfilePic}

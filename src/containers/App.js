@@ -1,6 +1,5 @@
-import React, { Component, useRef, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import './App.css';
-import Navbar from '../components/Navbar.js';
 import Splash from '../components/Splash.js';
 import Footer from '../components/Footer.js';
 import About from '../components/About.js';
@@ -21,7 +20,7 @@ function App() {
 			element.querySelectorAll('#component'),
 			{
 				opacity: 0,
-				x: -100,
+				x: -50,
 			},
 			{
 				opacity: 1,
