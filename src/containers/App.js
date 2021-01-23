@@ -36,7 +36,7 @@ function App() {
 	}, []);
 
 	return (
-		<div ref={ref} className='flex flex-col'>
+		<div ref={ref} className='flex flex-col max-w-8/12'>
 			{/* <Navbar></Navbar> */}
 			<Splash></Splash>
 			<About></About>

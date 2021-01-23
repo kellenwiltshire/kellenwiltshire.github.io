@@ -3,7 +3,6 @@ import ReactLogo from '../assets/icons/react.png';
 import NodeJSLogo from '../assets/icons/node.png';
 import PostgreSQLLogo from '../assets/icons/postgres.png';
 import GithubLogo from '../assets/icons/github.png';
-import WebsiteLogo from '../assets/icons/website.png';
 
 const portfolioProjects = ({
 	id,
@@ -36,28 +35,24 @@ const portfolioProjects = ({
 	});
 
 	return (
-		<div class='lg:w-3/12 shadow p-5 mx-2' id='proj1'>
-			<img class='proj-Image' src={img} alt='' />
+		<div class='lg:w-1/4 shadow p-5 mx-2' id='proj1'>
+			<h1 className='text-2xl text-center underline'>{name}</h1>
+			<a href={link} alt='View in Action' target='_blank'>
+				<img src={img} alt='' />
+			</a>
 			<div class='text-center justify-center align-middle flex flex-col h-auto m-3 sm:text-xs'>
-				<h1 className='text-2xl underline'>{name}</h1>
 				<p className='text-base'>{description}</p>
-				<div className='flex flex-row align-middle justify-center'>
-					{toolsUsed}
-				</div>
-				<div className='flex flex-row align-middle justify-center'>
-					<a href={git} alt='View on Github' target='_blank'>
+				<div className='flex flex-row align-center justify-between'>
+					<div className='flex flex-row align-middle'>{toolsUsed}</div>
+					<a
+						className='align-middle'
+						href={git}
+						alt='View on Github'
+						target='_blank'
+					>
 						<img
 							src={GithubLogo}
 							alt='Github Logo'
-							height='auto'
-							width='50px'
-						/>
-						Github
-					</a>
-					<a href={link} alt='View in Action' target='_blank'>
-						<img
-							src={WebsiteLogo}
-							alt='Website Logo'
 							height='auto'
 							width='50px'
 						/>

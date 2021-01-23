@@ -4,7 +4,7 @@ const pricing = () => {
 	return (
 		<div
 			id='component'
-			className='w-screen flex flex-row justify-center flex-wrap place-self-center'
+			className='w-screen flex flex-row justify-center flex-wrap items-center'
 		>
 			<h1 className='text-4xl sm:text-6xl text-gray-600 border-b-2 w-full text-center order-first'>
 				Services I Offer

@@ -2,7 +2,10 @@ import React from 'react';
 
 const contact = () => {
 	return (
-		<div id='component' className='flex flex-col items-center mb-10'>
+		<div
+			id='component'
+			className='flex flex-col justify-center w-screen items-center mb-10'
+		>
 			<h1 className='text-4xl sm:text-6xl text-gray-600 border-b-2 w-full text-center mb-0 sm:mb-10'>
 				Reach Out
 			</h1>

@@ -5,7 +5,7 @@ const portfolioList = ({ projects }) => {
 	return (
 		<div
 			id='component'
-			className='w-screen p-10 flex flex-row justify-center flex-wrap place-self-center'
+			className='w-screen p-10 flex flex-row justify-center flex-wrap items-center'
 		>
 			<h1 className='text-gray-600 text-4xl sm:text-6xl border-b-2 w-full text-center mb-10'>
 				Some of My Work
