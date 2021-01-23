@@ -22,7 +22,7 @@ const about = () => {
 					<h2 class='text-black'>Kingston, Ontario, Canada</h2>
 				</div>
 			</div>
-			<div className='text-black text-center w-full text-xs sm:text-base lg:w-6/12 space-y-3'>
+			<div className='text-black text-center w-full text-xs sm:text-base xl:w-6/12 space-y-3'>
 				<p>
 					Kellen started self teaching himself Web Development in 2020 with the
 					extra time he had during the pandemic. He graduated from the

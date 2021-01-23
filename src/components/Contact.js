@@ -9,7 +9,7 @@ const contact = () => {
 			<h1 className='text-4xl sm:text-6xl text-gray-600 border-b-2 w-full text-center mb-0 sm:mb-10'>
 				Reach Out
 			</h1>
-			<div class='mt-5 sm:mt-0 shadow lg:w-2/5 w-11/12'>
+			<div class='mt-5 sm:mt-0 shadow xl:w-2/5 w-11/12'>
 				<div class='md:grid md:grid-cols-1 md:gap-6'>
 					<div class='mt-5 md:mt-0 md:col-span-2'>
 						<form action='#' method='POST'>
