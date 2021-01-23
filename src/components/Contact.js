@@ -1,6 +1,22 @@
 import React from 'react';
+import { userID, templateID, serviceID } from '../emailAPI/emailAPI';
+import emailjs from 'emailjs-com';
 
 const contact = () => {
+	function sendEmail(e) {
+		e.preventDefault();
+
+		emailjs.init(userID);
+
+		emailjs.sendForm(serviceID, templateID, '#contact').then(
+			(response) => {
+				console.log(response.text);
+			},
+			(error) => {
+				console.log(error.text);
+			},
+		);
+	}
 	return (
 		<div
 			id='component'
@@ -12,7 +28,7 @@ const contact = () => {
 			<div class='mt-5 sm:mt-0 shadow xl:w-2/5 w-11/12'>
 				<div class='md:grid md:grid-cols-1 md:gap-6'>
 					<div class='mt-5 md:mt-0 md:col-span-2'>
-						<form action='#' method='POST'>
+						<form id='contact' onSubmit={sendEmail}>
 							<div class='shadow overflow-hidden sm:rounded-md'>
 								<div class='px-4 py-5 bg-white sm:p-6'>
 									<div class='grid grid-cols-6 gap-6'>

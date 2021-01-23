@@ -14,7 +14,6 @@ const portfolioProjects = ({
 	img,
 }) => {
 	const toolsUsed = tools.map((tool, i) => {
-		console.log(tool);
 		if (tool === 'React') {
 			return (
 				<img src={ReactLogo} alt='react logo' height='auto' width='50px' />
