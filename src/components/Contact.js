@@ -45,6 +45,7 @@ const contact = () => {
 												id='first_name'
 												autocomplete='given-name'
 												class='mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-500 rounded-md'
+												required
 											/>
 										</div>
 
@@ -61,6 +62,7 @@ const contact = () => {
 												id='last_name'
 												autocomplete='family-name'
 												class='mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-500 rounded-md'
+												required
 											/>
 										</div>
 
@@ -77,6 +79,7 @@ const contact = () => {
 												id='email_address'
 												autocomplete='email'
 												class='mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-500 rounded-md'
+												required
 											/>
 										</div>
 
@@ -114,6 +117,7 @@ const contact = () => {
 													rows='3'
 													class='shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border-gray-500 rounded-md'
 													placeholder='Description'
+													required
 												></textarea>
 											</div>
 										</div>
