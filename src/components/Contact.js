@@ -8,15 +8,22 @@ const contact = () => {
 
 		emailjs.init(userID);
 
-		emailjs.sendForm(serviceID, templateID, '#contact').then(
-			(response) => {
-				console.log(response.text);
-			},
-			(error) => {
-				console.log(error.text);
-			},
-		);
+		if (e.input !== '') {
+			emailjs.sendForm(serviceID, templateID, '#contact').then(
+				(response) => {
+					console.log(response.text);
+				},
+				(error) => {
+					console.log(error.text);
+				},
+			);
+		}
+		showSubmitSuccess();
 	}
+
+	const showSubmitSuccess = () => {
+		document.getElementById('success').style.visibility = 'visible';
+	};
 	return (
 		<div
 			id='component'
@@ -130,6 +137,13 @@ const contact = () => {
 									>
 										Submit
 									</button>
+								</div>
+								<div
+									id='success'
+									style={{ visibility: 'hidden' }}
+									className='text-center justify-center align-middle'
+								>
+									<h1>Request Sent!</h1>
 								</div>
 							</div>
 						</form>
