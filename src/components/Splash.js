@@ -16,6 +16,7 @@ const splash = () => {
 						href='https://github.com/kellenwiltshire'
 						alt='View on Github'
 						target='_blank'
+						rel='noreferrer'
 					>
 						<img
 							src={GithubLogo}
@@ -27,7 +28,11 @@ const splash = () => {
 					</a>
 				</div>
 				<div className='flex flex-col align-middle justify-center text-center'>
-					<a href='https://codepen.io/kellenwiltshire'>
+					<a
+						href='https://codepen.io/kellenwiltshire'
+						target='_blank'
+						rel='noreferrer'
+					>
 						<img
 							src={CodepenLogo}
 							alt='Codepen Logo'
