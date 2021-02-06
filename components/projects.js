@@ -1,6 +1,3 @@
-import Robofriends from './img/robofriends.png';
-import Smartbrain from './img/smartbrain.png';
-
 export const projects = [
 	{
 		id: 1,
@@ -10,7 +7,7 @@ export const projects = [
 		tools: ['React', 'ExpressJS', 'PostgreSQL', 'NodeJS'],
 		link: 'https://kw-smartbrain.herokuapp.com/',
 		git: 'https://github.com/kellenwiltshire/smartbrain-ztm',
-		img: Smartbrain,
+		img: 'Smartbrain',
 	},
 	{
 		id: 2,
@@ -20,6 +17,6 @@ export const projects = [
 		tools: ['React'],
 		link: 'https://kellenwiltshire.github.io/RoboFriends-ztm/',
 		git: 'https://github.com/kellenwiltshire/RoboFriends-ztm',
-		img: Robofriends,
+		img: 'Robofriends',
 	},
 ];

@@ -1,6 +1,5 @@
 import React from 'react';
-import GithubLogo from '../assets/icons/github.png';
-import CodepenLogo from '../assets/icons/codepen.png';
+import Image from 'next/image';
 
 const splash = () => {
 	return (
@@ -18,12 +17,7 @@ const splash = () => {
 						target='_blank'
 						rel='noreferrer'
 					>
-						<img
-							src={GithubLogo}
-							alt='Github Logo'
-							height='auto'
-							width='75px'
-						/>
+						<Image src='/github.png' alt='Github Logo' height={75} width={75} />
 						<p className='items-center'>Github</p>
 					</a>
 				</div>
@@ -33,13 +27,13 @@ const splash = () => {
 						target='_blank'
 						rel='noreferrer'
 					>
-						<img
-							src={CodepenLogo}
+						<Image
+							src='/codepen.png'
 							alt='Codepen Logo'
-							height='auto'
-							width='75px'
+							height={75}
+							width={75}
 						/>
-						Codepen
+						<p className='items-center'>Codepen</p>
 					</a>
 				</div>
 			</div>

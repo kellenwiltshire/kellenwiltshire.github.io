@@ -1,8 +1,5 @@
 import React from 'react';
-import ReactLogo from '../assets/icons/react.png';
-import NodeJSLogo from '../assets/icons/node.png';
-import PostgreSQLLogo from '../assets/icons/postgres.png';
-import GithubLogo from '../assets/icons/github.png';
+import Image from 'next/image';
 
 const portfolioProjects = ({
 	id,
@@ -15,16 +12,12 @@ const portfolioProjects = ({
 }) => {
 	const toolsUsed = tools.map((tool, i) => {
 		if (tool === 'React') {
-			return (
-				<img src={ReactLogo} alt='react logo' height='auto' width='50px' />
-			);
+			return <Image src='/react.png' alt='react logo' height={50} width={50} />;
 		} else if (tool === 'NodeJS') {
-			return (
-				<img src={NodeJSLogo} alt='react logo' height='auto' width='50px' />
-			);
+			return <Image src='/node.png' alt='Node logo' height={50} width={50} />;
 		} else if (tool === 'PostgreSQL') {
 			return (
-				<img src={PostgreSQLLogo} alt='react logo' height='auto' width='50px' />
+				<Image src='/postgres.png' alt='Postgres logo' height={50} width={50} />
 			);
 		} else if (tool === 'ExpressJS') {
 			return <p className='self-center'>ExpressJS</p>;
@@ -33,11 +26,35 @@ const portfolioProjects = ({
 		}
 	});
 
+	const projectImage = () => {
+		if (img === 'Smartbrain') {
+			return (
+				<Image
+					src='/smartbrain.png'
+					alt='Smartbrain Screenshot'
+					height={1352}
+					width={2402}
+				/>
+			);
+		} else if (img === 'Robofriends') {
+			return (
+				<Image
+					src='/robofriends.png'
+					alt='Robofriend Screenshot'
+					height={1620}
+					width={2880}
+				/>
+			);
+		} else {
+			return <div>OOPS</div>;
+		}
+	};
+
 	return (
 		<div class='lg:w-1/2 xl:w-1/4 shadow p-5 mx-2' id='proj1'>
 			<h1 className='text-2xl text-center underline'>{name}</h1>
 			<a href={link} alt='View in Action' target='_blank'>
-				<img src={img} alt='' />
+				{projectImage()}
 			</a>
 			<div class='text-center justify-center align-middle flex flex-col h-auto m-3 sm:text-xs'>
 				<p className='text-base'>{description}</p>
@@ -51,12 +68,7 @@ const portfolioProjects = ({
 						alt='View on Github'
 						target='_blank'
 					>
-						<img
-							src={GithubLogo}
-							alt='Github Logo'
-							height='auto'
-							width='50px'
-						/>
+						<Image src='/github.png' alt='Github Logo' height={50} width={50} />
 					</a>
 				</div>
 			</div>

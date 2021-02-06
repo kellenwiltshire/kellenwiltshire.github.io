@@ -1,17 +1,11 @@
 module.exports = {
-	purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+	purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
 	darkMode: false, // or 'media' or 'class'
 	theme: {
 		extend: {},
-		fontFamily: {
-			sans: ['Roboto', 'Segoe UI', 'monospace'],
-		},
 	},
 	variants: {
-		extend: {
-			padding: ['hover'],
-			maxHeight: ['focus'],
-		},
+		extend: {},
 	},
 	plugins: [require('@tailwindcss/forms')],
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import ProfilePic from '../assets/img/profile.png';
+import Image from 'next/image';
 
 const about = () => {
 	return (
@@ -12,11 +12,13 @@ const about = () => {
 			</h1>
 			<div className='flex w-64 justify-center items-center text-center p-5 rounded-none m-8 shadow'>
 				<div class='tc'>
-					<img
-						src={ProfilePic}
+					<Image
+						src='/profile.png'
 						className='flex text-white rounded-full'
 						title='Profile'
 						alt='profile'
+						height={500}
+						width={500}
 					/>
 					<h1 class='text-black'>Kellen Wiltshire</h1>
 					<h2 class='text-black'>Kingston, Ontario, Canada</h2>
