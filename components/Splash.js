@@ -3,11 +3,11 @@ import Image from 'next/image';
 
 const splash = () => {
 	return (
-		<div className='splash h-screen flex flex-col items-center justify-center'>
-			<header className='text-3xl text-white bg-black bg-opacity-50 py-4 px-10 rounded'>
+		<div className='splash flex flex-col items-center justify-center bg-blue-600 w-screen'>
+			<div className='text-6xl text-white'>
 				<h1>Hi, I'm Kellen Wiltshire</h1>
 				<h2>I'm a Web Developer (in training)</h2>
-			</header>
+			</div>
 
 			<div className='flex flex-row align-middle justify-center bg-black bg-opacity-50 rounded mt-16 text-white py-4 px-10'>
 				<div className='flex flex-col align-middle justify-center text-center'>
