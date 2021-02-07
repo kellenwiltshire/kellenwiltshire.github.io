@@ -5,11 +5,8 @@ const portfolioList = ({ projects }) => {
 	return (
 		<div
 			id='component'
-			className='w-full p-10 flex flex-row justify-center flex-wrap items-center'
+			className='w-full flex flex-row justify-center flex-wrap items-center'
 		>
-			<h1 className='text-gray-600 text-4xl sm:text-6xl border-b-2 w-full text-center mb-10'>
-				Some of My Work
-			</h1>
 			{projects.map((proj, i) => {
 				return (
 					<PortfolioProjects

@@ -1,6 +1,16 @@
 export const projects = [
 	{
 		id: 1,
+		name: 'The Knotty Island',
+		description:
+			"Website created for The Knotty Island, an online handmade Macrame Etsy store. The site was designed and created using NextJS utilizing the Etsy API. There is a small server created with NodeJS and Express to manage the API requests. The website was built and functions according the Client's Request and withing the limitation of the API",
+		tools: ['NextJS', 'ExpressJS', 'NodeJS'],
+		link: 'https://theknottyisland.com/',
+		git: 'https://github.com/kellenwiltshire/the-knotty-island',
+		img: 'TheKnottyIsland',
+	},
+	{
+		id: 2,
 		name: 'Smartbrain',
 		description:
 			'This App utilizes the ClarifAI API to determine where the faces are in the picture and if they are any celebrities. You can also securely register a profile to keep track of the number of images you have checked and allows for Profile deletion.',
@@ -10,7 +20,7 @@ export const projects = [
 		img: 'Smartbrain',
 	},
 	{
-		id: 2,
+		id: 3,
 		name: 'Robofriends',
 		description:
 			'Robofriends is a React App that utilizes HTML, CSS, and React to create a responsive interface to search your robot friends.',
