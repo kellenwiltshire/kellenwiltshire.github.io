@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 function Navigation() {
 	return (
-		<nav class='bg-blue-600 px-8 w-full'>
+		<nav class='bg-blue-600 px-8 py-4 w-full'>
 			<div class='-mb-px flex justify-center font-body'>
 				<Link href='/'>
 					<a className='no-underline text-white uppercase tracking-wide font-bold text-xs p-3 transition duration-300 ease-in-out hover:bg-white hover:text-blue-600'>

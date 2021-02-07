@@ -72,9 +72,13 @@ const portfolioProjects = ({
 			</div>
 			<div classame='justify-center align-middle flex flex-col h-auto m-3 sm:text-xs w-1/2'>
 				<div className='text-left w-full'>
-					<h1 className='text-2xl text-center underline order-2'>{name}</h1>
+					<a href={link} alt='View in Action' target='_blank'>
+						<h1 className='text-2xl text-center underline order-2 font-headers'>
+							{name}
+						</h1>
+					</a>
 				</div>
-				<p className='text-base m-10'>{description}</p>
+				<p className='text-base m-10 font-body'>{description}</p>
 				<div className='flex flex-col align-center justify-between m-10 w-full'>
 					<div className='flex flex-wrap sm:flex-row align-middle'>
 						{toolsUsed}
