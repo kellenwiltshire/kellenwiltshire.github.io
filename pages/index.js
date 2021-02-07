@@ -1,11 +1,13 @@
 import Layout from '../components/Layout';
 import Splash from '../components/Splash.js';
 import About from '../components/About.js';
+import Navigation from '../components/Navigation';
 
 export default function Home() {
 	return (
 		<Layout title='Kellen Wiltshire Web Development'>
 			<Splash />
+			<Navigation />
 			<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>
 				<path
 					fill='#2563eb'
