@@ -3,13 +3,13 @@ import Image from 'next/image';
 
 const about = () => {
 	return (
-		<div className='container px-1 sm:px-6'>
+		<div className='container px-1 sm:px-6 pb-32 pt-20'>
 			<div className='lg:flex justify-between items-center'>
 				<div className='lg:w-6/12 lg:p-0 p-7'>
-					<h1 className='text-3xl sm:text-6xl text-center mb-0 sm:mb-10 font-title'>
+					<h1 className='text-3xl sm:text-6xl text-center mb-0 sm:mb-10 font-headers'>
 						Kellen Wiltshire
 					</h1>
-					<p className='text-sm sm:text-xl sm:text-center leading-relaxed font-body'>
+					<p className='text-sm sm:text-xl leading-relaxed font-body pb-5'>
 						During this COVID-19 Pandemic, I have taught myself two new things.
 						First, I can make bread like nobody's business. Second, I learned
 						how to build sweet websites. Though I am still starting out, I am
@@ -17,7 +17,7 @@ const about = () => {
 						Development
 					</p>
 
-					<p className='text-sm sm:text-xl sm:text-center leading-relaxed font-body'>
+					<p className='text-sm sm:text-xl pb-5 leading-relaxed font-body'>
 						Although I have a fulfilling career helping people seek justice in
 						the Legal System, I was missing using my brain in a technical role.
 						With the extra time working from home I decided to start teaching
@@ -25,7 +25,7 @@ const about = () => {
 						Zero-to-Mastery.
 					</p>
 
-					<p className='text-sm sm:text-xl sm:text-center leading-relaxed font-body'>
+					<p className='text-sm sm:text-xl pb-5 leading-relaxed font-body'>
 						Now I build kick-ass websites and projects to hone my skills to one
 						day make the jump completely into Web Development. Contact me now if
 						you have any inquries!
@@ -33,7 +33,7 @@ const about = () => {
 				</div>
 				<div className='lg:w-5/12 order-2'>
 					<div className='flex w-64 justify-center items-center text-center p-5 rounded-none m-8 shadow'>
-						<div class='tc'>
+						<div>
 							<Image
 								src='/profile.png'
 								className='flex text-white rounded-full'

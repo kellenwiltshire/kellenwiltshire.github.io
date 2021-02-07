@@ -8,7 +8,6 @@ import Navigation from '../components/Navigation';
 function Portfolio() {
 	return (
 		<Layout title='Kellen Wiltshire Web Development || Contact Me'>
-			<Navigation />
 			<PageTitles title='Contact Me' />
 			<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>
 				<path

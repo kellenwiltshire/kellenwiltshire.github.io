@@ -11,7 +11,7 @@ function Layout({ title, children }) {
 
 				<link rel='preconnect' href='https://fonts.gstatic.com' />
 				<link
-					href='https://fonts.googleapis.com/css2?family=Open+Sans&family=Seaweed+Script&display=swap'
+					href='https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap'
 					rel='stylesheet'
 				/>
 			</Head>
