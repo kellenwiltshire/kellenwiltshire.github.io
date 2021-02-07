@@ -1,8 +1,6 @@
 import Layout from '../components/Layout';
 import Splash from '../components/Splash.js';
 import About from '../components/About.js';
-import Contact from '../components/Contact';
-import Pricing from '../components/Pricing';
 
 export default function Home() {
 	return (
@@ -16,8 +14,6 @@ export default function Home() {
 				></path>
 			</svg>
 			<About />
-			<Pricing />
-			<Contact />
 		</Layout>
 	);
 }
