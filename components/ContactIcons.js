@@ -78,26 +78,6 @@ function ContactIcons() {
 					</svg>
 				</a>
 			</div>
-			<div className='flex flex-col align-middle justify-center text-center'>
-				<a href='' target='_blank' rel='noreferrer'>
-					<svg
-						xmlns='http://www.w3.org/2000/svg'
-						className='icon icon-tabler icon-tabler-mail rounded transition duration-300 ease-in-out hover:bg-blue-900 p-4'
-						width='100'
-						height='100'
-						viewBox='0 0 24 24'
-						strokeWidth='1.5'
-						stroke='#ffffff'
-						fill='none'
-						strokeLinecap='round'
-						strokeLinejoin='round'
-					>
-						<path stroke='none' d='M0 0h24v24H0z' fill='none' />
-						<rect x='3' y='5' width='18' height='14' rx='2' />
-						<polyline points='3 7 12 13 21 7' />
-					</svg>
-				</a>
-			</div>
 		</div>
 	);
 }

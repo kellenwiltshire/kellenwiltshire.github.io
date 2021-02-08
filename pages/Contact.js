@@ -3,7 +3,6 @@ import Layout from '../components/Layout';
 import PageTitles from '../components/PageTitles';
 import Contact from '../components/Contact';
 import Pricing from '../components/Pricing';
-import Navigation from '../components/Navigation';
 
 function Portfolio() {
 	return (
