@@ -5,7 +5,7 @@ const portfolioList = ({ projects }) => {
 	return (
 		<div
 			id='component'
-			className='w-full flex flex-row justify-center flex-wrap items-center'
+			className='w-full flex flex-row justify-center flex-wrap items-center h-full'
 		>
 			{projects.map((proj, i) => {
 				return (

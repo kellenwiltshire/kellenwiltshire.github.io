@@ -15,7 +15,7 @@ function Layout({ title, children }) {
 					rel='stylesheet'
 				/>
 			</Head>
-			<main className='mx-auto min-h-screen flex justify-center flex-row flex-wrap'>
+			<main className='mx-auto flex justify-center flex-row flex-wrap'>
 				{children}
 			</main>
 			<Footer />
