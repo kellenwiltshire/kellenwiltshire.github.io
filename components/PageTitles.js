@@ -11,7 +11,7 @@ function PageTitles({ title }) {
 					animate={{ opacity: 1 }}
 					transition={{ duration: 2 }}
 				>
-					<h1>{title}</h1>
+					<h1 className='text-center'>{title}</h1>
 				</motion.div>
 				<Navigation />
 			</div>

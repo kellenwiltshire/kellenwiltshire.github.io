@@ -1,9 +1,37 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 function ContactIcons() {
+	const container = {
+		hidden: { opacity: 1, scale: 0 },
+		visible: {
+			opacity: 1,
+			scale: 1,
+			transition: {
+				delayChildren: 0.3,
+				staggerChildren: 0.2,
+			},
+		},
+	};
+
+	const item = {
+		hidden: { y: 20, opacity: 0 },
+		visible: {
+			y: 0,
+			opacity: 1,
+		},
+	};
 	return (
-		<div className='flex flex-row align-middle justify-center'>
-			<div className='flex flex-col align-middle justify-center'>
+		<motion.div
+			variants={container}
+			initial='hidden'
+			animate='visible'
+			className='flex flex-row align-middle justify-center space-x-7'
+		>
+			<motion.div
+				variants={item}
+				className='flex flex-col align-middle justify-center'
+			>
 				<a
 					href='https://github.com/kellenwiltshire'
 					alt='View on Github'
@@ -26,8 +54,11 @@ function ContactIcons() {
 						<path d='M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5' />
 					</svg>
 				</a>
-			</div>
-			<div className='flex flex-col align-middle justify-center text-center'>
+			</motion.div>
+			<motion.div
+				variants={item}
+				className='flex flex-col align-middle justify-center text-center'
+			>
 				<a
 					href='https://codepen.io/kellenwiltshire'
 					target='_blank'
@@ -54,8 +85,11 @@ function ContactIcons() {
 						<line x1='12' y1='15' x2='12' y2='21' />
 					</svg>
 				</a>
-			</div>
-			<div className='flex flex-col align-middle justify-center text-center'>
+			</motion.div>
+			<motion.div
+				variants={item}
+				className='flex flex-col align-middle justify-center text-center'
+			>
 				<a href='' target='_blank' rel='noreferrer'>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
@@ -77,8 +111,8 @@ function ContactIcons() {
 						<path d='M16 16v-3a2 2 0 0 0 -4 0' />
 					</svg>
 				</a>
-			</div>
-		</div>
+			</motion.div>
+		</motion.div>
 	);
 }
 
