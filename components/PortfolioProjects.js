@@ -26,7 +26,7 @@ const portfolioProjects = ({
 						onClick={() => setOpen(false)}
 						className='absolute top-0 left-0 w-full h-full z-10 flex place-items-center bg-white bg-opacity-50 justify-center'
 					>
-						<div className='bg-white flex justify-center rounded shadow-2xl m-20'>
+						<div className='bg-white flex justify-center rounded shadow-2xl sm:mx-72'>
 							<PortfolioProjectExpand
 								name={name}
 								description={description}

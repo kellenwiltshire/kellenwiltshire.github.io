@@ -11,9 +11,9 @@ const about = () => {
 					</h1>
 					<p className='text-sm sm:text-xl leading-relaxed font-body pb-5'>
 						During this COVID-19 Pandemic, I have taught myself two new things.
-						First, I can make bread like nobody's business. Second, I learned
-						how to build sweet websites. Though I am still starting out, I am
-						eager to learn more and dive deeper into the world of Web
+						First, I can now make bread like nobody's business. Second, I
+						learned how to build sweet websites. Though I am still starting out,
+						I am eager to learn more and dive deeper into the world of Web
 						Development
 					</p>
 
