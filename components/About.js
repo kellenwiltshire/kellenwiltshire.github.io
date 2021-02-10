@@ -4,9 +4,9 @@ import Image from 'next/image';
 const about = () => {
 	return (
 		<div className='container px-1 sm:px-6 pb-32 pt-20'>
-			<div className='lg:flex justify-between items-center'>
+			<div className='flex flex-wrap justify-center sm:justify-between items-center'>
 				<div className='lg:w-6/12 lg:p-0 p-7'>
-					<h1 className='text-3xl sm:text-6xl text-center mb-0 sm:mb-10 font-headers'>
+					<h1 className='text-3xl sm:text-6xl text-center mb-5 sm:mb-10 font-headers'>
 						Kellen Wiltshire
 					</h1>
 					<p className='text-sm sm:text-xl leading-relaxed font-body pb-5'>
@@ -31,7 +31,7 @@ const about = () => {
 						you have any inquries!
 					</p>
 				</div>
-				<div className='lg:w-5/12 order-2'>
+				<div className='lg:w-5/12'>
 					<div className='flex w-64 justify-center items-center text-center p-5 rounded-none m-8 shadow'>
 						<div>
 							<Image
