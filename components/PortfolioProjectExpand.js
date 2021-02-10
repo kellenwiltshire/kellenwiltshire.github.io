@@ -45,14 +45,14 @@ function PortfolioProjectExpand({
 	};
 
 	return (
-		<div className='p-5 m-10 flex flex-row'>
+		<div className='sm:p-5 lg:m-10 flex flex-row flex-wrap'>
 			<div className='rounded transition duration-300 ease-in-out hover:bg-blue-600 p-2'>
 				<a href={link} alt='View in Action' target='_blank'>
 					{projectImage()}
 					<p className='text-center'>View Site</p>
 				</a>
 			</div>
-			<div classame='justify-center flex flex-col h-auto m-3 sm:text-xs w-1/2'>
+			<div classame='justify-center flex flex-col h-auto sm:m-3 sm:text-xs w-1/2'>
 				<div className='text-left'>
 					<a href={link} alt='View in Action' target='_blank'>
 						<h1 className='text-2xl text-center underline order-2 font-headers'>
@@ -60,8 +60,10 @@ function PortfolioProjectExpand({
 						</h1>
 					</a>
 				</div>
-				<p className='text-base m-10 font-body'>{description}</p>
-				<div className='flex flex-col align-center justify-between m-10'>
+				<p className='text-xs sm:text-base m-5 lg:m-10 font-body'>
+					{description}
+				</p>
+				<div className='flex flex-col align-center justify-between m-5 sm:m-10 text-xs sm:text-base'>
 					<div className='flex flex-wrap sm:flex-row align-middle'>
 						Tools Used: {tools}
 					</div>
