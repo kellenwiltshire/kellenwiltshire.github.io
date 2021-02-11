@@ -1,10 +1,9 @@
 import React from 'react';
-import Image from 'next/image';
 
 const about = () => {
 	return (
 		<div className='container px-1 sm:px-6 pb-32 pt-20'>
-			<div className='flex flex-row flex-wrap justify-center sm:justify-between items-center'>
+			<div className='flex flex-row flex-wrap justify-center lg:justify-between items-center'>
 				<div className='lg:w-6/12 lg:p-0 p-7'>
 					<h1 className='text-3xl sm:text-6xl text-center mb-5 sm:mb-10 font-headers'>
 						Kellen Wiltshire
@@ -31,20 +30,16 @@ const about = () => {
 						you have any inquries!
 					</p>
 				</div>
-				<div className='lg:w-5/12'>
-					<div className='flex w-64 justify-center items-center text-center p-5 rounded-none m-8 shadow'>
-						<div>
-							<Image
-								src='/profile.png'
-								className='flex text-white rounded-full'
-								title='Profile'
-								alt='profile'
-								height={500}
-								width={500}
-							/>
-							<h1 class='text-black'>Kellen Wiltshire</h1>
-							<h2 class='text-black'>Kingston, Ontario, Canada</h2>
-						</div>
+
+				<div className='flex flex-row w-96 justify-center items-center text-center p-5 rounded-none m-20 shadow'>
+					<div>
+						<img
+							className='rounded-full'
+							src='https://avatars.githubusercontent.com/u/31140634?v=4'
+							alt='Profile Image'
+						/>
+						<h1 class='text-black'>Kellen Wiltshire</h1>
+						<h2 class='text-black'>Kingston, Ontario, Canada</h2>
 					</div>
 				</div>
 			</div>
