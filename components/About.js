@@ -38,8 +38,8 @@ const about = () => {
 							src='https://avatars.githubusercontent.com/u/31140634?v=4'
 							alt='Profile Image'
 						/>
-						<h1 class='text-black'>Kellen Wiltshire</h1>
-						<h2 class='text-black'>Kingston, Ontario, Canada</h2>
+						<h1 className='text-black'>Kellen Wiltshire</h1>
+						<h2 className='text-black'>Kingston, Ontario, Canada</h2>
 					</div>
 				</div>
 			</div>

@@ -4,17 +4,16 @@ import { motion } from 'framer-motion';
 
 function PageTitles({ title }) {
 	return (
-		<div className='splash flex flex-col items-center justify-center bg-blue-600 w-screen'>
-			<div className='text-6xl text-white p-32 font-headers'>
-				<motion.div
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					transition={{ duration: 2 }}
-				>
-					<h1 className='text-center'>{title}</h1>
-				</motion.div>
-				<Navigation />
-			</div>
+		<div className='flex flex-col items-center justify-center bg-blue-600 w-screen sm:pt-60 pb-32 sm:pb-96'>
+			<motion.div
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				transition={{ duration: 1 }}
+				className='text-3xl sm:text-6xl text-white text-center'
+			>
+				<h1 className='text-center font-headers m-10'>{title}</h1>
+			</motion.div>
+			<Navigation />
 		</div>
 	);
 }
