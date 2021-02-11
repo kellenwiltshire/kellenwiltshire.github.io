@@ -1,29 +1,28 @@
 import React from 'react';
-// import { userID, templateID, serviceID } from '../emailAPI/emailAPI';
-// import emailjs from 'emailjs-com';
+import emailjs from 'emailjs-com';
 
 const contact = () => {
-	// function sendEmail(e) {
-	// 	e.preventDefault();
+	function sendEmail(e) {
+		e.preventDefault();
 
-	// 	emailjs.init(userID);
+		emailjs.init(userID);
 
-	// 	if (e.input !== '') {
-	// 		emailjs.sendForm(serviceID, templateID, '#contact').then(
-	// 			(response) => {
-	// 				console.log(response.text);
-	// 			},
-	// 			(error) => {
-	// 				console.log(error.text);
-	// 			},
-	// 		);
-	// 	}
-	// 	showSubmitSuccess();
-	// }
+		if (e.input !== '') {
+			emailjs.sendForm(serviceID, templateID, '#contact').then(
+				(response) => {
+					console.log(response.text);
+				},
+				(error) => {
+					console.log(error.text);
+				},
+			);
+		}
+		showSubmitSuccess();
+	}
 
-	// const showSubmitSuccess = () => {
-	// 	document.getElementById('success').style.visibility = 'visible';
-	// };
+	const showSubmitSuccess = () => {
+		document.getElementById('success').style.visibility = 'visible';
+	};
 	return (
 		<div
 			id='component'
