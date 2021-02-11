@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 
 function PortfolioProjectExpand({
 	id,
@@ -45,7 +44,7 @@ function PortfolioProjectExpand({
 	};
 
 	return (
-		<div className='sm:p-5 lg:m-10 flex flex-row flex-wrap'>
+		<div className='sm:p-5 lg:m-10 flex flex-row flex-wrap lg:flex-nowrap'>
 			<div className='rounded transition duration-300 ease-in-out hover:bg-blue-600 p-2'>
 				<a href={link} alt='View in Action' target='_blank'>
 					{projectImage()}
