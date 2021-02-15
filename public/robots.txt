@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://kellenwiltshire.com
+
+# Sitemaps
+Sitemap: https://kellenwiltshire.com/sitemap.xml
