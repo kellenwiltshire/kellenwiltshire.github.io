@@ -8,6 +8,8 @@ function Layout({ title, children }) {
 			<Head>
 				<title>{title}</title>
 				<link rel='icon' href='/favicon.ico' />
+				<meta name='Kellen Wiltshire Web Development Kingston Ontario Canada' />
+				<meta lang='en' />
 
 				<link rel='preconnect' href='https://fonts.gstatic.com' />
 				<link
