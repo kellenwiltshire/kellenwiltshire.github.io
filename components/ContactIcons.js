@@ -55,7 +55,7 @@ function ContactIcons() {
 					</svg>
 				</a>
 			</motion.div>
-			<motion.div
+			{/* <motion.div
 				variants={item}
 				className='flex flex-col align-middle justify-center text-center'
 			>
@@ -85,7 +85,7 @@ function ContactIcons() {
 						<line x1='12' y1='15' x2='12' y2='21' />
 					</svg>
 				</a>
-			</motion.div>
+			</motion.div> */}
 			<motion.div
 				variants={item}
 				className='flex flex-col align-middle justify-center text-center'
