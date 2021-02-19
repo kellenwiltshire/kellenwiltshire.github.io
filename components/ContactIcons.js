@@ -90,7 +90,12 @@ function ContactIcons() {
 				variants={item}
 				className='flex flex-col align-middle justify-center text-center'
 			>
-				<a href='' target='_blank' rel='noreferrer'>
+				<a
+					href='https://www.linkedin.com/in/kellenwiltshire/'
+					alt='View on Linkedin'
+					target='_blank'
+					rel='noreferrer'
+				>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
 						className='icon icon-tabler icon-tabler-brand-linkedin rounded transition duration-300 ease-in-out hover:bg-blue-900 p-4'
