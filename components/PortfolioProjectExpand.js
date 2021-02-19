@@ -38,6 +38,15 @@ function PortfolioProjectExpand({
 					width={1920}
 				/>
 			);
+		} else if (img === 'WMWiltshire') {
+			return (
+				<Image
+					src='/WMWiltshire.jpg'
+					alt='Author Screenshot'
+					height={1080}
+					width={1920}
+				/>
+			);
 		} else {
 			return <div>OOPS</div>;
 		}
