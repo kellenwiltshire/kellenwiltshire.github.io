@@ -1,22 +1,9 @@
 import React from 'react';
-import emailjs from 'emailjs-com';
+import { useForm, ValidationError } from '@formspree/react';
 
 const contact = () => {
-	function sendEmail(e) {
-		e.preventDefault();
-
-		emailjs.init(userID);
-
-		if (e.input !== '') {
-			emailjs.sendForm(serviceID, templateID, '#contact').then(
-				(response) => {
-					console.log(response.text);
-				},
-				(error) => {
-					console.log(error.text);
-				},
-			);
-		}
+	const [state, handleSubmit] = useForm('xvoveere');
+	if (state.succeeded) {
 		showSubmitSuccess();
 	}
 
@@ -31,10 +18,14 @@ const contact = () => {
 			<h1 className='text-4xl sm:text-6xl text-gray-600 border-b-2 w-full text-center mb-0 sm:mb-10'>
 				Reach Out
 			</h1>
+			<p>
+				I offer a variety of services starting as low as $150/month with no
+				money down!
+			</p>
 			<div class='mt-5 sm:mt-0 shadow xl:w-2/5 w-11/12'>
 				<div class='md:grid md:grid-cols-1 md:gap-6'>
 					<div class='mt-5 md:mt-0 md:col-span-2'>
-						<form id='contact' onSubmit={sendEmail}>
+						<form id='contact' onSubmit={handleSubmit}>
 							<div class='shadow overflow-hidden sm:rounded-md'>
 								<div class='px-4 py-5 bg-white sm:p-6'>
 									<div class='grid grid-cols-6 gap-6'>
@@ -89,7 +80,7 @@ const contact = () => {
 											/>
 										</div>
 
-										<div class='col-span-6 sm:col-span-3'>
+										{/* <div class='col-span-6 sm:col-span-3'>
 											<label
 												for='product'
 												class='block text-sm font-medium text-black'
@@ -107,7 +98,7 @@ const contact = () => {
 												<option>5 Page Site with 6 Month Support</option>
 												<option>General Inquiry</option>
 											</select>
-										</div>
+										</div> */}
 
 										<div class='col-span-6'>
 											<label
