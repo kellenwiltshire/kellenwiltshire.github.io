@@ -2,14 +2,13 @@ import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 
 const contact = () => {
+	const showSubmitSuccess = () => {
+		document.getElementById('success').style.visibility = 'visible';
+	};
 	const [state, handleSubmit] = useForm('xvoveere');
 	if (state.succeeded) {
 		showSubmitSuccess();
 	}
-
-	const showSubmitSuccess = () => {
-		document.getElementById('success').style.visibility = 'visible';
-	};
 	return (
 		<div
 			id='component'
