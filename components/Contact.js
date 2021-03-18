@@ -34,7 +34,7 @@ const contact = () => {
 			<div class='mt-5 sm:mt-0 shadow xl:w-2/5 w-11/12'>
 				<div class='md:grid md:grid-cols-1 md:gap-6'>
 					<div class='mt-5 md:mt-0 md:col-span-2'>
-						<form id='contact' onSubmit=''>
+						<form id='contact' onSubmit={sendEmail}>
 							<div class='shadow overflow-hidden sm:rounded-md'>
 								<div class='px-4 py-5 bg-white sm:p-6'>
 									<div class='grid grid-cols-6 gap-6'>
