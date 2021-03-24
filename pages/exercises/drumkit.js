@@ -1,7 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Layout from '../../components/Layout';
 
 function drumkit() {
+	useEffect(() => {
+		window.addEventListener('keydown', playSound);
+	});
+
+	const removeTransition = (e) => {
+		if (e.propertyName !== 'transform') return;
+		e.target.classList.remove('playing');
+	};
+	const playSound = (e) => {
+		const keys = document.querySelectorAll('.key');
+		const sound = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+		const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+		if (!sound) return;
+		sound.currentTime = 0;
+		sound.play();
+
+		key.classList.add('playing');
+		keys.forEach((key) => {
+			key.addEventListener('transitionend', removeTransition);
+		});
+	};
+
 	return (
 		<Layout title='drumkit'>
 			<div className='background w-full h-full'>
@@ -45,15 +67,15 @@ function drumkit() {
 				</div>
 			</div>
 
-			<audio data-key='65' src='../../sounds/clap.wav'></audio>
-			<audio data-key='83' src='../../sounds/hihat.wav'></audio>
-			<audio data-key='68' src='../../sounds/kick.wav'></audio>
-			<audio data-key='70' src='../../sounds/openhat.wav'></audio>
-			<audio data-key='71' src='../../sounds/boom.wav'></audio>
-			<audio data-key='72' src='../../sounds/ride.wav'></audio>
-			<audio data-key='74' src='../../sounds/snare.wav'></audio>
-			<audio data-key='75' src='../../sounds/tom.wav'></audio>
-			<audio data-key='76' src='../../sounds/tink.wav'></audio>
+			<audio data-key='65' src='/sounds/clap.mp3' type='audio/mpeg'></audio>
+			<audio data-key='83' src='/sounds/hihat.mp3' type='audio/mpeg'></audio>
+			<audio data-key='68' src='/sounds/kick.mp3' type='audio/mpeg'></audio>
+			<audio data-key='70' src='/sounds/openhat.mp3' type='audio/mpeg'></audio>
+			<audio data-key='71' src='/sounds/boom.mp3' type='audio/mpeg'></audio>
+			<audio data-key='72' src='/sounds/ride.mp3' type='audio/mpeg'></audio>
+			<audio data-key='74' src='/sounds/snare.mp3' type='audio/mpeg'></audio>
+			<audio data-key='75' src='/sounds/tom.mp3' type='audio/mpeg'></audio>
+			<audio data-key='76' src='/sounds/tink.mp3' type='audio/mpeg'></audio>
 		</Layout>
 	);
 }
