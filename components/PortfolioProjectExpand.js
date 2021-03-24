@@ -47,6 +47,15 @@ function PortfolioProjectExpand({
 					width={1920}
 				/>
 			);
+		} else if (img === 'wemadeit') {
+			return (
+				<Image
+					src='/wemadeit.png'
+					alt='We Made It Screenshot'
+					height={1080}
+					width={1920}
+				/>
+			);
 		} else {
 			return <div>OOPS</div>;
 		}
