@@ -26,7 +26,7 @@ function drumkit() {
 
 	return (
 		<Layout title='drumkit'>
-			<div className='background w-full h-full'>
+			<div className='drumbackground w-full h-full'>
 				<div className='keys'>
 					<div data-key='65' className='key'>
 						<kbd>A</kbd>

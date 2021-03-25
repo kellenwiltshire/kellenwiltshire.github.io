@@ -2,7 +2,7 @@ import 'tailwindcss/tailwind.css';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import * as gtag from '../lib/gtag';
-import '../styles/drumkit.css';
+import '../styles/jsexercises.css';
 
 function MyApp({ Component, pageProps }) {
 	const router = useRouter();
