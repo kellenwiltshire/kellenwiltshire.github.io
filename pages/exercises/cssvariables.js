@@ -50,10 +50,7 @@ function cssvariables() {
 					<label htmlFor='base'>Base Color</label>
 					<input id='base' type='color' name='base' defaultValue='#ffc600' />
 				</div>
-				<img
-					className='cssVarImg'
-					src='https://images.unsplash.com/photo-1557656069-9066219a86b6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
-				></img>
+				<img className='cssVarImg' src='/stanleycup.jpg'></img>
 			</div>
 		</Layout>
 	);

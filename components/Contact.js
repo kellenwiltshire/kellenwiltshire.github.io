@@ -14,7 +14,7 @@ const contact = () => {
 			id='component'
 			className='flex flex-col justify-center w-screen items-center mb-10'
 		>
-			<h1 className='text-4xl sm:text-6xl text-gray-600 border-b-2 w-full text-center mb-0 sm:mb-10'>
+			<h1 className='text-4xl sm:text-6xl text-blue-600 w-full text-center mb-0 sm:mb-10'>
 				Reach Out
 			</h1>
 			<p>

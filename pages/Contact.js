@@ -7,7 +7,7 @@ import Pricing from '../components/Pricing';
 function Portfolio() {
 	return (
 		<Layout title='Kellen Wiltshire Web Development || Contact Me'>
-			<PageTitles title='Contact Me' />
+			<PageTitles title='Contact Me' height='small' />
 			<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>
 				<path
 					fill='#2563eb'
