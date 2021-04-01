@@ -9,7 +9,6 @@ function typeahead() {
 		fetch(endpoint)
 			.then((response) => response.json())
 			.then((data) => cities.push(...data));
-		console.log(cities);
 	});
 
 	const findMatches = (wordToMatch, cities) => {

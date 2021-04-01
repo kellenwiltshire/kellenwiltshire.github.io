@@ -13,6 +13,7 @@ function multiplecheck() {
 	let textInput;
 	let lastChecked;
 	let checkboxes;
+	let test;
 	const change = (e) => {
 		e.preventDefault();
 		newItem = e.target.value;
@@ -40,7 +41,6 @@ function multiplecheck() {
 	};
 
 	const deleteItem = (i) => {
-		console.log(i);
 		const newList = items;
 		items.splice(i, 1);
 		setItems([...items]);

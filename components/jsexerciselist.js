@@ -25,4 +25,15 @@ export const jsexercises = [
 		description:
 			'A predictive search box that will show you possible results of your typing',
 	},
+	{
+		exercise: 6,
+		name: 'ToDo List',
+		description:
+			'A simple ToDo list with a twist! Hold shift to select Multiple items at once!',
+	},
+	{
+		exercise: 7,
+		name: 'HTML Canvas',
+		description: 'Draw something awesome with HTML Canvas!',
+	},
 ];
