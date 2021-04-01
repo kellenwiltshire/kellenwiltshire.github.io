@@ -10,23 +10,59 @@ function multiplecheck() {
 		'Everything in between should also be set to checked',
 	]);
 	let newItem;
+	let textInput;
+	let lastChecked;
+	let checkboxes;
 	const change = (e) => {
 		e.preventDefault();
 		newItem = e.target.value;
-		console.log(newItem);
 	};
 	const addItem = (e) => {
 		e.preventDefault();
 		if (!newItem) return;
-		console.log('New Item: ', newItem);
 		setItems([...items, newItem]);
+		textInput.value = '';
 	};
+
+	const handleCheck = (e) => {
+		let inBetween = false;
+		if (e.shiftKey && e.target.checked) {
+			checkboxes.forEach((checkbox) => {
+				if (checkbox === e.target || checkbox === lastChecked) {
+					inBetween = !inBetween;
+				}
+				if (inBetween) {
+					checkbox.checked = true;
+				}
+			});
+		}
+		lastChecked = e.target;
+	};
+
+	const deleteItem = (i) => {
+		console.log(i);
+		const newList = items;
+		items.splice(i, 1);
+		setItems([...items]);
+	};
+
+	useEffect(() => {
+		textInput = document.querySelector('#textInput');
+		checkboxes = document.querySelectorAll(
+			'.checkinbox input[type="checkbox"]',
+		);
+		checkboxes.forEach((checkbox) =>
+			checkbox.addEventListener('click', handleCheck),
+		);
+	});
+
 	return (
 		<Layout>
 			<div className='multipleCheckBackground h-full w-full'>
 				<div>
 					<form className='search-form'>
 						<input
+							id='textInput'
 							type='text'
 							className='w-full'
 							onChange={change}
@@ -43,9 +79,12 @@ function multiplecheck() {
 				<div className='checkinbox'>
 					{items.map((item, i) => {
 						return (
-							<div className='checkitem'>
-								<input type='checkbox checkinput' />
+							<div key={i} className='checkitem'>
+								<input type='checkbox' className='checkinput' />
 								<p className='checkp'>{items[i]}</p>
+								<button onClick={() => deleteItem(i)} className='p-5'>
+									Delete
+								</button>
 							</div>
 						);
 					})}
