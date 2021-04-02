@@ -58,19 +58,19 @@ function multiplecheck() {
 
 	return (
 		<Layout>
-			<div className='multipleCheckBackground h-full w-full'>
-				<div>
-					<form className='search-form'>
+			<div className='multipleCheckBackground h-full w-full flex justify-center flex-row flex-wrap'>
+				<div className='w-full flex flex-row justify-center container'>
+					<form className='w-1/2 mt-10'>
 						<input
 							id='textInput'
 							type='text'
-							className='w-full'
+							className='mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-500 rounded-md'
 							onChange={change}
 							placeholder='Add item'
 						/>
 						<button
 							onClick={addItem}
-							className='no-underline text-black uppercase tracking-wide font-bold text-base p-3 transition duration-300 ease-in-out hover:bg-white hover:text-blue-600'
+							className='inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
 						>
 							Submit
 						</button>

@@ -1,5 +1,5 @@
 :root {
-	--base: #ffc600;
+	--base: #2563eb;
 	--spacing: 10px;
 	--blur: 10px;
 }
@@ -36,8 +36,8 @@
 
 .playing {
 	transform: scale(1.1);
-	border-color: #ffc600;
-	box-shadow: 0 0 1rem #ffc600;
+	border-color: #2563eb;
+	box-shadow: 0 0 1rem #2563eb;
 }
 
 kbd {
@@ -49,7 +49,7 @@ kbd {
 	font-size: 1.2rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
-	color: #ffc600;
+	color: #2563eb;
 }
 
 /* JS CLOCK CSS */
@@ -126,7 +126,7 @@ input {
 
 .flexBackground {
 	box-sizing: border-box;
-	background: #ffc600;
+	background: #2563eb;
 	font-family: 'helvetica neue';
 	font-size: 20px;
 	font-weight: 200;
@@ -302,7 +302,7 @@ span.population {
 
 .multipleCheckBackground {
 	font-family: sans-serif;
-	background: #ffc600;
+	background: white;
 }
 
 .checkinbox {
@@ -311,12 +311,13 @@ span.population {
 	background: white;
 	border-radius: 5px;
 	box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
+	color: black;
 }
 
 .checkitem {
 	display: flex;
 	align-items: center;
-	border-bottom: 1px solid #f1f1f1;
+	border-bottom: 2px solid #3a3a3a;
 }
 
 .checkitem:last-child {
@@ -349,10 +350,8 @@ span.population {
 	margin: 0;
 	padding: 0;
 	display: flex;
-	background: #7a419b;
+	background: white;
 	min-height: 100vh;
-	background: linear-gradient(135deg, #7c1599 0%, #921099 48%, #7e4ae8 100%);
-	background-size: cover;
 	align-items: center;
 	justify-content: center;
 }
@@ -391,6 +390,9 @@ span.population {
 	padding: 0;
 	cursor: pointer;
 	max-width: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .player__button:focus {

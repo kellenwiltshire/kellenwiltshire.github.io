@@ -22,8 +22,39 @@ function videoplayer() {
 	};
 
 	const updateButton = (e) => {
-		const icon = e.target.paused ? '►' : '❚ ❚';
-		toggle.textContent = icon;
+		const icon = e.target.paused
+			? `<svg
+            xmlns='http://www.w3.org/2000/svg'
+            className='icon icon-tabler icon-tabler-player-play'
+            width='20'
+            height='20'
+            viewBox='0 0 24 24'
+            strokeWidth='1.5'
+            stroke='#ffffff'
+            fill='none'
+            strokeLinecap='round'
+            strokeLinejoin='round'
+        >
+            <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+            <path d='M7 4v16l13 -8z' />
+        </svg>`
+			: `<svg
+				xmlns='http://www.w3.org/2000/svg'
+				className='icon icon-tabler icon-tabler-player-pause'
+				width='20'
+				height='20'
+				viewBox='0 0 24 24'
+				strokeWidth='1.5'
+				stroke='#ffffff'
+				fill='none'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+			>
+				<path stroke='none' d='M0 0h24v24H0z' fill='none' />
+				<rect x='6' y='5' width='4' height='14' rx='1' />
+				<rect x='14' y='5' width='4' height='14' rx='1' />
+			</svg>`;
+		toggle.innerHTML = icon;
 	};
 
 	const skip = (e) => {
@@ -122,7 +153,21 @@ function videoplayer() {
 							<div className='progress__filled'></div>
 						</div>
 						<button className='player__button toggle' title='Toggle Play'>
-							►
+							<svg
+								xmlns='http://www.w3.org/2000/svg'
+								className='icon icon-tabler icon-tabler-player-play'
+								width='20'
+								height='20'
+								viewBox='0 0 24 24'
+								strokeWidth='1.5'
+								stroke='#ffffff'
+								fill='none'
+								strokeLinecap='round'
+								strokeLinejoin='round'
+							>
+								<path stroke='none' d='M0 0h24v24H0z' fill='none' />
+								<path d='M7 4v16l13 -8z' />
+							</svg>
 						</button>
 						<input
 							type='range'
@@ -143,10 +188,40 @@ function videoplayer() {
 							defaultValue='1'
 						/>
 						<button data-skip='-10' className='player__button'>
-							« 10s
+							<svg
+								xmlns='http://www.w3.org/2000/svg'
+								className='icon icon-tabler icon-tabler-player-skip-back'
+								width='20'
+								height='20'
+								viewBox='0 0 24 24'
+								strokeWidth='1.5'
+								stroke='#ffffff'
+								fill='none'
+								strokeLinecap='round'
+								strokeLinejoin='round'
+							>
+								<path stroke='none' d='M0 0h24v24H0z' fill='none' />
+								<path d='M20 5v14l-12 -7z' />
+								<line x1='4' y1='5' x2='4' y2='19' />
+							</svg>
 						</button>
 						<button data-skip='25' className='player__button'>
-							25s »
+							<svg
+								xmlns='http://www.w3.org/2000/svg'
+								className='icon icon-tabler icon-tabler-player-skip-forward'
+								width='20'
+								height='20'
+								viewBox='0 0 24 24'
+								strokeWidth='1.5'
+								stroke='#ffffff'
+								fill='none'
+								strokeLinecap='round'
+								strokeLinejoin='round'
+							>
+								<path stroke='none' d='M0 0h24v24H0z' fill='none' />
+								<path d='M4 5v14l12 -7z' />
+								<line x1='20' y1='5' x2='20' y2='19' />
+							</svg>
 						</button>
 						<button id='fullscreen' className='player__button'>
 							<svg
@@ -156,7 +231,7 @@ function videoplayer() {
 								height='20'
 								viewBox='0 0 24 24'
 								strokeWidth='1.5'
-								stroke='#2c3e50'
+								stroke='#ffffff'
 								fill='none'
 								strokeLinecap='round'
 								strokeLinejoin='round'
