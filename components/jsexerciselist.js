@@ -36,4 +36,9 @@ export const jsexercises = [
 		name: 'HTML Canvas',
 		description: 'Draw something awesome with HTML Canvas!',
 	},
+	{
+		exercise: 8,
+		name: 'Video Player',
+		description: 'A Custom made HTML Video Player',
+	},
 ];

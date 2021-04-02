@@ -9,6 +9,8 @@ function videoplayer() {
 	let toggle;
 	let skipButtons;
 	let ranges;
+	let fullScreen;
+	let isFullscreen = false;
 
 	//Build Functions
 	const togglePlay = () => {
@@ -42,6 +44,28 @@ function videoplayer() {
 		video.currentTime = scrubTime;
 	};
 
+	const openFullscreen = () => {
+		isFullscreen = !isFullscreen;
+		if (player.requestFullscreen) {
+			player.requestFullscreen();
+		} else if (player.webkitRequestFullscreen) {
+			player.webkitRequestFullscreen();
+		} else if (player.msRequestFullscreen) {
+			player.msRequestFullscreen();
+		}
+	};
+
+	const closeFullscreen = () => {
+		isFullscreen = !isFullscreen;
+		if (document.exitFullscreen) {
+			document.exitFullscreen();
+		} else if (document.webkitExitFullscreen) {
+			document.webkitExitFullscreen();
+		} else if (document.msExitFullscreen) {
+			document.msExitFullscreen();
+		}
+	};
+
 	useEffect(() => {
 		// Get Our Elements
 		player = document.querySelector('.player');
@@ -51,6 +75,7 @@ function videoplayer() {
 		toggle = player.querySelector('.toggle');
 		skipButtons = player.querySelectorAll('[data-skip]');
 		ranges = player.querySelectorAll('.player__slider');
+		fullScreen = player.querySelector('#fullscreen');
 
 		//Hook Up Listeners
 		video.addEventListener('click', togglePlay);
@@ -76,6 +101,15 @@ function videoplayer() {
 		progress.addEventListener('mousemove', (e) => mousedown && scrub(e));
 		progress.addEventListener('mousedown', () => (mousedown = true));
 		progress.addEventListener('mouseup', () => (mousedown = false));
+
+		fullScreen.addEventListener('click', () => {
+			console.log(isFullscreen);
+			if (!isFullscreen) {
+				openFullscreen();
+			} else {
+				closeFullscreen();
+			}
+		});
 	});
 	return (
 		<Layout title='Video Player'>
@@ -113,6 +147,30 @@ function videoplayer() {
 						</button>
 						<button data-skip='25' className='player__button'>
 							25s »
+						</button>
+						<button id='fullscreen' className='player__button'>
+							<svg
+								xmlns='http://www.w3.org/2000/svg'
+								className='icon icon-tabler icon-tabler-arrows-maximize'
+								width='20'
+								height='20'
+								viewBox='0 0 24 24'
+								strokeWidth='1.5'
+								stroke='#2c3e50'
+								fill='none'
+								strokeLinecap='round'
+								strokeLinejoin='round'
+							>
+								<path stroke='none' d='M0 0h24v24H0z' fill='none' />
+								<polyline points='16 4 20 4 20 8' />
+								<line x1='14' y1='10' x2='20' y2='4' />
+								<polyline points='8 20 4 20 4 16' />
+								<line x1='4' y1='20' x2='10' y2='14' />
+								<polyline points='16 20 20 20 20 16' />
+								<line x1='14' y1='14' x2='20' y2='20' />
+								<polyline points='8 4 4 4 4 8' />
+								<line x1='4' y1='4' x2='10' y2='10' />
+							</svg>
 						</button>
 					</div>
 				</div>
