@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const splash = () => {
 	return (
-		<div className='flex flex-col items-center justify-center bg-blue-600 w-screen sm:pt-60 pb-72 sm:pb-96'>
+		<div className='flex flex-col items-center justify-center bg-blue-600 w-full sm:pt-60 pb-72 sm:pb-96'>
 			<motion.div
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}

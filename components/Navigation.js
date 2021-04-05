@@ -23,7 +23,7 @@ function Navigation() {
 		},
 	};
 	return (
-		<nav className='bg-blue-600 px-8 py-4 w-full'>
+		<nav className='bg-blue-600 py-4 w-full'>
 			<motion.div
 				variants={container}
 				initial='hidden'
