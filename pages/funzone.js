@@ -28,7 +28,7 @@ export default function Funzone() {
 									<p className='text-xl w-full text-center'>
 										{jsexercises[i].name}
 									</p>
-									<p>{jsexercises[i].description}</p>
+									<p className='text-center'>{jsexercises[i].description}</p>
 								</div>
 							</a>
 						</Link>

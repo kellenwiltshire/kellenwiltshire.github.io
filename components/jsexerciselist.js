@@ -55,4 +55,11 @@ export const jsexercises = [
 		description: 'JS Excercise to have images slide in while scrolling',
 		link: '/exercises/slidescroll',
 	},
+	{
+		exercise: 10,
+		name: 'Local Storage ToDo List',
+		description:
+			'A Local Storage ToDo List that will remember your items and completed items between page refreshes',
+		link: '/exercises/localstorage',
+	},
 ];
