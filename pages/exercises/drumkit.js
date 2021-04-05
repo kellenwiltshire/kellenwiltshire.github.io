@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from '../../components/Layout';
+import Link from 'next/link';
 
 function drumkit() {
 	useEffect(() => {
@@ -26,6 +27,13 @@ function drumkit() {
 
 	return (
 		<Layout title='drumkit'>
+			<Link href='/funzone'>
+				<a>
+					<div className='max-w-md py-8 px-4 flex flex-wrap flex-row justify-center items-center bg-blue-700 hover:text-white'>
+						<p className='text-xl w-full text-center'>Back to Fun Zone</p>
+					</div>
+				</a>
+			</Link>
 			<div className='drumbackground w-full h-full'>
 				<div className='keys'>
 					<div data-key='65' className='key'>
