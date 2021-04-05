@@ -16,6 +16,10 @@ export default function Funzone() {
 				></path>
 			</svg>
 			<div className='flex flex-row flex-wrap justify-center m-10'>
+				<div className='w-full text-center text-blue-600'>
+					Please note, not all of these exercises have been adjusted for mobile
+					use!
+				</div>
 				{jsexercises.map((item, i) => {
 					return (
 						<Link href={jsexercises[i].link}>

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from '../../components/Layout';
+import Link from 'next/link';
 
 function slidescroll() {
 	const debounce = (func, wait = 20, immediate = true) => {
@@ -41,7 +42,14 @@ function slidescroll() {
 		window.addEventListener('scroll', debounce(checkSlide));
 	});
 	return (
-		<Layout>
+		<Layout title='Slide In On Scroll'>
+			<Link href='/funzone'>
+				<a>
+					<div className='max-w-md py-8 px-4 flex flex-wrap flex-row justify-center items-center bg-blue-700 hover:text-white'>
+						<p className='text-xl w-full text-center'>Back to Fun Zone</p>
+					</div>
+				</a>
+			</Link>
 			<div className='slidescrollbackground w-full'>
 				<div className='site-wrap'>
 					<h1 className='text-center text-4xl pb-10'>Slide in on Scroll</h1>
