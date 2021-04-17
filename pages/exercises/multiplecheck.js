@@ -42,7 +42,6 @@ function multiplecheck() {
 	};
 
 	const deleteItem = (i) => {
-		const newList = items;
 		items.splice(i, 1);
 		setItems([...items]);
 	};

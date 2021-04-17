@@ -636,3 +636,18 @@ h1 {
 	outline: 0;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+/* Mouse Move Effect */
+
+.hero {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+}
+
+.mouseh1 {
+	text-shadow: 10px 10px 0 rgba(0, 0, 0, 1);
+	font-size: 100px;
+}
