@@ -62,4 +62,11 @@ export const jsexercises = [
 			'A Local Storage ToDo List that will remember your items and completed items between page refreshes',
 		link: '/exercises/localstorage',
 	},
+	{
+		exercise: 11,
+		name: 'Mouse Drop Shadow',
+		description:
+			'A JS exercise that moves a drop shadow depending on mouse location',
+		link: '/exercises/textdropshadow',
+	},
 ];
