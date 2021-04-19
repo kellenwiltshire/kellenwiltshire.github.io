@@ -12,11 +12,11 @@ function PortfolioProjectCard({ img }) {
 					width={1920}
 				/>
 			);
-		} else if (img === 'Robofriends') {
+		} else if (img === 'frontendassessment') {
 			return (
 				<Image
-					src='/robofriends.png'
-					alt='Robofriend Screenshot'
+					src='/frontendassessment.png'
+					alt='Frontend Assessment Screenshot'
 					height={1080}
 					width={1920}
 				/>

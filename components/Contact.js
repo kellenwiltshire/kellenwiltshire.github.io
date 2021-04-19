@@ -7,7 +7,20 @@ const contact = () => {
 	};
 	const [state, handleSubmit] = useForm('xvoveere');
 	if (state.succeeded) {
-		showSubmitSuccess();
+		return (
+			<div className='text-gray-600 body-font'>
+				<div className='container mx-auto flex px-5 items-center justify-center flex-col'>
+					<div className='text-center lg:w-2/3 w-full'>
+						<h1 class='title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900'>
+							Thank you for your message!
+						</h1>
+						<p className='mb-8 leading-relaxed'>
+							You can also contact me at webdevelopment@kellenwiltshire.com!
+						</p>
+					</div>
+				</div>
+			</div>
+		);
 	}
 	return (
 		<div
@@ -28,7 +41,7 @@ const contact = () => {
 							<div className='shadow overflow-hidden sm:rounded-md'>
 								<div className='px-4 py-5 bg-white sm:p-6'>
 									<div className='grid grid-cols-6 gap-6'>
-										<div className='col-span-6 sm:col-span-3'>
+										<div className='col-span-6 sm:col-span-3 m-2'>
 											<label
 												for='first_name'
 												className='block text-sm font-medium text-black'
@@ -45,7 +58,7 @@ const contact = () => {
 											/>
 										</div>
 
-										<div className='col-span-6 sm:col-span-3'>
+										<div className='col-span-6 sm:col-span-3 m-2'>
 											<label
 												for='last_name'
 												className='block text-sm font-medium text-black'
@@ -62,7 +75,7 @@ const contact = () => {
 											/>
 										</div>
 
-										<div className='col-span-6 sm:col-span-5'>
+										<div className='col-span-6 sm:col-span-5 m-2'>
 											<label
 												for='email_address'
 												className='block text-sm font-medium text-black'
@@ -99,7 +112,7 @@ const contact = () => {
 											</select>
 										</div> */}
 
-										<div className='col-span-6'>
+										<div className='col-span-6 m-2'>
 											<label
 												for='about'
 												className='block text-sm font-medium text-black'
@@ -126,13 +139,6 @@ const contact = () => {
 									>
 										Submit
 									</button>
-								</div>
-								<div
-									id='success'
-									style={{ visibility: 'hidden' }}
-									className='text-center justify-center align-middle'
-								>
-									<h1>Request Sent!</h1>
 								</div>
 							</div>
 						</form>

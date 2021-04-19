@@ -20,15 +20,13 @@ export default function Funzone() {
 					Please note, not all of these exercises have been adjusted for mobile
 					use!
 				</div>
-				{jsexercises.map((item, i) => {
+				{jsexercises.map((exercise) => {
 					return (
-						<Link href={jsexercises[i].link}>
+						<Link href={exercise.link}>
 							<a>
 								<div className='max-w-md py-8 px-4 flex flex-wrap flex-row justify-center items-center hover:bg-blue-700 hover:text-white'>
-									<p className='text-xl w-full text-center'>
-										{jsexercises[i].name}
-									</p>
-									<p className='text-center'>{jsexercises[i].description}</p>
+									<p className='text-xl w-full text-center'>{exercise.name}</p>
+									<p className='text-center'>{exercise.description}</p>
 								</div>
 							</a>
 						</Link>
