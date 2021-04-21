@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Layout from '../../components/Layout';
 import Link from 'next/link';
-import Playbutton from '../../components/icons/playbutton';
+import Playbutton from '../../components/icons/Playbutton';
 import Pausebutton from '../../components/icons/Pausebutton';
 
 function videoplayer() {
