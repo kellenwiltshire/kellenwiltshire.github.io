@@ -51,10 +51,10 @@ function typeahead() {
 	};
 	return (
 		<Layout title='Type Ahead'>
-			<Link href='/funzone'>
+			<Link href='/jsexercises'>
 				<a>
 					<div className='max-w-md py-8 px-4 flex flex-wrap flex-row justify-center items-center bg-blue-700 hover:text-white'>
-						<p className='text-xl w-full text-center'>Back to Fun Zone</p>
+						<p className='text-xl w-full text-center'>Back to JS Exercises</p>
 					</div>
 				</a>
 			</Link>

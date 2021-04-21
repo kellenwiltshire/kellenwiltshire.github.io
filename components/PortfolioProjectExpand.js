@@ -56,6 +56,15 @@ function PortfolioProjectExpand({
 					width={1920}
 				/>
 			);
+		} else if (img === 'jsexercises') {
+			return (
+				<Image
+					src='/javascript.svg'
+					alt='Javascript Img'
+					height={1080}
+					width={1920}
+				/>
+			);
 		} else {
 			return <div>OOPS</div>;
 		}

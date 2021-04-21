@@ -43,12 +43,12 @@ export const jsexercises = [
 		description: 'Draw something awesome with HTML Canvas!',
 		link: '/exercises/htmlcanvas',
 	},
-	{
-		exercise: 8,
-		name: 'Video Player',
-		description: 'A Custom made HTML Video Player',
-		link: '/exercises/videoplayer',
-	},
+	// {
+	// 	exercise: 8,
+	// 	name: 'Video Player',
+	// 	description: 'A Custom made HTML Video Player',
+	// 	link: '/exercises/videoplayer',
+	// },
 	{
 		exercise: 9,
 		name: 'Slide In on Scroll',

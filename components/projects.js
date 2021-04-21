@@ -49,4 +49,14 @@ export const projects = [
 		git: 'https://github.com/kellenwiltshire/frontend-assessment',
 		img: 'frontendassessment',
 	},
+	{
+		id: 6,
+		name: 'Javascript Exercises',
+		description:
+			'A collection of JavaScript exercises I have made while completing the course JS30 by Wes Bos',
+		tools: 'JavaScript',
+		link: '/jsexercises',
+		git: 'https://github.com/kellenwiltshire',
+		img: 'jsexercises',
+	},
 ];
