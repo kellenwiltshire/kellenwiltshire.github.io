@@ -3,7 +3,7 @@ import PageTitles from '../components/PageTitles';
 import { jsexercises } from '../components/jsexerciselist';
 import Link from 'next/link';
 
-export default function Funzone() {
+export default function JSexercises() {
 	return (
 		<Layout title='Fun Zone'>
 			<PageTitles title='Fun Zone' height='small' />

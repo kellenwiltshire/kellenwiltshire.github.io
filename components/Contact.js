@@ -30,11 +30,7 @@ const contact = () => {
 			<h1 className='text-4xl sm:text-6xl text-blue-600 w-full text-center mb-0 sm:mb-10'>
 				Reach Out
 			</h1>
-			<p>
-				I offer a variety of services starting as low as $150/month with no
-				money down!
-			</p>
-			<div className='mt-5 sm:mt-0 shadow xl:w-2/5 w-11/12'>
+			<div className='mt-5 sm:mt-0 rounded-lg border-2 border-gray-300 xl:w-2/5 w-11/12'>
 				<div className='md:grid md:grid-cols-1 md:gap-6'>
 					<div className='mt-5 md:mt-0 md:col-span-2'>
 						<form id='contact' onSubmit={handleSubmit}>
@@ -92,10 +88,10 @@ const contact = () => {
 											/>
 										</div>
 
-										{/* <div class='col-span-6 sm:col-span-3'>
+										<div className='col-span-6 sm:col-span-3 m-2'>
 											<label
 												for='product'
-												class='block text-sm font-medium text-black'
+												className='block text-sm font-medium text-black'
 											>
 												Inquiring About
 											</label>
@@ -103,14 +99,13 @@ const contact = () => {
 												id='product'
 												name='product'
 												autocomplete='product'
-												class='mt-1 block w-full py-2 px-3 border border-gray-500 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'
+												className='mt-1 block w-full py-2 px-3 border border-gray-500 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'
 											>
-												<option>5 Page Site with 12 Month Support</option>
 												<option>Standard 5 Page Site</option>
-												<option>5 Page Site with 6 Month Support</option>
+												<option>Square/Shopify Site</option>
 												<option>General Inquiry</option>
 											</select>
-										</div> */}
+										</div>
 
 										<div className='col-span-6 m-2'>
 											<label
