@@ -1,5 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Layout from '../../components/Layout';
+import Link from 'next/link';
+import Playbutton from '../../components/icons/playbutton';
+import Pausebutton from '../../components/icons/Pausebutton';
 
 function videoplayer() {
 	let player;
@@ -11,6 +14,7 @@ function videoplayer() {
 	let ranges;
 	let fullScreen;
 	let isFullscreen = false;
+	const [isPlaying, setIsPlaying] = useState(false);
 
 	//Build Functions
 	const togglePlay = () => {
@@ -22,39 +26,9 @@ function videoplayer() {
 	};
 
 	const updateButton = (e) => {
-		const icon = e.target.paused
-			? `<svg
-            xmlns='http://www.w3.org/2000/svg'
-            className='icon icon-tabler icon-tabler-player-play'
-            width='20'
-            height='20'
-            viewBox='0 0 24 24'
-            strokeWidth='1.5'
-            stroke='#ffffff'
-            fill='none'
-            strokeLinecap='round'
-            strokeLinejoin='round'
-        >
-            <path stroke='none' d='M0 0h24v24H0z' fill='none' />
-            <path d='M7 4v16l13 -8z' />
-        </svg>`
-			: `<svg
-				xmlns='http://www.w3.org/2000/svg'
-				className='icon icon-tabler icon-tabler-player-pause'
-				width='20'
-				height='20'
-				viewBox='0 0 24 24'
-				strokeWidth='1.5'
-				stroke='#ffffff'
-				fill='none'
-				strokeLinecap='round'
-				strokeLinejoin='round'
-			>
-				<path stroke='none' d='M0 0h24v24H0z' fill='none' />
-				<rect x='6' y='5' width='4' height='14' rx='1' />
-				<rect x='14' y='5' width='4' height='14' rx='1' />
-			</svg>`;
-		toggle.innerHTML = icon;
+		setIsPlaying(!isPlaying);
+		const icon = e.target.pause;
+		// toggle.innerHTML = icon;
 	};
 
 	const skip = (e) => {
@@ -144,6 +118,13 @@ function videoplayer() {
 	});
 	return (
 		<Layout title='Video Player'>
+			<Link href='/jsexercises'>
+				<a>
+					<div className='max-w-md py-8 px-4 flex flex-wrap flex-row justify-center items-center bg-blue-700 hover:text-white'>
+						<p className='text-xl w-full text-center'>Back to JS Exercises</p>
+					</div>
+				</a>
+			</Link>
 			<div className='videoPlayerBackground w-full h-full'>
 				<div className='player'>
 					<video className='player__video viewer' src='/652333414.mp4'></video>
@@ -153,21 +134,7 @@ function videoplayer() {
 							<div className='progress__filled'></div>
 						</div>
 						<button className='player__button toggle' title='Toggle Play'>
-							<svg
-								xmlns='http://www.w3.org/2000/svg'
-								className='icon icon-tabler icon-tabler-player-play'
-								width='20'
-								height='20'
-								viewBox='0 0 24 24'
-								strokeWidth='1.5'
-								stroke='#ffffff'
-								fill='none'
-								strokeLinecap='round'
-								strokeLinejoin='round'
-							>
-								<path stroke='none' d='M0 0h24v24H0z' fill='none' />
-								<path d='M7 4v16l13 -8z' />
-							</svg>
+							{isPlaying ? <Playbutton /> : <Pausebutton />}
 						</button>
 						<input
 							type='range'

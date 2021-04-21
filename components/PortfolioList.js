@@ -7,17 +7,17 @@ const portfolioList = ({ projects }) => {
 			id='component'
 			className='w-full flex flex-row justify-center flex-wrap items-center h-full'
 		>
-			{projects.map((proj, i) => {
+			{projects.map((proj) => {
 				return (
 					<PortfolioProjects
-						key={i}
-						id={projects[i].id}
-						name={projects[i].name}
-						description={projects[i].description}
-						tools={projects[i].tools}
-						link={projects[i].link}
-						git={projects[i].git}
-						img={projects[i].img}
+						key={proj.id}
+						id={proj.id}
+						name={proj.name}
+						description={proj.description}
+						tools={proj.tools}
+						link={proj.link}
+						git={proj.git}
+						img={proj.img}
 					></PortfolioProjects>
 				);
 			})}

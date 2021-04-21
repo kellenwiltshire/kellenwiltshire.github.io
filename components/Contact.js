@@ -7,7 +7,20 @@ const contact = () => {
 	};
 	const [state, handleSubmit] = useForm('xvoveere');
 	if (state.succeeded) {
-		showSubmitSuccess();
+		return (
+			<div className='text-gray-600 body-font'>
+				<div className='container mx-auto flex px-5 items-center justify-center flex-col'>
+					<div className='text-center lg:w-2/3 w-full'>
+						<h1 class='title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900'>
+							Thank you for your message!
+						</h1>
+						<p className='mb-8 leading-relaxed'>
+							You can also contact me at webdevelopment@kellenwiltshire.com!
+						</p>
+					</div>
+				</div>
+			</div>
+		);
 	}
 	return (
 		<div
@@ -17,18 +30,14 @@ const contact = () => {
 			<h1 className='text-4xl sm:text-6xl text-blue-600 w-full text-center mb-0 sm:mb-10'>
 				Reach Out
 			</h1>
-			<p>
-				I offer a variety of services starting as low as $150/month with no
-				money down!
-			</p>
-			<div className='mt-5 sm:mt-0 shadow xl:w-2/5 w-11/12'>
+			<div className='mt-5 sm:mt-0 rounded-lg border-2 border-gray-300 xl:w-2/5 w-11/12'>
 				<div className='md:grid md:grid-cols-1 md:gap-6'>
 					<div className='mt-5 md:mt-0 md:col-span-2'>
 						<form id='contact' onSubmit={handleSubmit}>
 							<div className='shadow overflow-hidden sm:rounded-md'>
 								<div className='px-4 py-5 bg-white sm:p-6'>
 									<div className='grid grid-cols-6 gap-6'>
-										<div className='col-span-6 sm:col-span-3'>
+										<div className='col-span-6 sm:col-span-3 m-2'>
 											<label
 												for='first_name'
 												className='block text-sm font-medium text-black'
@@ -45,7 +54,7 @@ const contact = () => {
 											/>
 										</div>
 
-										<div className='col-span-6 sm:col-span-3'>
+										<div className='col-span-6 sm:col-span-3 m-2'>
 											<label
 												for='last_name'
 												className='block text-sm font-medium text-black'
@@ -62,7 +71,7 @@ const contact = () => {
 											/>
 										</div>
 
-										<div className='col-span-6 sm:col-span-5'>
+										<div className='col-span-6 sm:col-span-5 m-2'>
 											<label
 												for='email_address'
 												className='block text-sm font-medium text-black'
@@ -79,10 +88,10 @@ const contact = () => {
 											/>
 										</div>
 
-										{/* <div class='col-span-6 sm:col-span-3'>
+										<div className='col-span-6 sm:col-span-3 m-2'>
 											<label
 												for='product'
-												class='block text-sm font-medium text-black'
+												className='block text-sm font-medium text-black'
 											>
 												Inquiring About
 											</label>
@@ -90,16 +99,15 @@ const contact = () => {
 												id='product'
 												name='product'
 												autocomplete='product'
-												class='mt-1 block w-full py-2 px-3 border border-gray-500 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'
+												className='mt-1 block w-full py-2 px-3 border border-gray-500 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'
 											>
-												<option>5 Page Site with 12 Month Support</option>
 												<option>Standard 5 Page Site</option>
-												<option>5 Page Site with 6 Month Support</option>
+												<option>Square/Shopify Site</option>
 												<option>General Inquiry</option>
 											</select>
-										</div> */}
+										</div>
 
-										<div className='col-span-6'>
+										<div className='col-span-6 m-2'>
 											<label
 												for='about'
 												className='block text-sm font-medium text-black'
@@ -126,13 +134,6 @@ const contact = () => {
 									>
 										Submit
 									</button>
-								</div>
-								<div
-									id='success'
-									style={{ visibility: 'hidden' }}
-									className='text-center justify-center align-middle'
-								>
-									<h1>Request Sent!</h1>
 								</div>
 							</div>
 						</form>

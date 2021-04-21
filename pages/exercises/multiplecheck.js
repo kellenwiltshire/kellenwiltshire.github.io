@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Layout from '../../components/Layout';
+import Link from 'next/link';
 
 function multiplecheck() {
 	const [items, setItems] = useState([
@@ -41,7 +42,6 @@ function multiplecheck() {
 	};
 
 	const deleteItem = (i) => {
-		const newList = items;
 		items.splice(i, 1);
 		setItems([...items]);
 	};
@@ -57,7 +57,14 @@ function multiplecheck() {
 	});
 
 	return (
-		<Layout>
+		<Layout title='Multiple Check ToDo List'>
+			<Link href='/jsexercises'>
+				<a>
+					<div className='max-w-md py-8 px-4 flex flex-wrap flex-row justify-center items-center bg-blue-700 hover:text-white'>
+						<p className='text-xl w-full text-center'>Back to JS Exercises</p>
+					</div>
+				</a>
+			</Link>
 			<div className='multipleCheckBackground h-full w-full flex justify-center flex-row flex-wrap'>
 				<div className='w-full flex flex-row justify-center container'>
 					<form className='w-1/2 mt-10'>

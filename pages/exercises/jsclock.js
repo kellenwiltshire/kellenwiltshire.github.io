@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from '../../components/Layout';
+import Link from 'next/link';
 
 function jsclock() {
 	useEffect(() => {
@@ -26,6 +27,13 @@ function jsclock() {
 
 	return (
 		<Layout title='JS Clock'>
+			<Link href='/jsexercises'>
+				<a>
+					<div className='max-w-md py-8 px-4 flex flex-wrap flex-row justify-center items-center bg-blue-700 hover:text-white'>
+						<p className='text-xl w-full text-center'>Back to JS Exercises</p>
+					</div>
+				</a>
+			</Link>
 			<div className='clockbackground w-full h-screen'>
 				<div className='clock'>
 					<div className='clock-face'>

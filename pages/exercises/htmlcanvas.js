@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Layout from '../../components/Layout';
+import Link from 'next/link';
 
 function htmlcanvas() {
 	let isDrawing = false;
@@ -50,6 +51,13 @@ function htmlcanvas() {
 
 	return (
 		<Layout title='HTML Canvas'>
+			<Link href='/jsexercises'>
+				<a>
+					<div className='max-w-md py-8 px-4 flex flex-wrap flex-row justify-center items-center bg-blue-700 hover:text-white'>
+						<p className='text-xl w-full text-center'>Back to JS Exercises</p>
+					</div>
+				</a>
+			</Link>
 			<div className='w-screen h-screen'>
 				<canvas id='draw' width='800' height='800'></canvas>
 			</div>

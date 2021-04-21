@@ -557,3 +557,152 @@ h1 {
 	opacity: 1;
 	transform: translateX(0%) scale(1);
 }
+
+/* Local Storage */
+
+.localstoragebackground {
+	box-sizing: border-box;
+	background: url('/oh-la-la.jpeg') center no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+.localstoragesvg {
+	fill: white;
+	background: rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	border-radius: 50%;
+	width: 200px;
+	margin-bottom: 10px;
+}
+
+.wrapper {
+	padding: 20px;
+	max-width: 350px;
+	background: rgba(255, 255, 255, 0.95);
+	box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.plates {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	list-style: none;
+}
+
+.plates li {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	padding: 10px 0;
+	font-weight: 100;
+	display: flex;
+}
+
+.plates label {
+	flex: 1;
+	cursor: pointer;
+}
+
+.plates input {
+	display: none;
+}
+
+.plates input + label:before {
+	content: '⬜️';
+	margin-right: 10px;
+}
+
+.plates input:checked + label:before {
+	content: '🌮';
+}
+
+.add-items {
+	margin-top: 20px;
+}
+
+.add-items input {
+	padding: 10px;
+	outline: 0;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Mouse Move Effect */
+
+.hero {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+}
+
+.mouseh1 {
+	text-shadow: 10px 10px 0 rgba(0, 0, 0, 1);
+	font-size: 100px;
+}
+
+/* Webcam Fun CSS */
+
+.photobooth {
+	background: white;
+	max-width: 150rem;
+	margin: 2rem auto;
+	border-radius: 2px;
+}
+
+/*clearfix*/
+.photobooth:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.webcamplayer {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 200px;
+}
+
+/*
+	Strip!
+  */
+
+.strip {
+	padding: 2rem;
+}
+
+.strip img {
+	width: 100px;
+	overflow-x: scroll;
+	padding: 0.8rem 0.8rem 2.5rem 0.8rem;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+	background: white;
+}
+
+.strip a:nth-child(5n + 1) img {
+	transform: rotate(10deg);
+}
+.strip a:nth-child(5n + 2) img {
+	transform: rotate(-2deg);
+}
+.strip a:nth-child(5n + 3) img {
+	transform: rotate(8deg);
+}
+.strip a:nth-child(5n + 4) img {
+	transform: rotate(-11deg);
+}
+.strip a:nth-child(5n + 5) img {
+	transform: rotate(12deg);
+}

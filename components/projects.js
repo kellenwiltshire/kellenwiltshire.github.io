@@ -41,12 +41,22 @@ export const projects = [
 	},
 	{
 		id: 5,
-		name: 'Robofriends',
+		name: 'Frontend Assessment',
 		description:
-			'Robofriends was the first website I created with React. It is relatively simple and was very helpful for learning how to intereact with API as well as the freedom and functionality that React has. The website is responsive to searches which will sort through the Robots to find who you are looking for. It was great introduction into the React world.',
-		tools: 'Create React App',
-		link: 'https://kellenwiltshire.github.io/RoboFriends-ztm/',
-		git: 'https://github.com/kellenwiltshire/RoboFriends-ztm',
-		img: 'Robofriends',
+			'This was a Frontend Assessment I completed. The goal was to fetch information from an API and then display that information in a way that is searchable. Then, you must be able to add "tags" to each "student" that is also searchable. Each "student" card is also expandable showing their recent grades.',
+		tools: 'NextJS',
+		link: 'https://frontend-assessment.vercel.app',
+		git: 'https://github.com/kellenwiltshire/frontend-assessment',
+		img: 'frontendassessment',
+	},
+	{
+		id: 6,
+		name: 'Javascript Exercises',
+		description:
+			'A collection of JavaScript exercises I have made while completing the course JS30 by Wes Bos',
+		tools: 'JavaScript',
+		link: '/jsexercises',
+		git: 'https://github.com/kellenwiltshire',
+		img: 'jsexercises',
 	},
 ];

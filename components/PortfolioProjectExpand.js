@@ -20,11 +20,11 @@ function PortfolioProjectExpand({
 					width={1920}
 				/>
 			);
-		} else if (img === 'Robofriends') {
+		} else if (img === 'frontendassessment') {
 			return (
 				<Image
-					src='/robofriends.png'
-					alt='Robofriend Screenshot'
+					src='/frontendassessment.png'
+					alt='Frontend Assessment Screenshot'
 					height={1080}
 					width={1920}
 				/>
@@ -52,6 +52,15 @@ function PortfolioProjectExpand({
 				<Image
 					src='/wemadeit.png'
 					alt='We Made It Screenshot'
+					height={1080}
+					width={1920}
+				/>
+			);
+		} else if (img === 'jsexercises') {
+			return (
+				<Image
+					src='/javascript.svg'
+					alt='Javascript Img'
 					height={1080}
 					width={1920}
 				/>

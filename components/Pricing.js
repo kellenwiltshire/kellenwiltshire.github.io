@@ -1,75 +1,96 @@
 import React from 'react';
+import Checkmark from './icons/Checkmark';
 
 const pricing = () => {
 	return (
-		<div
-			id='component'
-			className='w-screen flex flex-row justify-center flex-wrap items-center'
-		>
-			<h1 className='text-4xl sm:text-6xl text-gray-600 border-b-2 w-full text-center order-first'>
-				Services I Offer
-			</h1>
-			{/* 5 Page with 12 Month Support */}
-			<div class='w-full lg:w-1/2 xl:w-1/6 shadow m-3 order-2 xl:order-3'>
-				<div class='text-center justify-center align-middle flex flex-col h-20 p-2 m-0 bg-green-400 sm:text-xs'>
-					<h1 className='text-xl'>5 Page Website with Support for 12 Months</h1>
-				</div>
-				<div class='text-center justify-center align-middle flex flex-col h-auto m-3 sm:text-xs'>
-					<h3 className='text-base'>Starting at $150/month</h3>
-					<ul className='leading-loose list-disc text-left m-5 text-base'>
-						<li>Static 5 Page Website</li>
-						<li>Unlimited Revisions before initial Launch</li>
-						<li>Ongoing support for content updates</li>
-						<li>Domain Purchasing and Hosting Included</li>
-						<li>Once a Year Site Remodel</li>
-						<li>Responsive and Mobile Friendly</li>
-						<li>
-							Perfect for a Small Business that needs ongoing support and
-							updates
-						</li>
-					</ul>
-				</div>
-				<div class='text-center justify-center align-middle flex flex-col h-20 p-2 m-0 bg-green-400 sm:text-xs'>
-					<h1 className='text-xl'>Best Deal!</h1>
-				</div>
+		<div className='container px-5 py-24 mx-auto'>
+			<div className='flex flex-col text-center w-full mb-10'>
+				<h1 className='sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900'>
+					Pricing
+				</h1>
+				<p className='lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500'>
+					Whatever your budget, I've got a solution!
+				</p>
 			</div>
-			{/* 5 Page Standard Website */}
-			<div class='w-full lg:w-1/2 xl:w-1/6 shadow m-3 order-3 xl:order-2'>
-				<div class='text-center justify-center align-middle flex flex-col h-20 p-2 m-0 sm:text-xs bg-gray-300'>
-					<h1 className='text-xl'>Standard 5 Page Website</h1>
+			<div className='flex flex-wrap justify-center -m-4'>
+				<div className='p-4 my-3 xl:w-1/4 md:w-1/2 w-full'>
+					<div className='h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col'>
+						<h2 className='text-xl tracking-widest title-font mb-1 font-medium'>
+							5 Page Site
+						</h2>
+						<span className='text-xs ml-1 font-normal text-gray-500'>
+							Staring At $0 Down and
+						</span>
+
+						<h1 className='text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200'>
+							<span>$150</span>
+							<span className='text-lg ml-1 font-normal text-gray-500'>
+								/mo
+							</span>
+						</h1>
+						<p className='flex items-center text-gray-600 mb-2'>
+							<Checkmark />
+							Unlimited Revisions before Launch
+						</p>
+						<p className='flex items-center text-gray-600 mb-2'>
+							<Checkmark />
+							Ongoing Support for Content Updates
+						</p>
+						<p className='flex items-center text-gray-600 mb-2'>
+							<Checkmark />
+							Domain Purchasing and Hosting Included
+						</p>
+						<p className='flex items-center text-gray-600 mb-2'>
+							<Checkmark />
+							Responseive and Mobile Friendly
+						</p>
+						<p className='flex items-center text-gray-600 mb-6'>
+							<Checkmark />
+							Monthly Analytics Updates and Security Reviews
+						</p>
+					</div>
 				</div>
-				<div class='text-center justify-center align-middle flex flex-col h-auto m-3 sm:text-xs'>
-					<h3 className='text-base'>Starting at $600</h3>
-					<ul className='leading-loose list-disc text-left m-5 text-base'>
-						<li>Static 5 Page Website</li>
-						<li>Unlimited Revisions before Delivery</li>
-						<li>30 Day Support after Delivery</li>
-						<li>Responsive and Mobile Friendly</li>
-						<li>
-							Perfect for a Small Business looking to make their presence
-							online!
-						</li>
-					</ul>
-				</div>
-			</div>
-			{/* 5 Page with 6 Month Support */}
-			<div class='w-full lg:w-1/2 xl:w-1/6 shadow m-3 order-4 xl:order-4'>
-				<div class='text-center justify-center align-middle flex flex-col h-20 p-2 m-0 sm:text-xs bg-gray-300'>
-					<h1 className='text-xl'>5 Page Website with Support for 6 Months</h1>
-				</div>
-				<div class='text-center justify-center align-middle flex flex-col h-auto m-3 sm:text-xs'>
-					<h3 className='text-base'>Starting at $200/month</h3>
-					<ul className='leading-loose list-disc text-left m-5 text-base'>
-						<li>Static 5 Page Website</li>
-						<li>Unlimited Revisions before Initial Launch</li>
-						<li>Ongoing support for content updates</li>
-						<li>Domain Purchasing and Hosting Included</li>
-						<li>Responsive and Mobile Friendly</li>
-						<li>
-							Perfect for a Small Business that needs ongoing support and
-							updates
-						</li>
-					</ul>
+				<div className='p-4 my-3 xl:w-1/4 md:w-1/2 w-full'>
+					<div className='h-full p-6 rounded-lg border-2 border-gray-300 flex flex-col'>
+						<h2 className='text-xl tracking-widest title-font mb-1 font-medium'>
+							Square/Shopify Site
+						</h2>
+						<span className='text-xs ml-1 font-normal text-gray-500'>
+							Staring At
+						</span>
+
+						<h1 className='text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200'>
+							<span>$150</span>
+							<span className='text-lg ml-1 font-normal text-gray-500'>
+								/mo
+							</span>
+						</h1>
+						<p className='flex items-center text-gray-600 mb-2'>
+							<Checkmark />
+							Unlimited Revisions before Launch
+						</p>
+						<p className='flex items-center text-gray-600 mb-2'>
+							<Checkmark />
+							Ongoing Support for Content Updates
+						</p>
+						<p className='flex items-center text-gray-600 mb-2'>
+							<Checkmark />
+							<p>
+								Initial Domain Purchasing and Hosting Included
+								<sub className='text-xs'>
+									(additional fees may apply depending on traffic)
+								</sub>
+							</p>
+						</p>
+						<p className='flex items-center text-gray-600 mb-2'>
+							<Checkmark />
+							Responseive and Mobile Friendly
+						</p>
+						<p className='flex items-center text-gray-600 mb-6'>
+							<Checkmark />
+							Monthly Analytics Updates and Security Reviews
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
