@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Layout from '../../components/Layout';
 import Link from 'next/link';
-import ArrowCompass from '../../components/icons/arrowcompass';
+import ArrowCompass from '../../components/icons/ArrowCompass';
 
 function geolocation() {
 	useEffect(() => {
