@@ -68,6 +68,13 @@ export const jsexercises = [
 		name: 'Webcam Fun',
 		description:
 			"A JS exercise that allows you to have some fun with your webcam! Make a custom Green Screen and take photo's!",
-		link: '/exercises/textdropshadow',
+		link: '/exercises/webcamfun',
+	},
+	{
+		exercise: 12,
+		name: 'Geolocation',
+		description:
+			'A JS exercise that shows your current location, speed, and heading!',
+		link: '/exercises/geolocation',
 	},
 ];
