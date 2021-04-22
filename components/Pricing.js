@@ -19,7 +19,7 @@ const pricing = () => {
 							5 Page Site
 						</h2>
 						<span className='text-xs ml-1 font-normal text-gray-500'>
-							Staring At $0 Down and
+							Starting At $0 Down and
 						</span>
 
 						<h1 className='text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200'>
@@ -56,7 +56,7 @@ const pricing = () => {
 							Square/Shopify Site
 						</h2>
 						<span className='text-xs ml-1 font-normal text-gray-500'>
-							Staring At
+							Starting At
 						</span>
 
 						<h1 className='text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200'>
