@@ -4,7 +4,6 @@ import Link from 'next/link';
 
 function webcamfun() {
 	let ctx, canvas, video, strip, snap;
-	const [pixelEffect, setPixelEffect] = useState('');
 
 	useEffect(() => {
 		video = document.querySelector('.webcamplayer');
@@ -14,7 +13,6 @@ function webcamfun() {
 		snap = document.querySelector('.snap');
 
 		getVideo();
-
 		video.addEventListener('canplay', paintToCanvas);
 	}, []);
 
@@ -37,19 +35,10 @@ function webcamfun() {
 		return setInterval(() => {
 			ctx.drawImage(video, 0, 0, width, height);
 			let pixels = ctx.getImageData(0, 0, width, height);
-			if (pixelEffect === 'red') {
-				// pixels = redEffect(pixels);
-				ctx.putImageData(pixels, 0, 0);
-			} else if (pixelEffect === 'rgb') {
-				// pixels = rgbSplit(pixels);
-				ctx.putImageData(pixels, 0, 0);
-			} else if (pixelEffect === 'screen') {
-				pixels = greenScreen(pixels);
 
-				ctx.putImageData(pixels, 0, 0);
-			} else {
-				ctx.putImageData(pixels, 0, 0);
-			}
+			pixels = greenScreen(pixels);
+
+			ctx.putImageData(pixels, 0, 0);
 		}, 16);
 	};
 
@@ -117,19 +106,23 @@ function webcamfun() {
 		<Layout title='Webcam Fun'>
 			<Link href='/jsexercises'>
 				<a>
-					<div className='max-w-md py-8 px-4 flex flex-wrap flex-row justify-center items-center bg-blue-700 hover:text-white'>
+					<div className='w-full py-8 px-4 flex flex-wrap flex-row justify-center items-center bg-blue-700 hover:text-white'>
 						<p className='text-xl w-full text-center'>Back to JS Exercises</p>
 					</div>
 				</a>
 			</Link>
 			<div className='w-full h-full'>
-				<div className='m-8 w-full h-auto'>
+				<div className='m-8 w-full h-auto flex flex-row flex-wrap justify-center'>
+					<h1 className='text-2xl text-center w-full'>
+						Mess around! Take a Photo and save it!
+					</h1>
 					<button
-						className='inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 m-5'
+						className='inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 my-5'
 						onClick={takePhoto}
 					>
 						Take Photo
 					</button>
+
 					<div className='w-full h-full'>
 						<div className='w-full flex flex-row justify-evenly'>
 							<div className='rgb'>
