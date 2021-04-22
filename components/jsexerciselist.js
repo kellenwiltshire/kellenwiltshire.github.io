@@ -43,30 +43,38 @@ export const jsexercises = [
 		description: 'Draw something awesome with HTML Canvas!',
 		link: '/exercises/htmlcanvas',
 	},
-	// {
-	// 	exercise: 8,
-	// 	name: 'Video Player',
-	// 	description: 'A Custom made HTML Video Player',
-	// 	link: '/exercises/videoplayer',
-	// },
 	{
-		exercise: 9,
+		exercise: 8,
 		name: 'Slide In on Scroll',
 		description: 'JS Excercise to have images slide in while scrolling',
 		link: '/exercises/slidescroll',
 	},
 	{
-		exercise: 10,
+		exercise: 9,
 		name: 'Local Storage ToDo List',
 		description:
 			'A Local Storage ToDo List that will remember your items and completed items between page refreshes',
 		link: '/exercises/localstorage',
 	},
 	{
-		exercise: 11,
+		exercise: 10,
 		name: 'Mouse Drop Shadow',
 		description:
 			'A JS exercise that moves a drop shadow depending on mouse location',
 		link: '/exercises/textdropshadow',
+	},
+	{
+		exercise: 11,
+		name: 'Webcam Fun',
+		description:
+			"A JS exercise that allows you to have some fun with your webcam! Make a custom Green Screen and take photo's!",
+		link: '/exercises/webcamfun',
+	},
+	{
+		exercise: 12,
+		name: 'Geolocation',
+		description:
+			'A JS exercise that shows your current location, speed, and heading!',
+		link: '/exercises/geolocation',
 	},
 ];
