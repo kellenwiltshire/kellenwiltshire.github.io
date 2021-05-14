@@ -26,7 +26,7 @@ const portfolioProjects = ({
 						onClick={() => setOpen(false)}
 						className='absolute w-screen h-screen z-10 flex place-items-center justify-center'
 					>
-						<div className='bg-white flex justify-center rounded shadow-2xl lg:mx-72'>
+						<div className='bg-white flex justify-center rounded shadow-2xl lg:mx-20'>
 							<PortfolioProjectExpand
 								name={name}
 								description={description}
