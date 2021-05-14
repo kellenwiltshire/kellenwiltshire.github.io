@@ -23,118 +23,86 @@ const contact = () => {
 		);
 	}
 	return (
-		<div
-			id='component'
-			className='flex flex-col justify-center w-screen items-center mb-10'
-		>
+		<div className='w-screen flex justify-center flex-wrap mx-auto'>
 			<h1 className='text-4xl sm:text-6xl text-blue-600 w-full text-center mb-0 sm:mb-10'>
 				Reach Out
 			</h1>
-			<div className='mt-5 sm:mt-0 rounded-lg border-2 border-gray-300 xl:w-2/5 w-11/12'>
-				<div className='md:grid md:grid-cols-1 md:gap-6'>
-					<div className='mt-5 md:mt-0 md:col-span-2'>
-						<form id='contact' onSubmit={handleSubmit}>
-							<div className='shadow overflow-hidden sm:rounded-md'>
-								<div className='px-4 py-5 bg-white sm:p-6'>
-									<div className='grid grid-cols-6 gap-6'>
-										<div className='col-span-6 sm:col-span-3 m-2'>
-											<label
-												for='first_name'
-												className='block text-sm font-medium text-black'
-											>
-												First name
-											</label>
-											<input
-												type='text'
-												name='first_name'
-												id='first_name'
-												autocomplete='given-name'
-												className='mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-500 rounded-md'
-												required
-											/>
-										</div>
+			<div class='container mx-auto'>
+				<div class='max-w-2xl mx-auto my-10 bg-white p-5'>
+					<div class='m-7'>
+						<form onSubmit={handleSubmit}>
+							<div class='mb-6'>
+								<label
+									for='name'
+									class='block mb-2 text-sm text-gray-600 dark:text-gray-400'
+								>
+									Full Name
+								</label>
+								<input
+									type='text'
+									name='name'
+									id='name'
+									placeholder='John Doe'
+									required
+									class='w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500'
+								/>
+							</div>
+							<div class='mb-6'>
+								<label
+									for='email'
+									class='block mb-2 text-sm text-gray-600 dark:text-gray-400'
+								>
+									Email Address
+								</label>
+								<input
+									type='email'
+									name='email'
+									id='email'
+									placeholder='you@company.com'
+									required
+									class='w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500'
+								/>
+							</div>
+							<div class='mb-6'>
+								<label
+									for='phone'
+									class='text-sm text-gray-600 dark:text-gray-400'
+								>
+									Phone Number
+								</label>
+								<input
+									type='text'
+									name='phone'
+									id='phone'
+									placeholder='+1 (555) 1234-567'
+									required
+									class='w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500'
+								/>
+							</div>
+							<div class='mb-6'>
+								<label
+									for='message'
+									class='block mb-2 text-sm text-gray-600 dark:text-gray-400'
+								>
+									Your Message
+								</label>
 
-										<div className='col-span-6 sm:col-span-3 m-2'>
-											<label
-												for='last_name'
-												className='block text-sm font-medium text-black'
-											>
-												Last name
-											</label>
-											<input
-												type='text'
-												name='last_name'
-												id='last_name'
-												autocomplete='family-name'
-												className='mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-500 rounded-md'
-												required
-											/>
-										</div>
-
-										<div className='col-span-6 sm:col-span-5 m-2'>
-											<label
-												for='email_address'
-												className='block text-sm font-medium text-black'
-											>
-												Email address
-											</label>
-											<input
-												type='text'
-												name='email_address'
-												id='email_address'
-												autocomplete='email'
-												className='mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-500 rounded-md'
-												required
-											/>
-										</div>
-
-										<div className='col-span-6 sm:col-span-3 m-2'>
-											<label
-												for='product'
-												className='block text-sm font-medium text-black'
-											>
-												Inquiring About
-											</label>
-											<select
-												id='product'
-												name='product'
-												autocomplete='product'
-												className='mt-1 block w-full py-2 px-3 border border-gray-500 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm'
-											>
-												<option>Standard 5 Page Site</option>
-												<option>Square/Shopify Site</option>
-												<option>General Inquiry</option>
-											</select>
-										</div>
-
-										<div className='col-span-6 m-2'>
-											<label
-												for='about'
-												className='block text-sm font-medium text-black'
-											>
-												Brief Description About Your Project
-											</label>
-											<div className='mt-1'>
-												<textarea
-													id='description'
-													name='description'
-													rows='3'
-													className='shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border-gray-500 rounded-md'
-													placeholder='Description'
-													required
-												></textarea>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div className='px-4 py-3 bg-gray-50 text-right sm:px-6'>
-									<button
-										type='submit'
-										className='inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
-									>
-										Submit
-									</button>
-								</div>
+								<textarea
+									rows='5'
+									name='message'
+									id='message'
+									placeholder='Your Message'
+									class='w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500'
+									required
+								></textarea>
+							</div>
+							<div class='mb-6'>
+								<button
+									type='submit'
+									class='w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none'
+								>
+									Send Message
+								</button>
 							</div>
 						</form>
 					</div>
