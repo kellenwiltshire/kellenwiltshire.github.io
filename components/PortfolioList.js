@@ -12,11 +12,6 @@ const portfolioList = ({ projects }) => {
 					<PortfolioProjects
 						key={proj.id}
 						id={proj.id}
-						name={proj.name}
-						description={proj.description}
-						tools={proj.tools}
-						link={proj.link}
-						git={proj.git}
 						img={proj.img}
 					></PortfolioProjects>
 				);
