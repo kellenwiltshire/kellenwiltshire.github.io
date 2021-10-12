@@ -3,12 +3,12 @@ export const projects = [
 		id: '1',
 		name: 'We Made It',
 		description:
-			'We Made It is a Handmade Boutique retailer with an online presence. The site integrates with the Square API to show products and allow for searching of those products. The site is created with NextJS with a NodeJS backend to mange API requests. The Website allows users to browse the stores selection and make purchases through Square. This site was created to allow the owner to make sure their online store reflected their in-person store. Whenever they add an item to their Square inventory, that item immediately shows up on the website as well allowing for an up-to-date experience for the user.',
+			'This was the first site I made for a Client. The site was originally a store front for a Merchant Servicer called Square. It has since moved from Square to Shopify which allowed me to learn GraphQL. The project is built with NextJS and utilizies both ISR and SSR to make sure that the site is fast and responsive while maintaining great SEO. This project is ongoing as the needs of the Client change and grow.',
 		tools: 'NextJs, NodeJS, Heroku, Vercel',
 		link: 'https://we-made-it.ca/',
 		git: 'https://github.com/kellenwiltshire/we-made-it',
 		img: '/wemadeit.png',
-		type: 'Square',
+		type: 'Shopify',
 	},
 	{
 		id: '2',
