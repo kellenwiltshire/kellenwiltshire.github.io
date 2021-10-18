@@ -2,7 +2,7 @@ import 'tailwindcss/tailwind.css';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import * as gtag from '../lib/gtag';
-import '../styles/jsexercises.css';
+import Layout from '../components/Layout/Layout';
 
 function MyApp({ Component, pageProps }) {
 	const router = useRouter();
@@ -15,7 +15,11 @@ function MyApp({ Component, pageProps }) {
 			router.events.off('routeChangeComplete', handleRouteChange);
 		};
 	}, [router.events]);
-	return <Component {...pageProps} />;
+	return (
+		<Layout>
+			<Component {...pageProps} />
+		</Layout>
+	);
 }
 
 export default MyApp;
