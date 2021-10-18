@@ -122,9 +122,12 @@ export default function Contact() {
 										className='flex-shrink-0 w-6 h-6 text-indigo-200'
 										aria-hidden='true'
 									/>
-									<span className='ml-3'>
+									<a
+										href='mailto:webdevelopment@kellenwiltshire.com'
+										className='ml-3'
+									>
 										webdevelopment@kellenwiltshire.com
-									</span>
+									</a>
 								</dd>
 							</dl>
 							<ul role='list' className='mt-8 flex space-x-12'>
@@ -137,8 +140,8 @@ export default function Contact() {
 										<svg
 											xmlns='http://www.w3.org/2000/svg'
 											class='icon icon-tabler icon-tabler-brand-linkedin'
-											width='24'
-											height='24'
+											width='28'
+											height='28'
 											viewBox='0 0 24 24'
 											strokeWidth='1.5'
 											stroke='#ffffff'
@@ -165,8 +168,8 @@ export default function Contact() {
 										<svg
 											xmlns='http://www.w3.org/2000/svg'
 											className='icon icon-tabler icon-tabler-brand-github'
-											width='24'
-											height='24'
+											width='28'
+											height='28'
 											viewBox='0 0 24 24'
 											strokeWidth='1.5'
 											stroke='#ffffff'

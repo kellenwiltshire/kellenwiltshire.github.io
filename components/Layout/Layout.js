@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Footer from './Footer';
 
 export default function Layout({ children, title }) {
 	return (
@@ -17,7 +18,7 @@ export default function Layout({ children, title }) {
 				/>
 			</Head>
 			<main>{children}</main>
-			{/* <Footer /> */}
+			<Footer />
 		</div>
 	);
 }
