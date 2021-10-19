@@ -1,6 +1,6 @@
 import React from 'react';
 
-function project() {
+export default function project() {
 	return (
 		<div></div>
 	);
