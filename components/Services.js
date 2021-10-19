@@ -48,7 +48,7 @@ const tiers = [
 	},
 ];
 
-export default function Example() {
+export default function Services() {
 	return (
 		<div className='bg-gray-900'>
 			<div className='pt-12 sm:pt-16 lg:pt-24'>
@@ -67,7 +67,7 @@ export default function Example() {
 				<div className='relative'>
 					<div className='absolute inset-0 h-3/4 bg-gray-900' />
 					<div className='relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-						<div className='max-w-md mx-auto space-y-4 lg:max-w-5xl lg:grid lg:grid-cols-2 lg:gap-5 lg:space-y-0'>
+						<div className='max-w-md mx-auto space-y-4 lg:max-w-5xl lg:grid lg:grid-cols-3 lg:gap-5 lg:space-y-0'>
 							{tiers.map((tier) => (
 								<div
 									key={tier.name}
