@@ -1,6 +1,6 @@
 export default function Contact() {
 	return (
-		<div id='contact' className='relative bg-white'>
+		<div id='contact' className='relative bg-gray-50'>
 			<div className='lg:absolute lg:inset-0'>
 				<div className='lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2'>
 					<img

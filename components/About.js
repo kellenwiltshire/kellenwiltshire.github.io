@@ -13,7 +13,7 @@ const people = [
 
 export default function About() {
 	return (
-		<div id='about' className='bg-white'>
+		<div id='about' className='bg-gray-50'>
 			<div className='pt-12 sm:pt-16 lg:pt-24'>
 				<div className='max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8'>
 					<div className='max-w-3xl mx-auto space-y-2 lg:max-w-none'>
