@@ -14,9 +14,9 @@ export default function PortfolioCards({ project }) {
 					className='w-full h-full object-center object-cover group-hover:opacity-75'
 				/>
 			</div>
-			<h3 className='mt-4 text-lg text-gray-900'>{project.name}</h3>
-			<p className=' text-xs text-gray-700'>{project.type}</p>
-			<p className='mt-1 text-sm font-medium text-gray-700'>
+			<h3 className='mt-4 text-lg text-white'>{project.name}</h3>
+			<p className=' text-xs text-gray-100'>{project.type}</p>
+			<p className='mt-1 text-sm font-medium text-gray-100'>
 				{project.description}
 			</p>
 		</a>

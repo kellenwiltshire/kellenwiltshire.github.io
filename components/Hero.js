@@ -4,16 +4,16 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import Toggle from './Buttons/Toggle';
 
 const navigation = [
-	{ name: 'Home', href: '#' },
-	{ name: 'About', href: '#' },
-	{ name: 'Services', href: '#' },
-	{ name: 'Portfolio', href: '#' },
-	{ name: 'Contact', href: '#' },
+	{ name: 'Home', href: '#hero' },
+	{ name: 'About', href: '#about' },
+	{ name: 'Services', href: '#services' },
+	{ name: 'Portfolio', href: '#portfolio' },
+	{ name: 'Contact', href: '#contact' },
 ];
 
 export default function Hero() {
 	return (
-		<div className='relative bg-white overflow-hidden'>
+		<div id='hero' className='relative bg-white overflow-hidden'>
 			<div className='max-w-7xl mx-auto'>
 				<div className='relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32'>
 					<svg

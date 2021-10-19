@@ -5,13 +5,13 @@ const tiers = [
 		name: 'Static',
 		href: '#',
 		priceMonthly: 100,
-		description: 'Perfect Site for Your Small Business',
+		description: 'Create the Perfect Site for Your Small Business',
 		features: [
 			'Starting at $0 Down',
 			'Unlimited Revisions before Launch',
 			'Ongoing Support for Content Updates',
 			'Domain Purchasing and Hosting Included',
-			'Responseive and Mobile Friendly',
+			'Responsive and Mobile Friendly',
 			'Monthly Analytics Updates and Security Reviews',
 			'Search Engine Optomization',
 		],
@@ -26,7 +26,7 @@ const tiers = [
 			'Unlimited Revisions before Launch',
 			'Ongoing Support for Content Updates',
 			'Domain Purchasing Included',
-			'Responseive and Mobile Friendly',
+			'Responsive and Mobile Friendly',
 			'Monthly Analytics Updates and Security Reviews',
 			'Search Engine Optomization',
 		],
@@ -41,7 +41,7 @@ const tiers = [
 			'Unlimited Revisions before Launch',
 			'Ongoing Support for Content Updates',
 			'Domain Purchasing Included',
-			'Responseive and Mobile Friendly',
+			'Responsive and Mobile Friendly',
 			'Monthly Analytics Updates and Security Reviews',
 			'Search Engine Optomization',
 		],
@@ -50,7 +50,7 @@ const tiers = [
 
 export default function Services() {
 	return (
-		<div className='bg-blue-600'>
+		<div id='services' className='bg-blue-600'>
 			<div className='pt-12 sm:pt-16 lg:pt-24'>
 				<div className='max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8'>
 					<div className='max-w-3xl mx-auto space-y-2 lg:max-w-none'>
@@ -108,15 +108,6 @@ export default function Services() {
 												</li>
 											))}
 										</ul>
-										<div className='rounded-md shadow'>
-											<a
-												href={tier.href}
-												className='flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-900'
-												aria-describedby='tier-standard'
-											>
-												Get started
-											</a>
-										</div>
 									</div>
 								</div>
 							))}
