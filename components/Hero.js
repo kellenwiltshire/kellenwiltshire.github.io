@@ -104,18 +104,12 @@ export default function Hero() {
 											</a>
 										))}
 									</div>
-									<a
-										href='#'
-										className='block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100'
-									>
-										Log in
-									</a>
 								</div>
 							</Popover.Panel>
 						</Transition>
 					</Popover>
 
-					<main className='mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 min-h-screen'>
+					<main className='mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 sm:min-h-screen'>
 						<div className='sm:text-center lg:text-left'>
 							<h1 className='text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl flex flex-col'>
 								<span className='block xl:inline'>Kellen Wiltshire</span>
