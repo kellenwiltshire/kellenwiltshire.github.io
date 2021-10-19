@@ -71,7 +71,7 @@ export default function Services() {
 							{tiers.map((tier) => (
 								<div
 									key={tier.name}
-									className='flex flex-col rounded-lg shadow-lg overflow-hidden'
+									className='flex flex-col rounded-lg shadow-2xl overflow-hidden'
 								>
 									<div className='px-6 py-8 bg-white sm:p-10 sm:pb-6'>
 										<div>
