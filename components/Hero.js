@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import Toggle from './Buttons/Toggle';
 
 const navigation = [
 	{ name: 'Home', href: '#' },
@@ -58,6 +59,7 @@ export default function Hero() {
 											{item.name}
 										</a>
 									))}
+									<Toggle />
 								</div>
 							</nav>
 						</div>
