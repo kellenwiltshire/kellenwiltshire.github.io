@@ -50,7 +50,7 @@ const tiers = [
 
 export default function Services() {
 	return (
-		<div className='bg-gray-900'>
+		<div className='bg-blue-600'>
 			<div className='pt-12 sm:pt-16 lg:pt-24'>
 				<div className='max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8'>
 					<div className='max-w-3xl mx-auto space-y-2 lg:max-w-none'>
@@ -65,7 +65,7 @@ export default function Services() {
 			</div>
 			<div className='mt-8 pb-12 bg-gray-50 sm:mt-12 sm:pb-16 lg:mt-16 lg:pb-24'>
 				<div className='relative'>
-					<div className='absolute inset-0 h-3/4 bg-gray-900' />
+					<div className='absolute inset-0 h-3/4 bg-blue-600' />
 					<div className='relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
 						<div className='max-w-md mx-auto space-y-4 lg:max-w-5xl lg:grid lg:grid-cols-3 lg:gap-5 lg:space-y-0'>
 							{tiers.map((tier) => (
