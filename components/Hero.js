@@ -1,4 +1,4 @@
-import { Fragment } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import Toggle from './Buttons/Toggle';
@@ -12,13 +12,20 @@ const navigation = [
 ];
 
 export default function Hero({ isDarkMode, setIsDarkMode }) {
+	const [fillColour, setFillColour] = useState('#ffffff');
+	useEffect(() => {
+		isDarkMode ? setFillColour('#374151') : setFillColour('#ffffff');
+	}, [isDarkMode]);
 	return (
-		<div id='hero' className='relative bg-white overflow-hidden'>
+		<div
+			id='hero'
+			className='dark:bg-gray-700 relative bg-white overflow-hidden'
+		>
 			<div className='max-w-7xl mx-auto'>
-				<div className='relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32'>
+				<div className='relative z-10 pb-8 bg-white dark:bg-gray-700 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32'>
 					<svg
 						className='hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2'
-						fill='currentColor'
+						fill={fillColour}
 						viewBox='0 0 100 100'
 						preserveAspectRatio='none'
 						aria-hidden='true'
@@ -42,7 +49,7 @@ export default function Hero({ isDarkMode, setIsDarkMode }) {
 											/>
 										</a>
 										<div className='-mr-2 flex items-center md:hidden'>
-											<Popover.Button className='bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500'>
+											<Popover.Button className='bg-white dark:bg-gray-700 dark:text-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500'>
 												<span className='sr-only'>Open main menu</span>
 												<MenuIcon className='h-6 w-6' aria-hidden='true' />
 											</Popover.Button>
@@ -54,7 +61,7 @@ export default function Hero({ isDarkMode, setIsDarkMode }) {
 										<a
 											key={item.name}
 											href={item.href}
-											className='font-medium text-gray-500 hover:text-gray-900'
+											className='font-medium dark:text-white text-gray-500 hover:text-gray-900'
 										>
 											{item.name}
 										</a>
@@ -80,7 +87,7 @@ export default function Hero({ isDarkMode, setIsDarkMode }) {
 								focus
 								className='absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden'
 							>
-								<div className='rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden'>
+								<div className='rounded-lg shadow-md bg-white dark:bg-gray-700 ring-1 ring-black ring-opacity-5 overflow-hidden'>
 									<div className='px-5 pt-4 flex items-center justify-between'>
 										<div>
 											<img
@@ -90,7 +97,7 @@ export default function Hero({ isDarkMode, setIsDarkMode }) {
 											/>
 										</div>
 										<div className='-mr-2'>
-											<Popover.Button className='bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500'>
+											<Popover.Button className='bg-white dark:bg-gray-700 dark:text-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500'>
 												<span className='sr-only'>Close main menu</span>
 												<XIcon className='h-6 w-6' aria-hidden='true' />
 											</Popover.Button>
@@ -114,13 +121,13 @@ export default function Hero({ isDarkMode, setIsDarkMode }) {
 
 					<main className='mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 sm:mb-12'>
 						<div className='sm:text-center lg:text-left'>
-							<h1 className='text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl flex flex-col'>
+							<h1 className='text-4xl tracking-tight font-extrabold dark:text-white text-gray-900 sm:text-5xl md:text-6xl flex flex-col'>
 								<span className='block xl:inline'>Kellen Wiltshire</span>
 								<span className='block text-indigo-600 xl:inline'>
 									Web Developer
 								</span>
 							</h1>
-							<p className='mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0'>
+							<p className='mt-3 text-base dark:text-gray-100 text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0'>
 								Kingston, Ontario, Canada
 							</p>
 							<div className='mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start'>

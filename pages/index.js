@@ -5,10 +5,10 @@ import Portfolio from '../components/Portfolio/Portfolio';
 import Services from '../components/Services';
 import { projects } from '../utils/projects';
 
-export default function Home() {
+export default function Home({ setIsDarkMode, isDarkMode }) {
 	return (
 		<>
-			<Hero />
+			<Hero setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode} />
 			<About />
 			<Services />
 			<Portfolio projects={projects} />

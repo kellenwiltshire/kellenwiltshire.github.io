@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Switch } from '@headlessui/react';
 import { SunIcon, MoonIcon } from '@heroicons/react/outline';
 
@@ -9,14 +9,16 @@ function classNames(...classes) {
 export default function Toggle({ isDarkMode, setIsDarkMode }) {
 	const [enabled, setEnabled] = useState(false);
 
+	const changeDark = () => {
+		setIsDarkMode(!isDarkMode);
+	};
+
 	return (
 		<Switch
 			checked={isDarkMode}
-			onChange={() => {
-				setIsDarkMode(!isDarkMode);
-			}}
+			onChange={changeDark}
 			className={classNames(
-				enabled ? 'bg-gray-600' : 'bg-gray-200',
+				isDarkMode ? 'bg-gray-600' : 'bg-gray-200',
 				'relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500',
 			)}
 		>
