@@ -3,7 +3,7 @@ const people = [
 		name: 'Kellen Wiltshire',
 		role: 'Web Developer',
 		imageUrl: 'https://avatars.githubusercontent.com/u/31140634?v=4',
-		bio: `During this COVID-19 Pandemic, I have taught myself two new things. First, I can now make bread like nobody's business. Second, I learned how to build sweet websites. Though I am still starting out, I am eager to learn more and dive deeper into the world of Web Development
+		bio: `During this COVID-19 Pandemic, I have taught myself two new things. First, I can now make bread like nobody's business. Second, I learned how to build sweet websites. Though I am still starting out, I am eager to learn more and dive deeper into the world of Web Development.
 
         Although I have a fulfilling career helping people seek justice in the Legal System, I was missing using my brain in a technical role. With the extra time working from home I decided to start teaching myself Web Development with the help of the Udemy course Zero-to-Mastery.`,
 		githubUrl: 'https://github.com/kellenwiltshire',
