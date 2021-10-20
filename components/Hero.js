@@ -2,6 +2,7 @@ import { Fragment, useEffect, useState } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import Toggle from './Buttons/Toggle';
+import Code from './SVG/Code';
 
 const navigation = [
 	{ name: 'Home', href: '#hero' },
@@ -13,8 +14,10 @@ const navigation = [
 
 export default function Hero({ isDarkMode, setIsDarkMode }) {
 	const [fillColour, setFillColour] = useState('#ffffff');
+	const [svgColour, setSVGColour] = useState('#4f46e5');
 	useEffect(() => {
 		isDarkMode ? setFillColour('#374151') : setFillColour('#ffffff');
+		isDarkMode ? setSVGColour('#ffffff') : setSVGColour('#4f46e5');
 	}, [isDarkMode]);
 	return (
 		<div
@@ -42,11 +45,9 @@ export default function Hero({ isDarkMode, setIsDarkMode }) {
 								<div className='flex items-center flex-grow flex-shrink-0 lg:flex-grow-0'>
 									<div className='flex items-center justify-between w-full md:w-auto'>
 										<a href='#'>
-											<span className='sr-only'>Workflow</span>
-											<img
-												className='h-8 w-auto sm:h-10'
-												src='https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg'
-											/>
+											<div>
+												<Code colour={svgColour} />
+											</div>
 										</a>
 										<div className='-mr-2 flex items-center md:hidden'>
 											<Popover.Button className='bg-white dark:bg-gray-700 dark:text-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500'>
@@ -90,11 +91,7 @@ export default function Hero({ isDarkMode, setIsDarkMode }) {
 								<div className='rounded-lg shadow-md bg-white dark:bg-gray-700 ring-1 ring-black ring-opacity-5 overflow-hidden'>
 									<div className='px-5 pt-4 flex items-center justify-between'>
 										<div>
-											<img
-												className='h-8 w-auto'
-												src='https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg'
-												alt=''
-											/>
+											<Code colour={fillColour} />
 										</div>
 										<div className='-mr-2'>
 											<Popover.Button className='bg-white dark:bg-gray-700 dark:text-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500'>
