@@ -59,7 +59,7 @@ export default function Services() {
 							Pricing
 						</h2>
 						<p className='text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl'>
-							The right price for you, whoever you are
+							What Can I Help You Create?
 						</p>
 					</div>
 				</div>
