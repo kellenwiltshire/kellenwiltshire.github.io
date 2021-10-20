@@ -2,12 +2,13 @@ import { CheckIcon } from '@heroicons/react/outline';
 
 const tiers = [
 	{
-		name: 'Static',
+		name: 'Brochure Site',
 		href: '#',
 		priceMonthly: 100,
 		description: 'Create the Perfect Site for Your Small Business',
 		features: [
 			'Starting at $0 Down',
+			'5 Page Site',
 			'Unlimited Revisions before Launch',
 			'Ongoing Support for Content Updates',
 			'Domain Purchasing and Hosting Included',
