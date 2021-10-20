@@ -4,7 +4,7 @@ import Footer from './Footer';
 
 export default function Layout({ children, title }) {
 	return (
-		<div>
+		<div id='topDiv' className='dark'>
 			<Head>
 				<title>{title}</title>
 				<link rel='icon' href='/favicon.ico' />

@@ -11,7 +11,7 @@ const navigation = [
 	{ name: 'Contact', href: '#contact' },
 ];
 
-export default function Hero() {
+export default function Hero({ isDarkMode, setIsDarkMode }) {
 	return (
 		<div id='hero' className='relative bg-white overflow-hidden'>
 			<div className='max-w-7xl mx-auto'>
@@ -59,7 +59,10 @@ export default function Hero() {
 											{item.name}
 										</a>
 									))}
-									<Toggle />
+									<Toggle
+										isDarkMode={isDarkMode}
+										setIsDarkMode={setIsDarkMode}
+									/>
 								</div>
 							</nav>
 						</div>

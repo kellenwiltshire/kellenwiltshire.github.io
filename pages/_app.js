@@ -5,6 +5,8 @@ import * as gtag from '../lib/gtag';
 import Layout from '../components/Layout/Layout';
 
 function MyApp({ Component, pageProps }) {
+	const [isDarkMode, setIsDarkMode] = useState(false);
+
 	const router = useRouter();
 	useEffect(() => {
 		const handleRouteChange = (url) => {
@@ -17,7 +19,11 @@ function MyApp({ Component, pageProps }) {
 	}, [router.events]);
 	return (
 		<Layout>
-			<Component {...pageProps} />
+			<Component
+				{...pageProps}
+				isDarkMode={isDarkMode}
+				setIsDarkMode={setIsDarkMode}
+			/>
 		</Layout>
 	);
 }
