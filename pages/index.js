@@ -12,7 +12,7 @@ export default function Home({ setIsDarkMode, isDarkMode }) {
 			<About isDarkMode={isDarkMode} />
 			<Services isDarkMode={isDarkMode} />
 			<Portfolio projects={projects} isDarkMode={isDarkMode} />
-			<Contact />
+			<Contact isDarkMode={isDarkMode} />
 		</>
 	);
 }

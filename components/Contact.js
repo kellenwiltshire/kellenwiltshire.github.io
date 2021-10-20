@@ -1,6 +1,6 @@
 export default function Contact() {
 	return (
-		<div id='contact' className='relative bg-gray-50'>
+		<div id='contact' className='relative bg-gray-50 dark:bg-gray-700'>
 			<div className='lg:absolute lg:inset-0'>
 				<div className='lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2'>
 					<img
@@ -14,10 +14,10 @@ export default function Contact() {
 				<div className='lg:pr-8'>
 					<div className='max-w-md mx-auto sm:max-w-lg lg:mx-0'>
 						<div className='text-center sm:text-left'>
-							<h2 className='text-lg leading-6 font-semibold text-black uppercase tracking-wider'>
+							<h2 className='text-lg leading-6 font-semibold text-black dark:text-white uppercase tracking-wider'>
 								Let's work together
 							</h2>
-							<p className='text-3xl font-extrabold text-black sm:text-4xl lg:text-5xl'>
+							<p className='text-3xl font-extrabold text-black dark:text-white sm:text-4xl lg:text-5xl'>
 								I'd Love to Hear From You!
 							</p>
 						</div>
@@ -29,7 +29,7 @@ export default function Contact() {
 							<div>
 								<label
 									htmlFor='first-name'
-									className='block text-sm font-medium text-gray-700'
+									className='block text-sm font-medium text-gray-700 dark:text-gray-100'
 								>
 									First name
 								</label>
@@ -46,7 +46,7 @@ export default function Contact() {
 							<div>
 								<label
 									htmlFor='last-name'
-									className='block text-sm font-medium text-gray-700'
+									className='block text-sm font-medium text-gray-700 dark:text-gray-100'
 								>
 									Last name
 								</label>
@@ -63,7 +63,7 @@ export default function Contact() {
 							<div className='sm:col-span-2'>
 								<label
 									htmlFor='email'
-									className='block text-sm font-medium text-gray-700'
+									className='block text-sm font-medium text-gray-700 dark:text-gray-100'
 								>
 									Email
 								</label>
@@ -82,13 +82,13 @@ export default function Contact() {
 								<div className='flex justify-between'>
 									<label
 										htmlFor='phone'
-										className='block text-sm font-medium text-gray-700'
+										className='block text-sm font-medium text-gray-700 dark:text-gray-100'
 									>
 										Phone
 									</label>
 									<span
 										id='phone-description'
-										className='text-sm text-gray-500'
+										className='text-sm text-gray-500 dark:text-gray-200'
 									>
 										Optional
 									</span>
@@ -108,7 +108,7 @@ export default function Contact() {
 								<div className='flex justify-between'>
 									<label
 										htmlFor='how-can-we-help'
-										className='block text-sm font-medium text-gray-700'
+										className='block text-sm font-medium text-gray-700 dark:text-gray-100'
 									>
 										What are you looking for?
 									</label>
@@ -128,7 +128,7 @@ export default function Contact() {
 							<div className='sm:col-span-2'>
 								<label
 									htmlFor='how-did-you-hear-about-us'
-									className='block text-sm font-medium text-gray-700'
+									className='block text-sm font-medium text-gray-700 dark:text-gray-100'
 								>
 									How did you hear about me?
 								</label>
