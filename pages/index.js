@@ -10,7 +10,7 @@ export default function Home({ setIsDarkMode, isDarkMode }) {
 		<>
 			<Hero setIsDarkMode={setIsDarkMode} isDarkMode={isDarkMode} />
 			<About isDarkMode={isDarkMode} />
-			<Services />
+			<Services isDarkMode={isDarkMode} />
 			<Portfolio projects={projects} />
 			<Contact />
 		</>
