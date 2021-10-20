@@ -7,7 +7,7 @@ function classNames(...classes) {
 export default function PortfolioCards({ project }) {
 	return (
 		<a key={project.id} className='group'>
-			<div className='w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-8 xl:aspect-h-7'>
+			<div className='w-full aspect-w-1 aspect-h-1 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden xl:aspect-w-8 xl:aspect-h-7'>
 				<img
 					src={project.image}
 					alt={project.description}
