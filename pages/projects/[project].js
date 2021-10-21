@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '../../components/Layout/Navbar';
+import Projects from '../../components/Projects/Projects';
 import { projects } from '../../utils/projects';
 
 export default function project({ project, isDarkMode, setIsDarkMode }) {
@@ -7,6 +8,7 @@ export default function project({ project, isDarkMode, setIsDarkMode }) {
 	return (
 		<div className='bg-white dark:bg-gray-700'>
 			<Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+			<Projects isDarkMode={isDarkMode} project={project} />
 		</div>
 	);
 }

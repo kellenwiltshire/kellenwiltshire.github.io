@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
-import { projects } from '../../utils/projects';
-import Github from './SVG/Github';
+import Github from '../SVG/Github';
 
 export default function Projects({ isDarkMode, project }) {
 	const [svgColour, setSVGColour] = useState('#000000');
@@ -25,7 +24,7 @@ export default function Projects({ isDarkMode, project }) {
 			<div className='mt-8 pb-12 bg-gray-50 dark:bg-gray-700 sm:mt-12 sm:pb-16 lg:mt-16 lg:pb-24'>
 				<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
 					<div className='space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0'>
-						<div className='aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4'>
+						<div className='aspect-w-3 aspect-h-2 sm:aspect-w-4 sm:aspect-h-3'>
 							<img
 								className='object-cover shadow-lg rounded-lg'
 								src={project.image}
@@ -60,7 +59,7 @@ export default function Projects({ isDarkMode, project }) {
 											className='text-gray-400 hover:text-gray-500'
 										>
 											<span className='sr-only'>LinkedIn</span>
-											<Linkedin colour={svgColour} />
+											<Github colour={svgColour} />
 										</a>
 									</li>
 								</ul>
