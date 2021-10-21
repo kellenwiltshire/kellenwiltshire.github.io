@@ -56,9 +56,7 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
 								</a>
 							</Link>
 						))}
-						<div className='hidden md:block md:ml-10 md:pr-4 md:space-x-8'>
-							<Toggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-						</div>
+						<Toggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
 					</div>
 				</nav>
 			</div>
