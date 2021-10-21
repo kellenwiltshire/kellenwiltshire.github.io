@@ -1,21 +1,5 @@
 export const projects = [
 	{
-		id: '1',
-		name: 'We Made It',
-		description:
-			'We Made It is a Handmade Boutique retailer with an online presence.',
-		lessons:
-			'This was the first site I made for a Client. The site was originally a store front for a Merchant Servicer called Square. It has since moved from Square to Shopify which allowed me to learn GraphQL. The project is built with NextJS and utilizies both ISR and SSR to make sure that the site is fast and responsive while maintaining great SEO. This project is ongoing as the needs of the Client change and grow.',
-		tech: {
-			client: 'NextJS, TailwindCSS',
-		},
-
-		link: 'https://we-made-it.ca/',
-		git: 'https://github.com/kellenwiltshire/we-made-it',
-		image: '/wemadeit.png',
-		type: 'Shopify',
-	},
-	{
 		id: '2',
 		name: 'The Knotty Island',
 		description:
