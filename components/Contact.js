@@ -1,4 +1,26 @@
+import { useForm, ValidationError } from '@formspree/react';
+
 export default function Contact() {
+	const showSubmitSuccess = () => {
+		document.getElementById('success').style.visibility = 'visible';
+	};
+	const [state, handleSubmit] = useForm('xvoveere');
+	if (state.succeeded) {
+		return (
+			<div className='text-gray-600 body-font'>
+				<div className='container mx-auto flex px-5 items-center justify-center flex-col'>
+					<div className='text-center lg:w-2/3 w-full'>
+						<h1 class='title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900'>
+							Thank you for your message!
+						</h1>
+						<p className='mb-8 leading-relaxed'>
+							You can also contact me at webdevelopment@kellenwiltshire.com!
+						</p>
+					</div>
+				</div>
+			</div>
+		);
+	}
 	return (
 		<div id='contact' className='relative bg-gray-50 dark:bg-gray-700'>
 			<div className='lg:absolute lg:inset-0'>
@@ -22,8 +44,7 @@ export default function Contact() {
 							</p>
 						</div>
 						<form
-							action='#'
-							method='POST'
+							onSubmit={handleSubmit}
 							className='mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8'
 						>
 							<div>
