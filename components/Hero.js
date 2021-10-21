@@ -3,6 +3,7 @@ import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import Toggle from './Buttons/Toggle';
 import Code from './SVG/Code';
+import Link from 'next/link';
 
 const navigation = [
 	{ name: 'Home', href: '#hero' },
@@ -16,7 +17,7 @@ export default function Hero({ isDarkMode, setIsDarkMode }) {
 	const [fillColour, setFillColour] = useState('#ffffff');
 	const [svgColour, setSVGColour] = useState('#4f46e5');
 	useEffect(() => {
-		isDarkMode ? setFillColour('#374151') : setFillColour('#ffffff');
+		isDarkMode ? setFillColour('#ffffff') : setFillColour('#374151');
 		isDarkMode ? setSVGColour('#ffffff') : setSVGColour('#4f46e5');
 	}, [isDarkMode]);
 	return (
@@ -59,18 +60,18 @@ export default function Hero({ isDarkMode, setIsDarkMode }) {
 								</div>
 								<div className='hidden md:block md:ml-10 md:pr-4 md:space-x-8'>
 									{navigation.map((item) => (
-										<a
-											key={item.name}
-											href={item.href}
-											className='font-medium dark:text-white text-gray-500 hover:text-gray-900'
-										>
-											{item.name}
-										</a>
+										<Link key={item.name} href={item.href}>
+											<a className='font-medium dark:text-white text-gray-500 hover:text-gray-900'>
+												{item.name}
+											</a>
+										</Link>
 									))}
-									<Toggle
-										isDarkMode={isDarkMode}
-										setIsDarkMode={setIsDarkMode}
-									/>
+									<div className='hidden md:block md:ml-10 md:pr-4 md:space-x-8'>
+										<Toggle
+											isDarkMode={isDarkMode}
+											setIsDarkMode={setIsDarkMode}
+										/>
+									</div>
 								</div>
 							</nav>
 						</div>
@@ -102,14 +103,18 @@ export default function Hero({ isDarkMode, setIsDarkMode }) {
 									</div>
 									<div className='px-2 pt-2 pb-3 space-y-1'>
 										{navigation.map((item) => (
-											<a
-												key={item.name}
-												href={item.href}
-												className='block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50'
-											>
-												{item.name}
-											</a>
+											<Link key={item.name} href={item.href}>
+												<a className='block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 dark:text-gray-100'>
+													{item.name}
+												</a>
+											</Link>
 										))}
+										<div className='px-2 pt-2 pb-3 space-y-1'>
+											<Toggle
+												isDarkMode={isDarkMode}
+												setIsDarkMode={setIsDarkMode}
+											/>
+										</div>
 									</div>
 								</div>
 							</Popover.Panel>

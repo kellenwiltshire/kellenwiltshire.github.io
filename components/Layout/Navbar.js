@@ -3,6 +3,7 @@ import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import Code from '../SVG/Code';
 import Toggle from '../Buttons/Toggle';
+import Link from 'next/link';
 
 function classNames(...classes) {
 	return classes.filter(Boolean).join(' ');
@@ -20,7 +21,7 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
 	const [fillColour, setFillColour] = useState('#ffffff');
 	const [svgColour, setSVGColour] = useState('#4f46e5');
 	useEffect(() => {
-		isDarkMode ? setFillColour('#374151') : setFillColour('#ffffff');
+		isDarkMode ? setFillColour('#ffffff') : setFillColour('#374151');
 		isDarkMode ? setSVGColour('#ffffff') : setSVGColour('#4f46e5');
 	}, [isDarkMode]);
 	return (
@@ -32,11 +33,13 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
 				>
 					<div className='flex items-center flex-grow flex-shrink-0 lg:flex-grow-0'>
 						<div className='flex items-center justify-between w-full md:w-auto'>
-							<a href='#'>
-								<div>
-									<Code colour={svgColour} />
-								</div>
-							</a>
+							<Link href='/'>
+								<a>
+									<div>
+										<Code colour={svgColour} />
+									</div>
+								</a>
+							</Link>
 							<div className='-mr-2 flex items-center md:hidden'>
 								<Popover.Button className='bg-white dark:bg-gray-700 dark:text-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500'>
 									<span className='sr-only'>Open main menu</span>
@@ -47,15 +50,15 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
 					</div>
 					<div className='hidden md:block md:ml-10 md:pr-4 md:space-x-8'>
 						{navigation.map((item) => (
-							<a
-								key={item.name}
-								href={item.href}
-								className='font-medium dark:text-white text-gray-500 hover:text-gray-900'
-							>
-								{item.name}
-							</a>
+							<Link key={item.name} href={item.href}>
+								<a className='font-medium dark:text-white text-gray-500 hover:text-gray-900'>
+									{item.name}
+								</a>
+							</Link>
 						))}
-						<Toggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+						<div className='hidden md:block md:ml-10 md:pr-4 md:space-x-8'>
+							<Toggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+						</div>
 					</div>
 				</nav>
 			</div>
@@ -73,13 +76,13 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
 					focus
 					className='absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden'
 				>
-					<div className='rounded-lg shadow-md bg-white dark:bg-gray-700 ring-1 ring-black ring-opacity-5 overflow-hidden'>
+					<div className='rounded-lg shadow-md bg-white dark:bg-gray-600 ring-1 ring-black ring-opacity-5 overflow-hidden'>
 						<div className='px-5 pt-4 flex items-center justify-between'>
 							<div>
 								<Code colour={fillColour} />
 							</div>
 							<div className='-mr-2'>
-								<Popover.Button className='bg-white dark:bg-gray-700 dark:text-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500'>
+								<Popover.Button className='bg-white dark:bg-gray-500 dark:text-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500'>
 									<span className='sr-only'>Close main menu</span>
 									<XIcon className='h-6 w-6' aria-hidden='true' />
 								</Popover.Button>
@@ -87,14 +90,15 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
 						</div>
 						<div className='px-2 pt-2 pb-3 space-y-1'>
 							{navigation.map((item) => (
-								<a
-									key={item.name}
-									href={item.href}
-									className='block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50'
-								>
-									{item.name}
-								</a>
+								<Link key={item.name} href={item.href}>
+									<a className='block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 dark:text-gray-100'>
+										{item.name}
+									</a>
+								</Link>
 							))}
+							<div className='px-2 pt-2 pb-3 space-y-1'>
+								<Toggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+							</div>
 						</div>
 					</div>
 				</Popover.Panel>

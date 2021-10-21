@@ -10,7 +10,7 @@ export default function Projects({ isDarkMode, project }) {
 	});
 	return (
 		<div id='about' className='bg-gray-50 dark:bg-gray-700'>
-			<div className='pt-10'>
+			<div>
 				<div className='max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8'>
 					<div className='max-w-3xl mx-auto space-y-2 lg:max-w-none'>
 						<h2 className='text-lg leading-6 font-semibold text-black dark:text-white uppercase tracking-wider'>
