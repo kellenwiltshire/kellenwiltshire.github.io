@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 import Navbar from '../../components/Layout/Navbar';
 import Projects from '../../components/Projects/Projects';
@@ -8,7 +9,13 @@ export default function project({ project, isDarkMode, setIsDarkMode }) {
 	return (
 		<div className='bg-white dark:bg-gray-700 min-h-screen'>
 			<Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-			<Projects isDarkMode={isDarkMode} project={project} />
+			<motion.div
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				transition={{ duration: 1 }}
+			>
+				<Projects isDarkMode={isDarkMode} project={project} />
+			</motion.div>
 		</div>
 	);
 }
