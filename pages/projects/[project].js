@@ -5,7 +5,7 @@ import { projects } from '../../utils/projects';
 export default function project({ project, isDarkMode, setIsDarkMode }) {
 	console.log(project);
 	return (
-		<div>
+		<div className='bg-white dark:bg-gray-700'>
 			<Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
 		</div>
 	);
