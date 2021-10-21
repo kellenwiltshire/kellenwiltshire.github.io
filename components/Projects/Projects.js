@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Github from '../SVG/Github';
+import Web from '../SVG/Web';
 
 export default function Projects({ isDarkMode, project }) {
 	const [svgColour, setSVGColour] = useState('#000000');
@@ -9,7 +10,7 @@ export default function Projects({ isDarkMode, project }) {
 	});
 	return (
 		<div id='about' className='bg-gray-50 dark:bg-gray-700'>
-			<div className='pt-12 sm:pt-16 lg:pt-24'>
+			<div className='pt-10'>
 				<div className='max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8'>
 					<div className='max-w-3xl mx-auto space-y-2 lg:max-w-none'>
 						<h2 className='text-lg leading-6 font-semibold text-black dark:text-white uppercase tracking-wider'>
@@ -33,6 +34,14 @@ export default function Projects({ isDarkMode, project }) {
 						</div>
 						<div className='sm:col-span-2'>
 							<div className='space-y-4'>
+								<div>
+									<h3
+										className='inline-flex px-4 py-1 rounded-full text-sm font-semibold tracking-wide uppercase bg-indigo-100 text-indigo-600'
+										id='tier-standard'
+									>
+										{project.type}
+									</h3>
+								</div>
 								<div className='text-lg'>
 									<p className='py-1 text-gray-500 dark:text-gray-100'>
 										{project.description}
@@ -42,6 +51,19 @@ export default function Projects({ isDarkMode, project }) {
 									<p className='py-1 text-gray-500 dark:text-gray-100'>
 										{project.lessons}
 									</p>
+								</div>
+								<div className='text-lg'>
+									<p className='py-1 text-gray-500 underline dark:text-gray-100'>
+										Tech Stack
+									</p>
+									<p className='py-1 text-gray-500 dark:text-gray-100'>
+										Client: {project.tech.client}
+									</p>
+									{project.tech.server ? (
+										<p className='py-1 text-gray-500 dark:text-gray-100'>
+											Server: {project.tech.server}
+										</p>
+									) : null}
 								</div>
 								<ul role='list' className='flex space-x-5'>
 									<li>
@@ -58,8 +80,8 @@ export default function Projects({ isDarkMode, project }) {
 											href={project.link}
 											className='text-gray-400 hover:text-gray-500'
 										>
-											<span className='sr-only'>LinkedIn</span>
-											<Github colour={svgColour} />
+											<span className='sr-only'>Website</span>
+											<Web colour={svgColour} />
 										</a>
 									</li>
 								</ul>

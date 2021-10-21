@@ -9,11 +9,11 @@ function classNames(...classes) {
 }
 
 const navigation = [
-	{ name: 'Home', href: '#hero' },
-	{ name: 'About', href: '#about' },
-	{ name: 'Services', href: '#services' },
-	{ name: 'Portfolio', href: '#portfolio' },
-	{ name: 'Contact', href: '#contact' },
+	{ name: 'Home', href: '/' },
+	{ name: 'About', href: '/#about' },
+	{ name: 'Services', href: '/#services' },
+	{ name: 'Portfolio', href: '/#portfolio' },
+	{ name: 'Contact', href: '/#contact' },
 ];
 
 export default function Navbar({ isDarkMode, setIsDarkMode }) {
