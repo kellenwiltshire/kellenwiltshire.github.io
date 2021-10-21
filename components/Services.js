@@ -1,4 +1,7 @@
-import { CheckIcon } from '@heroicons/react/outline';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { useEffect } from 'react';
+import ServicesCard from './Services/ServicesCard';
 
 const tiers = [
 	{
@@ -50,18 +53,44 @@ const tiers = [
 ];
 
 export default function Services() {
+	const controls = useAnimation();
+	const { ref, inView } = useInView();
+
+	useEffect(() => {
+		if (inView) {
+			controls.start('visible');
+		}
+		if (!inView) {
+			controls.start('hidden');
+		}
+	}, [controls, inView]);
+
+	const titleVariants = {
+		hidden: { opacity: 0 },
+		visible: {
+			opacity: 1,
+			transition: {
+				duration: 1,
+			},
+		},
+	};
 	return (
 		<div id='services' className='bg-blue-600 dark:bg-blue-900'>
 			<div className='pt-12 sm:pt-16 lg:pt-24'>
 				<div className='max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8'>
-					<div className='max-w-3xl mx-auto space-y-2 lg:max-w-none'>
+					<motion.div
+						ref={ref}
+						animate={controls}
+						variants={titleVariants}
+						className='max-w-3xl mx-auto space-y-2 lg:max-w-none'
+					>
 						<h2 className='text-lg leading-6 font-semibold text-gray-300 uppercase tracking-wider'>
 							Pricing
 						</h2>
 						<p className='text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl'>
 							What Can I Help You Create?
 						</p>
-					</div>
+					</motion.div>
 				</div>
 			</div>
 			<div className='mt-8 pb-12 bg-gray-50 dark:bg-gray-700 sm:mt-12 sm:pb-16 lg:mt-16 lg:pb-24'>
@@ -70,47 +99,7 @@ export default function Services() {
 					<div className='relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
 						<div className='max-w-md mx-auto space-y-4 lg:max-w-5xl lg:grid lg:grid-cols-3 lg:gap-5 lg:space-y-0'>
 							{tiers.map((tier) => (
-								<div
-									key={tier.name}
-									className='flex flex-col rounded-lg shadow-2xl overflow-hidden'
-								>
-									<div className='px-6 py-8 bg-white dark:bg-gray-700 sm:p-10 sm:pb-6'>
-										<div>
-											<h3
-												className='inline-flex px-4 py-1 rounded-full text-sm font-semibold tracking-wide uppercase bg-indigo-100 text-indigo-600'
-												id='tier-standard'
-											>
-												{tier.name}
-											</h3>
-										</div>
-										<div className='mt-4 flex items-baseline text-6xl font-extrabold dark:text-white'>
-											${tier.priceMonthly}
-											<span className='ml-1 text-2xl font-medium text-gray-500 dark:text-gray-100'>
-												/mo
-											</span>
-										</div>
-										<p className='mt-5 text-lg text-gray-500 dark:text-gray-100'>
-											{tier.description}
-										</p>
-									</div>
-									<div className='flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 dark:bg-gray-700 space-y-6 sm:p-10 sm:pt-6'>
-										<ul role='list' className='space-y-4'>
-											{tier.features.map((feature) => (
-												<li key={feature} className='flex items-start'>
-													<div className='flex-shrink-0'>
-														<CheckIcon
-															className='h-6 w-6 text-green-500 dark:text-gray-100'
-															aria-hidden='true'
-														/>
-													</div>
-													<p className='ml-3 text-base text-gray-700 dark:text-gray-100'>
-														{feature}
-													</p>
-												</li>
-											))}
-										</ul>
-									</div>
-								</div>
+								<ServicesCard tier={tier} />
 							))}
 						</div>
 					</div>
