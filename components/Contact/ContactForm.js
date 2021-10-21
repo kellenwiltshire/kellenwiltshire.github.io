@@ -1,26 +1,6 @@
-import { useForm, ValidationError } from '@formspree/react';
+import React from 'react';
 
-export default function Contact() {
-	const showSubmitSuccess = () => {
-		document.getElementById('success').style.visibility = 'visible';
-	};
-	const [state, handleSubmit] = useForm('xvoveere');
-	if (state.succeeded) {
-		return (
-			<div className='text-gray-600 body-font'>
-				<div className='container mx-auto flex px-5 items-center justify-center flex-col'>
-					<div className='text-center lg:w-2/3 w-full'>
-						<h1 class='title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900'>
-							Thank you for your message!
-						</h1>
-						<p className='mb-8 leading-relaxed'>
-							You can also contact me at webdevelopment@kellenwiltshire.com!
-						</p>
-					</div>
-				</div>
-			</div>
-		);
-	}
+export default function ContactForm({ handleSubmit }) {
 	return (
 		<div id='contact' className='relative bg-gray-50 dark:bg-gray-700'>
 			<div className='lg:absolute lg:inset-0'>
@@ -59,6 +39,7 @@ export default function Contact() {
 										type='text'
 										name='first-name'
 										id='first-name'
+										required
 										autoComplete='given-name'
 										className='block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md'
 									/>
@@ -76,6 +57,7 @@ export default function Contact() {
 										type='text'
 										name='last-name'
 										id='last-name'
+										required
 										autoComplete='family-name'
 										className='block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md'
 									/>
@@ -94,6 +76,7 @@ export default function Contact() {
 										name='email'
 										type='email'
 										autoComplete='email'
+										required
 										className='block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md'
 									/>
 								</div>
@@ -142,17 +125,26 @@ export default function Contact() {
 										rows={4}
 										className='block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md'
 										defaultValue={''}
+										required
 									/>
 								</div>
 							</div>
 
 							<div className='sm:col-span-2'>
-								<label
-									htmlFor='how-did-you-hear-about-us'
-									className='block text-sm font-medium text-gray-700 dark:text-gray-100'
-								>
-									How did you hear about me?
-								</label>
+								<div className='flex justify-between'>
+									<label
+										htmlFor='how-did-you-hear-about-us'
+										className='block text-sm font-medium text-gray-700 dark:text-gray-100'
+									>
+										How did you hear about me?
+									</label>
+									<span
+										id='phone-description'
+										className='text-sm text-gray-500 dark:text-gray-200'
+									>
+										Optional
+									</span>
+								</div>
 								<div className='mt-1'>
 									<input
 										type='text'
