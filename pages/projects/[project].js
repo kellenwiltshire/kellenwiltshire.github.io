@@ -8,6 +8,10 @@ export default function project({ project, isDarkMode, setIsDarkMode }) {
 	console.log(project);
 	return (
 		<div className='bg-white dark:bg-gray-700 min-h-screen'>
+			<NextSeo
+				title={`Kellen Wiltshire | ${project.name}`}
+				description={project.description}
+			/>
 			<Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
 			<motion.div
 				initial={{ opacity: 0 }}
