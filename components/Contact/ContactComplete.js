@@ -15,14 +15,6 @@ export default function ContactComplete() {
 			<div className='relative py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:py-32 lg:grid lg:grid-cols-2'>
 				<div className='lg:pr-8'>
 					<div className='max-w-md mx-auto sm:max-w-lg lg:mx-0'>
-						<div className='text-center sm:text-left'>
-							<h2 className='text-lg leading-6 font-semibold text-black dark:text-white uppercase tracking-wider'>
-								Let's work together
-							</h2>
-							<p className='text-3xl font-extrabold text-black dark:text-white sm:text-4xl lg:text-5xl'>
-								I'd Love to Hear From You!
-							</p>
-						</div>
 						<div className='text-gray-600 body-font'>
 							<div className='container mx-auto flex px-5 items-center justify-center flex-col'>
 								<div className='text-center lg:w-2/3 w-full'>
