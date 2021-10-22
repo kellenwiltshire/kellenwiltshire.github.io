@@ -57,7 +57,7 @@ export default function About({ isDarkMode }) {
 						<div className='aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4'>
 							<img
 								className='object-cover shadow-lg rounded-lg'
-								src='https://avatars.githubusercontent.com/u/31140634?v=4'
+								src='/profile.jpg'
 								alt=''
 							/>
 						</div>
