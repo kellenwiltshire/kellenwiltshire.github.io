@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from '../../components/Layout/Navbar';
 import Projects from '../../components/Projects/Projects';
 import { projects } from '../../utils/projects';
+import { NextSeo } from 'next-seo';
 
 export default function project({ project, isDarkMode, setIsDarkMode }) {
 	console.log(project);
