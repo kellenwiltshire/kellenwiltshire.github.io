@@ -6,7 +6,6 @@ import { projects } from '../../utils/projects';
 import { NextSeo } from 'next-seo';
 
 export default function project({ project, isDarkMode, setIsDarkMode }) {
-	console.log(project);
 	return (
 		<div className='bg-white dark:bg-gray-700 min-h-screen'>
 			<NextSeo
