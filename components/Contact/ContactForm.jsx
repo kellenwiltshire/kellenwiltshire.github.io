@@ -139,7 +139,7 @@ export default function ContactForm({ handleSubmit }) {
 										How did you hear about me?
 									</label>
 									<span
-										id='phone-description'
+										id='referral-description'
 										className='text-sm text-gray-500 dark:text-gray-200'
 									>
 										Optional
