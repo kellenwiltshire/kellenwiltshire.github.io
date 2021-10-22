@@ -5,10 +5,6 @@ import Code from '../SVG/Code';
 import Toggle from '../Buttons/Toggle';
 import Link from 'next/link';
 
-function classNames(...classes) {
-	return classes.filter(Boolean).join(' ');
-}
-
 const navigation = [
 	{ name: 'Home', href: '/' },
 	{ name: 'About', href: '/#about' },
@@ -25,7 +21,7 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
 	return (
 		<Popover>
 			<div className='relative py-2 px-4 sm:px-6 lg:px-8'>
-				<nav
+				<na
 					className='relative flex items-center justify-between sm:h-10 lg:justify-start'
 					aria-label='Global'
 				>
@@ -56,7 +52,7 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
 						))}
 						<Toggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
 					</div>
-				</nav>
+				</na>
 			</div>
 
 			<Transition

@@ -3,10 +3,6 @@ module.exports = {
 	darkMode: 'class',
 	theme: {
 		extend: {},
-		fontFamily: {
-			headers: 'Roboto',
-			body: 'Open Sans',
-		},
 	},
 	variants: {
 		extend: {},

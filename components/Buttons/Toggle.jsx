@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import { Switch } from '@headlessui/react';
 import { SunIcon, MoonIcon } from '@heroicons/react/outline';
 
@@ -7,8 +6,6 @@ function classNames(...classes) {
 }
 
 export default function Toggle({ isDarkMode, setIsDarkMode }) {
-	const [enabled, setEnabled] = useState(false);
-
 	const changeDark = () => {
 		setIsDarkMode(!isDarkMode);
 	};

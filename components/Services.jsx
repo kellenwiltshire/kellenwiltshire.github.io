@@ -99,7 +99,7 @@ export default function Services() {
 					<div className='relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
 						<div className='max-w-md mx-auto space-y-4 lg:max-w-5xl lg:grid lg:grid-cols-3 lg:gap-5 lg:space-y-0'>
 							{tiers.map((tier) => (
-								<ServicesCard tier={tier} />
+								<ServicesCard key={tier.name} tier={tier} />
 							))}
 						</div>
 					</div>

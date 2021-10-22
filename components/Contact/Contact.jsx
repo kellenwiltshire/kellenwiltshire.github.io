@@ -1,4 +1,4 @@
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm } from '@formspree/react';
 import ContactComplete from './ContactComplete';
 import ContactForm from './ContactForm';
 
