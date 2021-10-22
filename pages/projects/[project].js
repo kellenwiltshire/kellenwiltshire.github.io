@@ -1,9 +1,9 @@
-import { motion } from 'framer-motion';
 import React from 'react';
 import Navbar from '../../components/Layout/Navbar';
 import Projects from '../../components/Projects/Projects';
 import { projects } from '../../utils/projects';
 import { NextSeo } from 'next-seo';
+import { motion } from 'framer-motion';
 
 export default function project({ project, isDarkMode, setIsDarkMode }) {
 	return (
