@@ -6,7 +6,7 @@ export default function Layout({ children }) {
 	return (
 		<div id='topDiv' className='dark'>
 			<Header />
-			<main>{children}</main>
+			<main className='bg-white dark:bg-gray-700'>{children}</main>
 			<Footer />
 		</div>
 	);

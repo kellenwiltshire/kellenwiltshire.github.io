@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 export default function project({ project, isDarkMode, setIsDarkMode }) {
 	return (
-		<div className='bg-white dark:bg-gray-700 min-h-screen'>
+		<div className='bg-white dark:bg-gray-700 min-h-screen max-w-7xl mx-auto'>
 			<NextSeo
 				title={`Kellen Wiltshire | ${project.name}`}
 				description={project.description}

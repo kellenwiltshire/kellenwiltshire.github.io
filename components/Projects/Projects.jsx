@@ -9,7 +9,7 @@ export default function Projects({ isDarkMode, project }) {
 		isDarkMode ? setSVGColour('#ffffff') : setSVGColour('#374151');
 	});
 	return (
-		<div id='about' className='bg-gray-50 dark:bg-gray-700'>
+		<div id='about' className='bg-white dark:bg-gray-700 mt-2'>
 			<div>
 				<div className='max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8'>
 					<div className='max-w-3xl mx-auto space-y-2 lg:max-w-none'>
