@@ -1,9 +1,18 @@
 export const projects = [
 	{
+		id: '1',
+		name: 'Women on Par',
+		description: 'Golf League score and event tracker.',
+		readme: '/golfleague.md',
+		link: 'https://golfleague.vercel.app/',
+		git: 'https://github.com/kellenwiltshire/golfleague',
+		image: '/womenonpar.png',
+		type: 'Web App',
+	},
+	{
 		id: '2',
 		name: 'The Knotty Island',
-		description:
-			'Website created for The Knotty Island, an online handmade Macrame Etsy store.',
+		description: 'Website created for The Knotty Island, an online handmade Macrame Etsy store.',
 		lessons: `The site was designed and created using NextJS utilizing the Etsy API. There is a small server created with NodeJS and Express to manage the API requests. The website was built and functions according the Client's Request and within the limitation of the API. The API has a limit on requests that can be made per limit, but the limit seems arbitrary and can be frustrating because seperate requests need to be made to get the product details and pictures.`,
 		tech: {
 			client: 'NextJS, TailwindCSS, Vercel',
@@ -18,8 +27,7 @@ export const projects = [
 	{
 		id: '3',
 		name: 'Flip The Show',
-		description:
-			'Website created for flipping cards in the game MLB The Show 21',
+		description: 'Website created for flipping cards in the game MLB The Show 21',
 		lessons:
 			'The site was designed with NextJS and TailwindCSS. The site was a good lesson on how to format tables with lots of information to look good on multiple screen sizes. Unfortunately, the Players section is currently broken due a change in information relayed by API and I have had a chance to fix it yet...',
 		tech: {
