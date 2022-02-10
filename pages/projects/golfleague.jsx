@@ -2,6 +2,7 @@ import GolfleagueReadMe from '../../Readme/golfleague.md';
 import React, { useState, useEffect } from 'react';
 import Github from '../../components/SVG/Github';
 import Web from '../../components/SVG/Web';
+import MDXComponents from '../../Readme/MDXComponents';
 
 function golfleague({ isDarkMode }) {
 	const [svgColour, setSVGColour] = useState('#000000');
@@ -41,7 +42,7 @@ function golfleague({ isDarkMode }) {
 										Web App
 									</h3>
 								</div>
-								<GolfleagueReadMe />
+								<GolfleagueReadMe components={MDXComponents} />
 								<ul role='list' className='flex space-x-5'>
 									<li>
 										<a
