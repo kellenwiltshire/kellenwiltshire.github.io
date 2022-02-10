@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react';
-import Github from '../SVG/Github';
-import Web from '../SVG/Web';
-import ReactMarkdown from 'react-markdown';
+import GolfleagueReadMe from '../../Readme/golfleague.md';
+import React, { useState, useEffect } from 'react';
+import Github from '../../components/SVG/Github';
+import Web from '../../components/SVG/Web';
 
-export default function Projects({ isDarkMode, project }) {
+function golfleague({ isDarkMode }) {
 	const [svgColour, setSVGColour] = useState('#000000');
 
 	useEffect(() => {
@@ -14,7 +14,7 @@ export default function Projects({ isDarkMode, project }) {
 			<div className='mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8'>
 				<div className='mx-auto max-w-3xl space-y-2 lg:max-w-none'>
 					<h1 className='text-3xl font-extrabold text-black dark:text-white sm:text-4xl lg:text-5xl'>
-						{project.name}
+						Women On Par
 					</h1>
 				</div>
 			</div>
@@ -22,12 +22,12 @@ export default function Projects({ isDarkMode, project }) {
 				<div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
 					<div className='space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0'>
 						<a
-							href={project.link}
+							href='https://golfleague.vercel.app'
 							className='aspect-w-3 aspect-h-2 sm:aspect-w-4 sm:aspect-h-3 '
 						>
 							<img
 								className='rounded-lg object-cover shadow-lg '
-								src={project.image}
+								src='/background.jpg'
 								alt=''
 							/>
 						</a>
@@ -38,23 +38,24 @@ export default function Projects({ isDarkMode, project }) {
 										className='inline-flex rounded-full bg-indigo-100 px-4 py-1 text-sm font-semibold uppercase tracking-wide text-indigo-600'
 										id='tier-standard'
 									>
-										{project.type}
+										Web App
 									</h3>
 								</div>
-								<ReactMarkdown>{project.readme}</ReactMarkdown>
+								<GolfleagueReadMe />
 								<ul role='list' className='flex space-x-5'>
 									<li>
 										<a
-											href={project.git}
+											href='https://github.com/kellenwiltshire/golfleague'
 											className='text-gray-400 hover:text-gray-500'
 										>
 											<span className='sr-only'>Github</span>
+
 											<Github colour={svgColour} />
 										</a>
 									</li>
 									<li>
 										<a
-											href={project.link}
+											href='https://golfleague.vercel.app/'
 											className='text-gray-400 hover:text-gray-500'
 										>
 											<span className='sr-only'>Website</span>
@@ -70,3 +71,5 @@ export default function Projects({ isDarkMode, project }) {
 		</div>
 	);
 }
+
+export default golfleague;
