@@ -1,8 +1,8 @@
 Custom Web App for a Golf League. This site allows it's users to enter their score and set their availability for the following week. The Admin's are able to generate a schedule and post news for its members.
 
-This Example is based off the site created for Women On Par, a Golf group from Toronto, Ontario.
+This Site was created for Women On Par, a Golf group from Toronto, Ontario.
 
-### Try It
+### Try The Example Linked
 
 ##### Admin Account Login
 

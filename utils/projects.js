@@ -1,12 +1,12 @@
 export const projects = [
 	{
-		id: '1',
+		id: 'golfleague',
 		name: 'Women on Par',
 		description: 'Golf League score and event tracker.',
 		readme: '',
 		link: 'https://golfleague.vercel.app/',
 		git: 'https://github.com/kellenwiltshire/golfleague',
-		image: '/womenonpar.png',
+		image: '/golfleague.png',
 		type: 'Web App',
 	},
 	{

@@ -38,11 +38,11 @@ function golfleague({ isDarkMode, setIsDarkMode }) {
 							<div className='space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0'>
 								<a
 									href='https://golfleague.vercel.app'
-									className='aspect-w-3 aspect-h-2 sm:aspect-w-4 sm:aspect-h-3 '
+									className='aspect-w-3 aspect-h-2 sm:aspect-w-5 sm:aspect-h-3 '
 								>
 									<img
-										className='rounded-lg object-cover shadow-lg '
-										src='/background.jpg'
+										className='object-fit rounded-lg shadow-lg '
+										src='/golfleague.png'
 										alt=''
 									/>
 								</a>
@@ -56,7 +56,6 @@ function golfleague({ isDarkMode, setIsDarkMode }) {
 												Web App
 											</h3>
 										</div>
-										<GolfleagueReadMe components={MDXComponents} />
 										<ul role='list' className='flex space-x-5'>
 											<li>
 												<a
@@ -78,6 +77,7 @@ function golfleague({ isDarkMode, setIsDarkMode }) {
 												</a>
 											</li>
 										</ul>
+										<GolfleagueReadMe components={MDXComponents} />
 									</div>
 								</div>
 							</div>
