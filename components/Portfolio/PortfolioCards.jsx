@@ -35,7 +35,7 @@ export default function PortfolioCards({ project }) {
 		>
 			<a key={project.id} className='group'>
 				<motion.div ref={ref} animate={controls} variants={projectVariants}>
-					<div className='aspect-w-5 aspect-h-3 xl:aspect-w-8 xl:aspect-h-7 w-full overflow-hidden rounded-lg bg-gray-200 dark:bg-gray-700'>
+					<div className='aspect-w-5 aspect-h-3 xl:aspect-w-10 xl:aspect-h-6 w-full overflow-hidden rounded-lg bg-gray-200 dark:bg-gray-700'>
 						<img
 							src={project.image}
 							alt={project.description}
