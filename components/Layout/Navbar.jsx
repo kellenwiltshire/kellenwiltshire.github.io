@@ -1,4 +1,4 @@
-import { Fragment, useState, useEffect } from 'react';
+import { Fragment, useState } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import Code from '../SVG/Code';
@@ -14,13 +14,10 @@ const navigation = [
 ];
 
 export default function Navbar({ isDarkMode, setIsDarkMode }) {
-	const [svgColour, setSVGColour] = useState('#4f46e5');
-	useEffect(() => {
-		isDarkMode ? setSVGColour('#ffffff') : setSVGColour('#4f46e5');
-	}, [isDarkMode]);
+	
 	return (
 		<Popover>
-			<div className='relative py-2 px-4 sm:px-6 lg:px-8'>
+			<div className='relative py-2 px-4 sm:px-6 lg:px-8 bg-blue-900 rounded-b-md'>
 				<nav
 					className='relative flex items-center justify-between sm:h-10 lg:justify-start'
 					aria-label='Global'
@@ -30,12 +27,12 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
 							<Link href='/' alt='Logo Link'>
 								<a>
 									<div>
-										<Code colour={svgColour} />
+										<Code colour='white' />
 									</div>
 								</a>
 							</Link>
 							<div className='-mr-2 flex items-center md:hidden'>
-								<Popover.Button className='bg-white dark:bg-gray-700 dark:text-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500'>
+								<Popover.Button className=' dark:bg-gray-700 dark:text-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500'>
 									<span className='sr-only'>Open main menu</span>
 									<MenuIcon className='h-6 w-6' aria-hidden='true' />
 								</Popover.Button>
@@ -45,7 +42,7 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
 					<div className='hidden md:block md:ml-10 md:pr-4 md:space-x-8'>
 						{navigation.map((item) => (
 							<Link key={item.name} href={item.href}>
-								<a className='font-medium dark:text-white text-gray-500 hover:text-gray-900'>
+								<a className='font-medium text-white  hover:text-gray-300'>
 									{item.name}
 								</a>
 							</Link>
@@ -71,7 +68,7 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
 					<div className='rounded-lg shadow-md bg-white dark:bg-gray-600 ring-1 ring-black ring-opacity-5 overflow-hidden'>
 						<div className='px-5 pt-4 flex items-center justify-between'>
 							<div>
-								<Code colour={svgColour} />
+								<Code colour='black' />
 							</div>
 							<div className='-mr-2'>
 								<Popover.Button className='bg-white dark:bg-gray-500 dark:text-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500'>
@@ -83,7 +80,7 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
 						<div className='px-2 pt-2 pb-3 space-y-1'>
 							{navigation.map((item) => (
 								<Link key={item.name} href={item.href}>
-									<a className='block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 dark:text-gray-100'>
+									<a className='block px-3 py-2 rounded-md text-base font-medium text-black  hover:text-gray-900 hover:bg-gray-50 '>
 										{item.name}
 									</a>
 								</Link>

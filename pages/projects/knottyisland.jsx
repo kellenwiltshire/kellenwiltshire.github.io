@@ -1,8 +1,8 @@
-import ReadMe from '../../Readme/knottyisland.md';
+import ReadMe from '../../Markdowns/knottyisland.md';
 import React, { useState, useEffect } from 'react';
 import Github from '../../components/SVG/Github';
 import Web from '../../components/SVG/Web';
-import MDXComponents from '../../Readme/MDXComponents';
+import MDXComponents from '../../Markdowns/MDXComponents';
 import { motion } from 'framer-motion';
 import { NextSeo } from 'next-seo';
 import Navbar from '../../components/Layout/Navbar';
