@@ -66,6 +66,6 @@ Throughout this project I have learned to work with Strapi and their method of a
 
 ## Tech Stack
 
-Client: NextJS, TailwindCSS, Vercel, Typescript
+**Client:** NextJS, TailwindCSS, Vercel, Typescript
 
-Backend: Heroku, Strapi
+**Backend:** Heroku, Strapi
