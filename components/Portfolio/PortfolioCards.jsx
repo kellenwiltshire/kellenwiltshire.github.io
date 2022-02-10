@@ -35,11 +35,11 @@ export default function PortfolioCards({ project }) {
 		>
 			<a key={project.id} className='group'>
 				<motion.div ref={ref} animate={controls} variants={projectVariants}>
-					<div className='w-full aspect-w-1 aspect-h-1 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden xl:aspect-w-8 xl:aspect-h-7'>
+					<div className='aspect-w-5 aspect-h-3 xl:aspect-w-10 xl:aspect-h-6 w-full overflow-hidden rounded-lg bg-gray-200 dark:bg-gray-700'>
 						<img
 							src={project.image}
 							alt={project.description}
-							className='w-full h-full object-center object-cover group-hover:opacity-75'
+							className='h-full w-full object-cover object-center group-hover:opacity-75'
 						/>
 					</div>
 					<h3 className='mt-4 text-lg text-white'>{project.name}</h3>
