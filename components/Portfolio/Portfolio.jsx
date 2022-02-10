@@ -2,7 +2,6 @@ import PortfolioCards from './PortfolioCards';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
-import Link from 'next/link';
 
 export default function Portfolio({ projects }) {
 	const controls = useAnimation();
@@ -40,9 +39,7 @@ export default function Portfolio({ projects }) {
 						<h2 className='text-lg font-semibold uppercase leading-6 tracking-wider text-gray-300 dark:text-gray-100'>
 							Portfolio
 						</h2>
-						<p className='text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl'>
-							What I Have Created
-						</p>
+						<p className='text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl'>What I Have Created</p>
 					</motion.div>
 				</div>
 			</div>
