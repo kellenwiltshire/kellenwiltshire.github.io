@@ -1,4 +1,4 @@
-import GolfleagueReadMe from '../../Markdowns/golfleague.md';
+import GolfleagueReadMe from '../../Markdowns/golfleague.mdx';
 import React, { useState, useEffect } from 'react';
 import Github from '../../components/SVG/Github';
 import Web from '../../components/SVG/Web';

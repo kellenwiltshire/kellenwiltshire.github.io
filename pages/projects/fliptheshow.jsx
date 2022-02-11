@@ -1,4 +1,4 @@
-import ReadMe from '../../Markdowns/fliptheshow.md';
+import ReadMe from '../../Markdowns/fliptheshow.mdx';
 import React, { useState, useEffect } from 'react';
 import Github from '../../components/SVG/Github';
 import Web from '../../components/SVG/Web';
