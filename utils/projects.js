@@ -3,8 +3,8 @@ export const projects = [
 		id: 'golfleague',
 		name: 'Women on Par',
 		description: 'Golf League score and event tracker.',
-		
-		image: '/golfleague.png',
+
+		image: '/golfleague.webp',
 		type: 'Web App',
 	},
 	{
@@ -12,8 +12,8 @@ export const projects = [
 		name: 'The Knotty Island',
 		description:
 			'Website created for The Knotty Island, an online handmade Macrame Etsy store.',
-		
-		image: '/theknottyisland.png',
+
+		image: '/theknottyisland.webp',
 		type: 'Etsy',
 	},
 	{
@@ -21,7 +21,7 @@ export const projects = [
 		name: 'Flip The Show',
 		description:
 			'Website created for flipping cards in the game MLB The Show 21',
-		image: '/fliptheshow.png',
+		image: '/fliptheshow.webp',
 		type: 'Personal',
 	},
 	{
@@ -29,8 +29,8 @@ export const projects = [
 		name: 'Smartbrain',
 		description:
 			'This App was created as part of the Zero-to-Mastery Udemy Course. This is my first full stack web app creation.',
-		
-		image: '/smartbrain.png',
+
+		image: '/smartbrain.webp',
 		type: 'Web App',
-	}
-]
+	},
+];

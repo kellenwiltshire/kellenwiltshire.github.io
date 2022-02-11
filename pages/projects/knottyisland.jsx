@@ -42,7 +42,7 @@ function knottyisland({ isDarkMode, setIsDarkMode }) {
 								>
 									<img
 										className='object-fit rounded-lg shadow-lg '
-										src='/theknottyisland.png'
+										src='/theknottyisland.webp'
 										alt=''
 									/>
 								</a>

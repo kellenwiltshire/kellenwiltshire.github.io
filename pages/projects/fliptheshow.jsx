@@ -42,7 +42,7 @@ function fliptheshow({ isDarkMode, setIsDarkMode }) {
 								>
 									<img
 										className='object-fit rounded-lg shadow-lg '
-										src='/fliptheshow.png'
+										src='/fliptheshow.webp'
 										alt=''
 									/>
 								</a>

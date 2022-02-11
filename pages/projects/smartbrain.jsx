@@ -42,7 +42,7 @@ function smartbrain({ isDarkMode, setIsDarkMode }) {
 								>
 									<img
 										className='object-fit rounded-lg shadow-lg '
-										src='/smartbrain.png'
+										src='/smartbrain.webp'
 										alt=''
 									/>
 								</a>

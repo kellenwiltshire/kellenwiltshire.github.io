@@ -42,7 +42,7 @@ function golfleague({ isDarkMode, setIsDarkMode }) {
 								>
 									<img
 										className='object-fit rounded-lg shadow-lg '
-										src='/golfleague.png'
+										src='/golfleague.webp'
 										alt=''
 									/>
 								</a>
