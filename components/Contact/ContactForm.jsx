@@ -7,16 +7,16 @@ export default function ContactForm({ handleSubmit }) {
 				<div className='lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2'>
 					<img
 						className='h-56 w-full object-cover lg:absolute lg:h-full'
-						src='/contactpicture.jpg'
+						src='/contactpicture.webp'
 						alt=''
 					/>
 				</div>
 			</div>
-			<div className='relative py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:py-32 lg:grid lg:grid-cols-2'>
+			<div className='relative py-16 px-4 sm:py-24 sm:px-6 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:px-8 lg:py-32'>
 				<div className='lg:pr-8'>
-					<div className='max-w-md mx-auto sm:max-w-lg lg:mx-0'>
+					<div className='mx-auto max-w-md sm:max-w-lg lg:mx-0'>
 						<div className='text-center sm:text-left'>
-							<h2 className='text-lg leading-6 font-semibold text-black dark:text-white uppercase tracking-wider'>
+							<h2 className='text-lg font-semibold uppercase leading-6 tracking-wider text-black dark:text-white'>
 								Let's work together
 							</h2>
 							<p className='text-3xl font-extrabold text-black dark:text-white sm:text-4xl lg:text-5xl'>
@@ -41,7 +41,7 @@ export default function ContactForm({ handleSubmit }) {
 										id='first-name'
 										required
 										autoComplete='given-name'
-										className='block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md'
+										className='block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm'
 									/>
 								</div>
 							</div>
@@ -59,7 +59,7 @@ export default function ContactForm({ handleSubmit }) {
 										id='last-name'
 										required
 										autoComplete='family-name'
-										className='block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md'
+										className='block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm'
 									/>
 								</div>
 							</div>
@@ -77,7 +77,7 @@ export default function ContactForm({ handleSubmit }) {
 										type='email'
 										autoComplete='email'
 										required
-										className='block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md'
+										className='block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm'
 									/>
 								</div>
 							</div>
@@ -104,7 +104,7 @@ export default function ContactForm({ handleSubmit }) {
 										id='phone'
 										autoComplete='tel'
 										aria-describedby='phone-description'
-										className='block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md'
+										className='block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm'
 									/>
 								</div>
 							</div>
@@ -123,7 +123,7 @@ export default function ContactForm({ handleSubmit }) {
 										name='how-can-we-help'
 										aria-describedby='how-can-we-help-description'
 										rows={4}
-										className='block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md'
+										className='block w-full rounded-md border border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm'
 										defaultValue={''}
 										required
 									/>
@@ -150,14 +150,14 @@ export default function ContactForm({ handleSubmit }) {
 										type='text'
 										name='how-did-you-hear-about-us'
 										id='how-did-you-hear-about-us'
-										className='shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md'
+										className='block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm'
 									/>
 								</div>
 							</div>
 							<div className='text-right sm:col-span-2'>
 								<button
 									type='submit'
-									className='inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+									className='inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
 								>
 									Submit
 								</button>

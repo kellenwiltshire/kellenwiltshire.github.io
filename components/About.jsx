@@ -35,14 +35,14 @@ export default function About({ isDarkMode }) {
 	return (
 		<div id='about' className='bg-gray-50 dark:bg-gray-700'>
 			<div className='pt-12 sm:pt-16 lg:pt-24'>
-				<div className='max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8'>
+				<div className='mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8'>
 					<motion.div
 						ref={ref}
 						animate={controls}
 						variants={titleVariants}
-						className='max-w-3xl mx-auto space-y-2 lg:max-w-none'
+						className='mx-auto max-w-3xl space-y-2 lg:max-w-none'
 					>
-						<h2 className='text-lg leading-6 font-semibold text-black dark:text-white uppercase tracking-wider'>
+						<h2 className='text-lg font-semibold uppercase leading-6 tracking-wider text-black dark:text-white'>
 							About Me
 						</h2>
 						<p className='text-3xl font-extrabold text-black dark:text-white sm:text-4xl lg:text-5xl'>
@@ -51,20 +51,20 @@ export default function About({ isDarkMode }) {
 					</motion.div>
 				</div>
 			</div>
-			<div className='mt-8 pb-12 bg-gray-50 dark:bg-gray-700 sm:mt-12 sm:pb-16 lg:mt-16 lg:pb-24'>
-				<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+			<div className='mt-8 bg-gray-50 pb-12 dark:bg-gray-700 sm:mt-12 sm:pb-16 lg:mt-16 lg:pb-24'>
+				<div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
 					<div className='space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0'>
 						<div className='aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4'>
 							<img
-								className='object-cover shadow-lg rounded-lg'
-								src='/profile.jpg'
+								className='rounded-lg object-cover shadow-lg'
+								src='/profile.webp'
 								alt=''
 							/>
 						</div>
 						<div className='sm:col-span-2'>
 							<div className='space-y-4'>
-								<div className='text-lg leading-6 font-medium space-y-1'>
-									<h3 className='dark:text-white text-black text-3xl'>
+								<div className='space-y-1 text-lg font-medium leading-6'>
+									<h3 className='text-3xl text-black dark:text-white'>
 										Kellen Wiltshire
 									</h3>
 									<p className='text-indigo-600 dark:text-gray-100'>
