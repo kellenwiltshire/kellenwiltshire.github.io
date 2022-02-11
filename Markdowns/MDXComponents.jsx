@@ -21,7 +21,7 @@ const Body = ({ children }) => {
 };
 
 const UL = ({ children }) => {
-	return <li className='list-item text-sm'>{children}</li>;
+	return <li className='list-disc text-sm'>{children}</li>;
 };
 
 const MDXComponents = {
@@ -31,7 +31,7 @@ const MDXComponents = {
 	h4: H4,
 	h5: H4,
 	p: Body,
-	// ul: UL,
+	li: UL,
 };
 
 export default MDXComponents;
