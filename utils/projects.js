@@ -3,9 +3,9 @@ export const projects = [
 		id: 'golfleague',
 		name: 'Women on Par',
 		description: 'Golf League score and event tracker.',
-
 		image: '/golfleague.webp',
 		type: 'Web App',
+		link: '/projects/golfleague',
 	},
 	{
 		id: 'knottyisland',
@@ -15,6 +15,7 @@ export const projects = [
 
 		image: '/theknottyisland.webp',
 		type: 'Etsy',
+		link: '/projects/knottyisland',
 	},
 	{
 		id: 'fliptheshow',
@@ -23,6 +24,7 @@ export const projects = [
 			'Website created for flipping cards in the game MLB The Show 21',
 		image: '/fliptheshow.webp',
 		type: 'Personal',
+		link: '/projects/fliptheshow',
 	},
 	{
 		id: 'smartbrain',
@@ -32,5 +34,6 @@ export const projects = [
 
 		image: '/smartbrain.webp',
 		type: 'Web App',
+		link: '/projects/smartbrain',
 	},
 ];
