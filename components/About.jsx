@@ -73,18 +73,19 @@ export default function About({ isDarkMode }) {
 								</div>
 								<div className='text-lg'>
 									<p className='py-1 text-gray-500 dark:text-gray-100'>
-										During this COVID-19 Pandemic, I have taught myself two new
-										things. First, I can now make bread like nobody's business.
-										Second, I learned how to build sweet websites. Though I am
-										still starting out, I am eager to learn more and dive deeper
-										into the world of Web Development.
+										I am a self-taught Web Developer looking for the next step
+										in my journey. I have taught myself with the help of online
+										courses how to create beautiful and functional websites
+										combining the latest frameworks and technologies. I have
+										knowledge of React, Javascript/Typescript, TailwindCSS,
+										Styled Components, as well as traditional HTML5 and CSS3.
 									</p>
 									<p className='py-1 text-gray-500 dark:text-gray-100'>
-										Although I have a fulfilling career helping people seek
-										justice in the Legal System, I was missing using my brain in
-										a technical role. With the extra time working from home I
-										decided to start teaching myself Web Development with the
-										help of the Udemy course Zero-to-Mastery.
+										I can also help you build the perfect site for your
+										business! I have experience working with Shopify and
+										Squareup systems to make sure your products are easy for
+										your customers to find and buy! Whatever your needs, I can
+										make a site that works perfectly for you.
 									</p>
 								</div>
 								<ul role='list' className='flex space-x-5'>
@@ -93,8 +94,8 @@ export default function About({ isDarkMode }) {
 											href='https://github.com/kellenwiltshire'
 											className='text-gray-400 hover:text-gray-500'
 										>
-											<span className='sr-only'>Github</span>
 											<Github colour={svgColour} />
+											<p>Github</p>
 										</a>
 									</li>
 									<li>
@@ -102,8 +103,8 @@ export default function About({ isDarkMode }) {
 											href='https://www.linkedin.com/in/kellenwiltshire/'
 											className='text-gray-400 hover:text-gray-500'
 										>
-											<span className='sr-only'>LinkedIn</span>
 											<Linkedin colour={svgColour} />
+											<p>LinkedIn</p>
 										</a>
 									</li>
 								</ul>
