@@ -17,7 +17,7 @@ const tiers = [
 			'Domain Purchasing and Hosting Included',
 			'Responsive and Mobile Friendly',
 			'Monthly Analytics Updates and Security Reviews',
-			'Search Engine Optomization',
+			'Search Engine Optimization',
 		],
 	},
 	{
@@ -32,7 +32,7 @@ const tiers = [
 			'Domain Purchasing Included',
 			'Responsive and Mobile Friendly',
 			'Monthly Analytics Updates and Security Reviews',
-			'Search Engine Optomization',
+			'Search Engine Optimization',
 		],
 	},
 	{
@@ -47,7 +47,7 @@ const tiers = [
 			'Domain Purchasing Included',
 			'Responsive and Mobile Friendly',
 			'Monthly Analytics Updates and Security Reviews',
-			'Search Engine Optomization',
+			'Search Engine Optimization',
 		],
 	},
 ];
