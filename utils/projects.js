@@ -21,19 +21,18 @@ export const projects = [
 		id: 'fliptheshow',
 		name: 'Flip The Show',
 		description:
-			'Website created for flipping cards in the game MLB The Show 21',
+			'Website created for flipping cards in the game MLB The Show 22',
 		image: '/fliptheshow.webp',
 		type: 'Personal',
 		link: '/projects/fliptheshow',
 	},
 	{
-		id: 'smartbrain',
-		name: 'Smartbrain',
-		description:
-			'This App was created as part of the Zero-to-Mastery Udemy Course. This is my first full stack web app creation.',
+		id: 'teetime',
+		name: 'Tee Time Generator',
+		description: `A Vue webapp to generate a completely random and properly organized list of Foursome's in seconds that is ready to print and send to a User's Golf Group or League.`,
 
-		image: '/smartbrain.webp',
+		image: '/teetime.webp',
 		type: 'Web App',
-		link: '/projects/smartbrain',
+		link: '/projects/teetime',
 	},
 ];
