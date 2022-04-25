@@ -3,10 +3,6 @@ import { motion } from 'framer-motion';
 import Navbar from './Layout/Navbar';
 
 export default function Hero({ isDarkMode, setIsDarkMode }) {
-	const [fillColour, setFillColour] = useState('#ffffff');
-	useEffect(() => {
-		isDarkMode ? setFillColour('#374151') : setFillColour('#ffffff');
-	}, [isDarkMode]);
 	return (
 		<div id='hero' className='flex justify-center'>
 			<div className='w-full max-w-7xl'>
@@ -24,11 +20,9 @@ export default function Hero({ isDarkMode, setIsDarkMode }) {
 						>
 							<h1 className='flex flex-col text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-5xl md:text-6xl'>
 								<span className='block xl:inline'>Kellen Wiltshire</span>
-								<span className='block text-indigo-600 xl:inline'>
-									Web Developer
-								</span>
+								<span className='block text-indigo-600 xl:inline'>Web Developer</span>
 							</h1>
-							<p className='mt-3 text-base text-gray-500 dark:text-gray-100 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0'>
+							<p className='mt-3 text-base text-black dark:text-gray-100 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0'>
 								Kingston, Ontario, Canada
 							</p>
 							<div className='mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start'>

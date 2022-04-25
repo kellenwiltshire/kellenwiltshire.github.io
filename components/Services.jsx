@@ -75,29 +75,25 @@ export default function Services() {
 		},
 	};
 	return (
-		<div id='services' className='bg-blue-600 dark:bg-blue-900'>
+		<div id='services' className='bg-blue-900'>
 			<div className='pt-12 sm:pt-16 lg:pt-24'>
-				<div className='max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8'>
+				<div className='mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8'>
 					<motion.div
 						ref={ref}
 						animate={controls}
 						variants={titleVariants}
-						className='max-w-3xl mx-auto space-y-2 lg:max-w-none'
+						className='mx-auto max-w-3xl space-y-2 lg:max-w-none'
 					>
-						<h2 className='text-lg leading-6 font-semibold text-gray-300 uppercase tracking-wider'>
-							Pricing
-						</h2>
-						<p className='text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl'>
-							What Can I Help You Create?
-						</p>
+						<h2 className='text-lg font-semibold uppercase leading-6 tracking-wider text-gray-300'>Pricing</h2>
+						<p className='text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl'>What Can I Help You Create?</p>
 					</motion.div>
 				</div>
 			</div>
-			<div className='mt-8 pb-12 bg-gray-50 dark:bg-gray-700 sm:mt-12 sm:pb-16 lg:mt-16 lg:pb-24'>
+			<div className='mt-8 bg-gray-50 pb-12 dark:bg-gray-700 sm:mt-12 sm:pb-16 lg:mt-16 lg:pb-24'>
 				<div className='relative'>
-					<div className='absolute inset-0 h-3/4 bg-blue-600 dark:bg-blue-900' />
-					<div className='relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-						<div className='max-w-md mx-auto space-y-4 lg:max-w-5xl lg:grid lg:grid-cols-3 lg:gap-5 lg:space-y-0'>
+					<div className='absolute inset-0 h-3/4 bg-blue-900' />
+					<div className='relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
+						<div className='mx-auto max-w-md space-y-4 lg:grid lg:max-w-5xl lg:grid-cols-3 lg:gap-5 lg:space-y-0'>
 							{tiers.map((tier) => (
 								<ServicesCard key={tier.name} tier={tier} />
 							))}
