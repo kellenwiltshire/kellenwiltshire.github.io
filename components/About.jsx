@@ -33,7 +33,7 @@ export default function About({ isDarkMode }) {
 		isDarkMode ? setSVGColour('#ffffff') : setSVGColour('#374151');
 	});
 	return (
-		<div id='about' className='bg-gray-50 dark:bg-gray-700'>
+		<div id='about'>
 			<div className='pt-12 sm:pt-16 lg:pt-24'>
 				<div className='mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8'>
 					<motion.div
@@ -49,7 +49,7 @@ export default function About({ isDarkMode }) {
 					</motion.div>
 				</div>
 			</div>
-			<div className='mt-8 bg-gray-50 pb-12 dark:bg-gray-700 sm:mt-12 sm:pb-16 lg:mt-16 lg:pb-24'>
+			<div className='mt-8  pb-12 sm:mt-12 sm:pb-16 lg:mt-16 lg:pb-24'>
 				<div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
 					<div className='space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0'>
 						<div className='aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4'>
@@ -59,7 +59,7 @@ export default function About({ isDarkMode }) {
 							<div className='space-y-4'>
 								<div className='space-y-1 text-lg font-medium leading-6'>
 									<h3 className='text-3xl text-black dark:text-white'>Kellen Wiltshire</h3>
-									<p className='text-indigo-600 dark:text-gray-100'>Web Developer</p>
+									<p className='text-white dark:text-gray-100'>Web Developer</p>
 								</div>
 								<div className='text-lg'>
 									<p className='py-1 text-gray-500 dark:text-gray-100'>
