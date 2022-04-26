@@ -52,7 +52,7 @@ export default function About({ isDarkMode }) {
 							</motion.div>
 						</div>
 						<div className='sm:col-span-2'>
-							<div className='space-y-4'>
+							<div className='space-y-4 rounded-lg bg-black bg-opacity-20 p-2'>
 								<div className='space-y-1 text-lg font-medium leading-6'>
 									<h3 className='text-3xl text-black dark:text-white'>
 										Kellen Wiltshire
@@ -60,7 +60,7 @@ export default function About({ isDarkMode }) {
 									<p className='text-white dark:text-gray-100'>Web Developer</p>
 								</div>
 								<div className='text-lg'>
-									<p className='py-1 text-black dark:text-gray-100'>
+									<p className='py-1 text-gray-300 dark:text-gray-100'>
 										I am a passionate full-stack developer specializing in all
 										aspects of Web Development looking for the next step in my
 										journey. I have the experience to create beautiful and

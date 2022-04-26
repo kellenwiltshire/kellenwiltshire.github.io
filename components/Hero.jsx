@@ -3,10 +3,6 @@ import { motion } from 'framer-motion';
 import Navbar from './Layout/Navbar';
 
 export default function Hero({ isDarkMode, setIsDarkMode }) {
-	const [fillColour, setFillColour] = useState('#ffffff');
-	useEffect(() => {
-		isDarkMode ? setFillColour('#374151') : setFillColour('#ffffff');
-	}, [isDarkMode]);
 	return (
 		<div id='hero' className='flex justify-center'>
 			<div className='w-full max-w-7xl'>
