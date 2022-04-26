@@ -4,8 +4,9 @@ import MDXComponents from '../../Markdowns/MDXComponents';
 import Projects from '../../components/Projects/Projects';
 
 function knottyisland({ isDarkMode, setIsDarkMode }) {
-	const title = 'The Knoty Island';
-	const description = 'Website created for The Knotty Island, an online handmade Macrame Etsy store.';
+	const title = 'The Knotty Island';
+	const description =
+		'Website created for The Knotty Island, an online handmade Macrame Etsy store.';
 	const webType = 'Etsy';
 	const image = '/theknottyisland.webp';
 	const link = 'https://theknottyisland.com';
