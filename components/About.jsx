@@ -34,32 +34,22 @@ export default function About({ isDarkMode }) {
 	});
 	return (
 		<div id='about'>
-			<div className='pt-12 sm:pt-16 lg:pt-24'>
-				<div className='mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8'>
-					<motion.div
-						ref={ref}
-						animate={controls}
-						variants={titleVariants}
-						className='mx-auto max-w-3xl space-y-2 lg:max-w-none'
-					>
-						<h2 className='text-lg font-semibold uppercase leading-6 tracking-wider text-black dark:text-white'>
-							About Me
-						</h2>
-						<p className='text-3xl font-extrabold text-black dark:text-white sm:text-4xl lg:text-5xl'>
-							Who Am I?
-						</p>
-					</motion.div>
-				</div>
-			</div>
 			<div className='mt-8  pb-12 sm:mt-12 sm:pb-16 lg:mt-16 lg:pb-24'>
 				<div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
 					<div className='space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0'>
 						<div className='aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4'>
-							<img
-								className='rounded-lg object-cover shadow-lg'
-								src='/profile.webp'
-								alt=''
-							/>
+							<motion.div
+								ref={ref}
+								animate={controls}
+								variants={titleVariants}
+								className='mx-auto max-w-3xl space-y-2 lg:max-w-none'
+							>
+								<img
+									className='rounded-lg object-cover shadow-lg'
+									src='/profile.webp'
+									alt=''
+								/>
+							</motion.div>
 						</div>
 						<div className='sm:col-span-2'>
 							<div className='space-y-4'>
@@ -70,7 +60,7 @@ export default function About({ isDarkMode }) {
 									<p className='text-white dark:text-gray-100'>Web Developer</p>
 								</div>
 								<div className='text-lg'>
-									<p className='py-1 text-gray-300 dark:text-gray-100'>
+									<p className='py-1 text-black dark:text-gray-100'>
 										I am a passionate full-stack developer specializing in all
 										aspects of Web Development looking for the next step in my
 										journey. I have the experience to create beautiful and
