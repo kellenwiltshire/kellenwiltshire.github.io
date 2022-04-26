@@ -5,7 +5,7 @@ path {
 	background-color: #e0e7ff;
 	position: absolute;
 	width: 100vw;
-	height: fit-content;
+	height: max-content;
 	z-index: -1;
 	top: 0;
 	left: 0;
@@ -31,7 +31,7 @@ darkmode-Background-Custom {
 	background-color: #3c3c3c;
 	position: absolute;
 	width: 100vw;
-	height: fit-content;
+	height: max-content;
 	z-index: -1;
 	top: 0;
 	left: 0;
