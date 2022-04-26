@@ -27,7 +27,7 @@ export default function Portfolio({ projects }) {
 	};
 
 	return (
-		<div id='portfolio' className='bg-blue-600 dark:bg-blue-900'>
+		<div id='portfolio' className='bg-blue-900'>
 			<div className='pt-12 sm:pt-16 lg:pt-24'>
 				<div className='mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8'>
 					<motion.div

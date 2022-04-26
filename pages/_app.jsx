@@ -4,6 +4,8 @@ import { useRouter } from 'next/router';
 import * as gtag from '../lib/gtag';
 import Layout from '../components/Layout/Layout';
 
+import '../styles/background.css';
+
 function MyApp({ Component, pageProps }) {
 	const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -23,7 +25,7 @@ function MyApp({ Component, pageProps }) {
 		};
 	}, [router.events]);
 	return (
-		<Layout>
+		<Layout isDarkMode={isDarkMode}>
 			<Component
 				{...pageProps}
 				isDarkMode={isDarkMode}

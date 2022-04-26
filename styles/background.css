@@ -1,0 +1,38 @@
+path {
+	transform-origin: 75% 0%;
+}
+.background--custom {
+	background-color: #e0e7ff;
+	position: absolute;
+	width: 100vw;
+	height: max-content;
+	z-index: -1;
+	top: 0;
+	left: 0;
+}
+@keyframes path0 {
+	0% {
+		transform: rotate(60deg);
+	}
+	100% {
+		transform: rotate(-60deg);
+	}
+}
+@keyframes path1 {
+	0% {
+		transform: rotate(20deg);
+	}
+	100% {
+		transform: rotate(-20deg);
+	}
+}
+
+darkmode-Background-Custom {
+	background-color: #3c3c3c;
+	position: absolute;
+	width: 100vw;
+	height: max-content;
+	z-index: -1;
+	top: 0;
+	left: 0;
+}
