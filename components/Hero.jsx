@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Navbar from './Layout/Navbar';
 
@@ -20,22 +19,18 @@ export default function Hero({ isDarkMode, setIsDarkMode }) {
 						>
 							<h1 className='- flex flex-col text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-5xl md:text-6xl'>
 								<span className='block xl:inline'>Kellen Wiltshire</span>
-								<span className='block text-indigo-600 xl:inline'>
-									Web Developer
-								</span>
+								<span className='block text-indigo-600 xl:inline'>Web Developer</span>
 							</h1>
-							<p className='mt-3 text-base text-gray-600 dark:text-gray-200'>
-								Kingston, Ontario, Canada
-							</p>
+							<p className='mt-3 text-base text-gray-600 dark:text-gray-200'>Kingston, Ontario, Canada</p>
 							<div className='mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-center'>
-								<div className='rounded-md shadow'>
+								{/* <div className='rounded-md shadow'>
 									<a
 										href='#services'
 										className='flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 md:py-4 md:px-10 md:text-lg'
 									>
 										Services
 									</a>
-								</div>
+								</div> */}
 								<div className='mt-3 sm:mt-0 sm:ml-3'>
 									<a
 										href='#contact'
