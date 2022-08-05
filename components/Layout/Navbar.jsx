@@ -8,8 +8,8 @@ import Link from 'next/link';
 const navigation = [
 	{ name: 'Home', href: '/' },
 	{ name: 'About', href: '/#about' },
-	{ name: 'Services', href: '/#services' },
-	{ name: 'Portfolio', href: '/#portfolio' },
+	// { name: 'Services', href: '/#services' },
+	// { name: 'Portfolio', href: '/#portfolio' },
 	{ name: 'Contact', href: '/#contact' },
 ];
 
@@ -18,10 +18,7 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
 		<div className='flex min-w-full flex-row justify-center'>
 			<Popover>
 				<div className='relative rounded-b-md bg-blue-900 py-2 px-4 sm:px-6 lg:px-8'>
-					<nav
-						className='relative flex items-center justify-between sm:h-10 lg:justify-start'
-						aria-label='Global'
-					>
+					<nav className='relative flex items-center justify-between sm:h-10 lg:justify-start' aria-label='Global'>
 						<div className='flex flex-shrink-0 flex-grow items-center lg:flex-grow-0'>
 							<div className='flex w-full items-center justify-between md:w-auto'>
 								<Link href='/' alt='Logo Link'>
@@ -42,9 +39,7 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
 						<div className='hidden md:ml-10 md:block md:space-x-8 md:pr-4'>
 							{navigation.map((item) => (
 								<Link key={item.name} href={item.href}>
-									<a className='font-medium text-white  hover:text-gray-300'>
-										{item.name}
-									</a>
+									<a className='font-medium text-white  hover:text-gray-300'>{item.name}</a>
 								</Link>
 							))}
 							<Toggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
@@ -86,10 +81,7 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
 									</Link>
 								))}
 								<div className='space-y-1 px-2 pt-2 pb-3'>
-									<Toggle
-										isDarkMode={isDarkMode}
-										setIsDarkMode={setIsDarkMode}
-									/>
+									<Toggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
 								</div>
 							</div>
 						</div>
