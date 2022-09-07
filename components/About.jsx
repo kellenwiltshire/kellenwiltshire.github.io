@@ -7,7 +7,7 @@ export default function About() {
 
 	return (
 		<div id='about'>
-			<div className='mt-8 pb-12 sm:mt-12 sm:pb-16 lg:mt-16 lg:pb-24'>
+			<div className='pb-12 sm:pb-16 lg:pb-24' style={{ backgroundColor: '#09D6FE' }}>
 				<div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>
 					<div className='space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0'>
 						<img className='rounded-lg object-cover shadow-lg' src='/profile.webp' alt='' />

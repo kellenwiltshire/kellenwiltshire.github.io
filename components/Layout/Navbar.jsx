@@ -42,7 +42,7 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
 									<a className='font-medium text-white  hover:text-gray-300'>{item.name}</a>
 								</Link>
 							))}
-							<Toggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+							{/* <Toggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} /> */}
 						</div>
 					</nav>
 				</div>
@@ -80,9 +80,9 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
 										</a>
 									</Link>
 								))}
-								<div className='space-y-1 px-2 pt-2 pb-3'>
+								{/* <div className='space-y-1 px-2 pt-2 pb-3'>
 									<Toggle isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-								</div>
+								</div> */}
 							</div>
 						</div>
 					</Popover.Panel>

@@ -3,7 +3,7 @@ import Navbar from './Layout/Navbar';
 
 export default function Hero({ isDarkMode, setIsDarkMode }) {
 	return (
-		<div id='hero' className='flex justify-center'>
+		<div id='hero' className='flex justify-center pb-4' style={{ backgroundColor: '#09D6FE' }}>
 			<div className='w-full max-w-7xl'>
 				<div className='relative z-10 min-w-full lg:w-full lg:max-w-2xl'>
 					<div className='flex w-full justify-center'>
